@@ -1,7 +1,7 @@
-baseURL: https://www.nickmckay.org/
+baseURL: https://nickmckay.github.io/
 theme: hugo-apero
 languageCode: en
-title: Nick McKay
+title: Nick McKay - Paleoclimate Scientist
 author: Nick McKay
 copyright: ''
 googleAnalytics: ''
@@ -34,7 +34,7 @@ params:
   custom_theme: ''
   customheadingFontFamily: Fraunces
   customtextFontFamily: Commissioner
-  description: I am a climate scientist...
+  description: Professor at Northern Arizona University, studying paleoclimate dynamics using natural records of past climate variability to understand our climate future.
   favicon: /img/favicon.ico
   giscus:
     category: Comments
@@ -55,8 +55,8 @@ params:
   math:
     renderer: katex
   navallcaps: yes
-  orgLocal: Anywhere
-  orgName: RStudio
+  orgLocal: Flagstaff, Arizona
+  orgName: Northern Arizona University
   sharing_image: /img/papillons.jpg
   social:
     - icon: github
@@ -76,7 +76,7 @@ params:
   utterances:
     issue_term: pathname
     label: 'comments :crystal_ball:'
-    repo_name: apreshill/apero
+    repo_name: nickmckay/nickmckay.github.io
     theme: boxy-light
 taxonomies:
   category: categories
@@ -84,43 +84,43 @@ taxonomies:
   tag: tags
 menu:
   footer:
+    - name: Contact
+      title: Contact Dr. McKay
+      url: /contact/
+      weight: 1
     - name: License
       title: License
       url: /license/
-      weight: 1
-    - name: Contact
-      title: Contact form
-      url: /contact/
       weight: 2
-    - name: Contributors
-      title: Contributors
-      url: /contributors/
-      weight: 3
   header:
     - name: About
-      title: About Blogophonic
+      title: About Nick McKay
       url: /about/
       weight: 1
-    - name: Blog
-      title: Blog
-      url: /blog/
+    - name: Research
+      title: Research Areas
+      url: /research/
       weight: 2
+    - name: Blog
+      title: Research Blog
+      url: /blog/
+      weight: 3
     - name: Projects
       title: Project Portfolio
       url: /project/
-      weight: 3
-    - name: Talks
-      title: Talks
-      url: /talk/
       weight: 4
-    - name: A collection
-      title: A collection
-      url: /collection/
+    - name: Publications
+      title: Publications
+      url: /publications/
       weight: 5
-    - name: Elements
-      title: Element Page
-      url: /elements/
+    - name: Opportunities
+      title: Graduate Students
+      url: /opportunities/
       weight: 6
+    - name: Contact
+      title: Get in Touch
+      url: /contact/
+      weight: 7
 privacy:
   disqus:
     disable: yes

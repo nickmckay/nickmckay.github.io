@@ -1,0 +1,47 @@
+---
+title: "Publications"
+subtitle: "My research publications"
+description: |
+  My publications in paleoclimate science, automatically updated from Google Scholar.
+date: "2025-08-04"
+author: "Nick McKay"
+draft: false
+# layout options: single, single-sidebar
+layout: single
+---
+
+
+
+This page automatically updates with publications from [Google Scholar](https://scholar.google.com/citations?user=j8_CgoEAAAAJ&hl=en) using the R `scholar` package.
+
+---
+
+## Publication Metrics
+
+**Total Citations:**  8039 
+
+**h-index:**  37 
+
+**i10-index:**  62 
+
+**Publications:**  93 
+
+---
+
+## Citation History
+
+<div class="figure">
+<img src="index_files/figure-html/citation_plot-1.png" alt="Citation history over time" width="960" />
+<p class="caption">(\#fig:citation_plot)Citation history over time</p>
+</div>
+
+---
+
+## Recent Publications (Last 2 Years)
+
+
+
+
+
+
+

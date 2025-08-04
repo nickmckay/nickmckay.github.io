@@ -3,10 +3,10 @@
 text_align_right: false
 show_title_as_headline: false
 headline: |
-  Hi, my name is Hugo Apéro. Nice to meet you.
+  Hi, I'm Nick McKay. Nice to meet you.
 ---
 
 <!-- this is a subheadline -->
-I'm a Hugo theme you'll want to hang out with. :fr: 
+I'm a paleoclimate scientist working to understand how Earth's climate system has changed in the past and what that means for our future.
 
-The page you are reading is based on a markdown file- look in `content/about/` to edit. There, look inside the `header`, `main`, and `sidebar` folders to get started building your own "about" page.
+Human activity has caused large changes to Earth's climate and landscapes, and has committed us to even more dramatic climatic and environmental changes in the not-so-distant future. To better prepare for, and adapt to these changes, we must better understand the complex details of our climate and earth systems. My research uses natural records of past climate variability to inform our understanding of climate dynamics. I study natural climate variability in places ranging from the tropics to the arctic, on timescales ranging years to millennia and on spatial scales ranging from hemispheres to meters.
