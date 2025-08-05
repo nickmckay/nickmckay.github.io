@@ -1,46 +1,277 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Nick McKay</title>
-    <link>https://www.nickmckay.org/tags/</link>
-    <description>Recent content in Tags on Nick McKay</description>
+    <title>Tags on Nick McKay - Paleoclimate Scientist</title>
+    <link>https://nickmckay.github.io/tags/</link>
+    <description>Recent content in Tags on Nick McKay - Paleoclimate Scientist</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.nickmckay.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nickmckay.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Style</title>
-      <link>https://www.nickmckay.org/tags/style/</link>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.nickmckay.org/tags/style/</guid>
+      <title>Climate Modeling</title>
+      <link>https://nickmckay.github.io/tags/climate-modeling/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/climate-modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Assimilation</title>
+      <link>https://nickmckay.github.io/tags/data-assimilation/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/data-assimilation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Innovation</title>
+      <link>https://nickmckay.github.io/tags/innovation/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/innovation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lake Levels</title>
+      <link>https://nickmckay.github.io/tags/lake-levels/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/lake-levels/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PhD Research</title>
+      <link>https://nickmckay.github.io/tags/phd-research/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/phd-research/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arctic Warming</title>
+      <link>https://nickmckay.github.io/tags/arctic-warming/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/arctic-warming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Climate Indicators</title>
+      <link>https://nickmckay.github.io/tags/climate-indicators/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/climate-indicators/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Glacier Retreat</title>
+      <link>https://nickmckay.github.io/tags/glacier-retreat/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/glacier-retreat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Remote Sensing</title>
+      <link>https://nickmckay.github.io/tags/remote-sensing/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/remote-sensing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Snowline</title>
+      <link>https://nickmckay.github.io/tags/snowline/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/snowline/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>4.2 Ka Event</title>
+      <link>https://nickmckay.github.io/tags/4.2-ka-event/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/4.2-ka-event/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Climate Change</title>
+      <link>https://nickmckay.github.io/tags/climate-change/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/climate-change/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Analysis</title>
+      <link>https://nickmckay.github.io/tags/data-analysis/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/data-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Global Climate</title>
+      <link>https://nickmckay.github.io/tags/global-climate/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/global-climate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Paleoclimatology</title>
+      <link>https://nickmckay.github.io/tags/paleoclimatology/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/paleoclimatology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Interoperability</title>
+      <link>https://nickmckay.github.io/tags/data-interoperability/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/data-interoperability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Standards</title>
+      <link>https://nickmckay.github.io/tags/data-standards/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/data-standards/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Informatics</title>
+      <link>https://nickmckay.github.io/tags/informatics/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/informatics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linked Earth</title>
+      <link>https://nickmckay.github.io/tags/linked-earth/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/linked-earth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LiPD</title>
+      <link>https://nickmckay.github.io/tags/lipd/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/lipd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arctic</title>
+      <link>https://nickmckay.github.io/tags/arctic/</link>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/arctic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Climate Models</title>
+      <link>https://nickmckay.github.io/tags/climate-models/</link>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/climate-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Model Comparison</title>
+      <link>https://nickmckay.github.io/tags/data-model-comparison/</link>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/data-model-comparison/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Synthesis</title>
+      <link>https://nickmckay.github.io/tags/synthesis/</link>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/synthesis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Glaciers</title>
+      <link>https://nickmckay.github.io/tags/glaciers/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/glaciers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lakes</title>
+      <link>https://nickmckay.github.io/tags/lakes/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/lakes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modeling</title>
+      <link>https://nickmckay.github.io/tags/modeling/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Systems Modeling</title>
+      <link>https://nickmckay.github.io/tags/systems-modeling/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/systems-modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Colorado</title>
+      <link>https://nickmckay.github.io/tags/colorado/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/colorado/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drought</title>
+      <link>https://nickmckay.github.io/tags/drought/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/drought/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dust</title>
+      <link>https://nickmckay.github.io/tags/dust/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/dust/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lake Sediments</title>
+      <link>https://nickmckay.github.io/tags/lake-sediments/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/lake-sediments/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Paleoclimate</title>
+      <link>https://nickmckay.github.io/tags/paleoclimate/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/paleoclimate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hydroclimate</title>
+      <link>https://nickmckay.github.io/tags/hydroclimate/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/hydroclimate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Isotopes</title>
+      <link>https://nickmckay.github.io/tags/isotopes/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/isotopes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PAGES 2k</title>
+      <link>https://nickmckay.github.io/tags/pages-2k/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/pages-2k/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Water Resources</title>
+      <link>https://nickmckay.github.io/tags/water-resources/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/water-resources/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo-Site</title>
-      <link>https://www.nickmckay.org/tags/hugo-site/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.nickmckay.org/tags/hugo-site/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Plot</title>
-      <link>https://www.nickmckay.org/tags/plot/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>https://www.nickmckay.org/tags/plot/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>R Markdown</title>
-      <link>https://www.nickmckay.org/tags/r-markdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>https://www.nickmckay.org/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Regression</title>
-      <link>https://www.nickmckay.org/tags/regression/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>https://www.nickmckay.org/tags/regression/</guid>
+      <link>https://nickmckay.github.io/tags/hugo-site/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/hugo-site/</guid>
       <description></description>
     </item>
   </channel>

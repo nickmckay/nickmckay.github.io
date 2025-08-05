@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Nick McKay</title>
-    <link>https://www.nickmckay.org/series/</link>
-    <description>Recent content in Series on Nick McKay</description>
+    <title>Series on Nick McKay - Paleoclimate Scientist</title>
+    <link>https://nickmckay.github.io/series/</link>
+    <description>Recent content in Series on Nick McKay - Paleoclimate Scientist</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.nickmckay.org/series/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>A Spoonful of Hugo</title>
-      <link>https://www.nickmckay.org/series/a-spoonful-of-hugo/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.nickmckay.org/series/a-spoonful-of-hugo/</guid>
-      <description></description>
-    </item>
+    <atom:link href="https://nickmckay.github.io/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

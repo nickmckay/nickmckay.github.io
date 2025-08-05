@@ -2,163 +2,281 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.nickmckay.org/collection/day02/01-netlify/</loc>
+    <loc>https://nickmckay.github.io/collection/day02/01-netlify/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/spoonful-series/01-spoonful/</loc>
+    <loc>https://nickmckay.github.io/collection/day01/01-github/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/collection/day01/01-github/</loc>
+    <loc>https://nickmckay.github.io/collection/prework/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/collection/prework/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/collection/day01/</loc>
+    <loc>https://nickmckay.github.io/collection/day01/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/collection/day01/02-postcards/</loc>
+    <loc>https://nickmckay.github.io/collection/day01/02-postcards/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/spoonful-series/02-spoonful/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/collection/day02/02-blogdown/</loc>
+    <loc>https://nickmckay.github.io/collection/day02/02-blogdown/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/collection/day02/</loc>
+    <loc>https://nickmckay.github.io/collection/day02/</loc>
     <lastmod>2021-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/spoonful-series/03-spoonful/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/collection/day01/03-distill/</loc>
+    <loc>https://nickmckay.github.io/collection/day01/03-distill/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/collection/day02/03-blogdown/</loc>
+    <loc>https://nickmckay.github.io/collection/day02/03-blogdown/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
+    <loc>https://nickmckay.github.io/blog/damp21ka-data-assimilation/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/categories/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
+    <loc>https://nickmckay.github.io/categories/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
+    <loc>https://nickmckay.github.io/tags/climate-modeling/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/social/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
+    <loc>https://nickmckay.github.io/categories/data-assimilation/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/categories/theme-features/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
+    <loc>https://nickmckay.github.io/tags/data-assimilation/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/tags/style/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
+    <loc>https://nickmckay.github.io/categories/hydroclimate/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/color-themes/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
+    <loc>https://nickmckay.github.io/tags/innovation/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/fonts/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
+    <loc>https://nickmckay.github.io/tags/lake-levels/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/tags/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
+    <loc>https://nickmckay.github.io/categories/methodology/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/collection/</loc>
+    <loc>https://nickmckay.github.io/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/categories/paleoclimate/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/phd-research/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/blog/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/</loc>
+    <lastmod>2024-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/categories/arctic/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/arctic-warming/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/categories/climate-change/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/climate-indicators/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/glacier-retreat/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/categories/glaciers/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/remote-sensing/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/snowline/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/blog/arctic-snowline-rise/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/contact/</loc>
+    <lastmod>2024-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/form/</loc>
+    <lastmod>2024-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/publications/</loc>
+    <lastmod>2024-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/4.2-ka-event/</loc>
+    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/climate-change/</loc>
+    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/categories/climate-events/</loc>
+    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/data-analysis/</loc>
+    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/global-climate/</loc>
+    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/categories/holocene/</loc>
+    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/paleoclimatology/</loc>
+    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/blog/4.2ka-event-not-remarkable/</loc>
+    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/data-interoperability/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/data-standards/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/informatics/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/linked-earth/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/lipd/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/research/paleoclimate-informatics/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/categories/research/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/research/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/arctic/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/climate-models/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/data-model-comparison/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/research/paleoclimate-synthesis/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/synthesis/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/glaciers/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/lakes/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/modeling/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/research/process-modeling/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/systems-modeling/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/colorado/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/drought/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/dust/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/lake-sediments/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/paleoclimate/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/research/paleoclimate-records/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/hydroclimate/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/isotopes/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/pages-2k/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/blog/global-water-cycle-response/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/categories/water-cycle/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/water-resources/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/collection/</loc>
     <lastmod>2021-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/evergreen/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/categories/evergreen/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/talk/campfire/</loc>
+    <loc>https://nickmckay.github.io/talk/campfire/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/talk/</loc>
+    <loc>https://nickmckay.github.io/talk/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/categories/workshop/</loc>
+    <loc>https://nickmckay.github.io/categories/workshop/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/spoonful-series/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/series/a-spoonful-of-hugo/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/tags/hugo-site/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/categories/r/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/series/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/blog/seedling/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/talk/second-seedling/</loc>
+    <loc>https://nickmckay.github.io/talk/second-seedling/</loc>
     <lastmod>2021-01-01T14:15:59-06:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/categories/meetup/</loc>
+    <loc>https://nickmckay.github.io/categories/meetup/</loc>
     <lastmod>2021-01-01T14:15:59-06:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/rmarkdown/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/blog/2020-12-01-r-rmarkdown/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/tags/plot/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/tags/r-markdown/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/tags/regression/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/talk/seedling/</loc>
+    <loc>https://nickmckay.github.io/talk/seedling/</loc>
     <lastmod>2020-01-13T14:15:59-06:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/project/</loc>
+    <loc>https://nickmckay.github.io/project/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/categories/package/</loc>
+    <loc>https://nickmckay.github.io/tags/hugo-site/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/project/giraffes/</loc>
+    <loc>https://nickmckay.github.io/categories/package/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/css-grid-scaffold/</loc>
+    <loc>https://nickmckay.github.io/categories/r/</loc>
+    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/project/giraffes/</loc>
+    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/categories/theme-features/</loc>
+    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/project/penguins/</loc>
     <lastmod>2019-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/project/penguins/</loc>
-    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/project/bakeoff/</loc>
+    <loc>https://nickmckay.github.io/project/bakeoff/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/blog/built-in-contact-form/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/contact/</loc>
-    <lastmod>2019-02-25T13:38:41-06:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/form/</loc>
-    <lastmod>2019-02-25T13:38:41-06:00</lastmod>
-  </url><url>
-    <loc>https://www.nickmckay.org/elements/</loc>
+    <loc>https://nickmckay.github.io/elements/</loc>
     <lastmod>2019-02-18T12:27:33-06:00</lastmod>
   </url><url>
-    <loc>https://www.nickmckay.org/about/</loc>
+    <loc>https://nickmckay.github.io/about/</loc>
   </url><url>
-    <loc>https://www.nickmckay.org/contributors/</loc>
+    <loc>https://nickmckay.github.io/contributors/</loc>
   </url><url>
-    <loc>https://www.nickmckay.org/license/</loc>
+    <loc>https://nickmckay.github.io/opportunities/</loc>
+  </url><url>
+    <loc>https://nickmckay.github.io/license/</loc>
+  </url><url>
+    <loc>https://nickmckay.github.io/series/</loc>
   </url>
 </urlset>
