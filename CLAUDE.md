@@ -35,6 +35,16 @@ hugo
 hugo --environment production
 ```
 
+**Publications Database Management:**
+```bash
+# Update publications database from Google Scholar (run periodically)
+cd /path/to/site && Rscript R/update_publications.R
+
+# Note: This should be run manually when you want to refresh publication data
+# The script fetches complete author lists for recent publications (last 3 years)
+# Rate limiting is built in to avoid hitting Google Scholar limits
+```
+
 **Deployment:**
 - Automatic deployment via Netlify when pushing to main branch
 - Build command: `hugo`
@@ -48,6 +58,10 @@ hugo --environment production
   - `_index.md`: Homepage content and configuration
   - `about/`: About page with modular sections (header, main, sidebar)
   - `blog/`: Blog posts (supports .Rmd and .md files)
+  - `data/`: Local databases for site content
+    - `publications.csv`: Publications database with complete author lists
+    - `profile_metrics.csv`: Scholar profile metrics (citations, h-index, etc.)
+    - `citation_history.csv`: Citation history data for visualizations
   - `project/`: Project portfolio entries
   - `talk/`: Speaking engagements and presentations
   - `collection/`: Grouped content series

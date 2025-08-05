@@ -26,6 +26,7 @@ library(ggplot2)
 library(DT)
 library(knitr)
 library(kableExtra)
+# library(readr)  # Using base R read.csv instead
 
 # Nick McKay's Google Scholar ID
 scholar_id <- "j8_CgoEAAAAJ"
@@ -35,12 +36,25 @@ scholar_id <- "j8_CgoEAAAAJ"
 ## Publication Metrics
 
 ```{r metrics, results='asis'}
-# Get citation data
-profile <- get_profile(scholar_id)
-citation_hist <- get_citation_history(scholar_id)
-
-# Get publications data (used throughout the document)
-pubs <- get_publications(scholar_id)
+# Load data from local database (updated periodically via R/update_publications.R)
+tryCatch({
+  pubs <- read.csv("data/publications.csv", stringsAsFactors = FALSE)
+  profile_metrics <- read.csv("data/profile_metrics.csv", stringsAsFactors = FALSE)
+  citation_hist <- read.csv("data/citation_history.csv", stringsAsFactors = FALSE)
+  
+  # Create profile object for compatibility
+  profile <- list(
+    total_cites = profile_metrics$total_cites[1],
+    h_index = profile_metrics$h_index[1],
+    i10_index = profile_metrics$i10_index[1]
+  )
+}, error = function(e) {
+  # Fallback to Google Scholar if local database doesn't exist
+  cat("Local database not found, fetching from Google Scholar...\n")
+  profile <- get_profile(scholar_id)
+  citation_hist <- get_citation_history(scholar_id)
+  pubs <- get_publications(scholar_id)
+})
 
 # Display key metrics
 cat("**Publications:** ", nrow(pubs), "\n\n")
@@ -87,12 +101,15 @@ if(nrow(recent_pubs) > 0) {
   for(i in 1:min(10, nrow(recent_pubs))) {
     pub <- recent_pubs[i,]
     
+    # Use author data from local database (complete authors fetched during database update)
+    authors_to_display <- pub$author
+    
     # Create Google Scholar search URL for the paper
     scholar_search_url <- paste0("https://scholar.google.com/scholar?q=", 
-                                URLencode(paste(pub$title, pub$author), reserved = TRUE))
+                                URLencode(paste(pub$title, authors_to_display), reserved = TRUE))
     
     cat("<strong><a href='", scholar_search_url, "' target='_blank'>", pub$title, "</a></strong>\n\n")
-    cat("<em>", pub$author, "</em>\n\n")
+    cat("<em>", authors_to_display, "</em>\n\n")
     cat(pub$journal, " (", pub$year, ")")
     if(!is.na(pub$cites) && pub$cites > 0) {
       cat(" • Citations: ", pub$cites)

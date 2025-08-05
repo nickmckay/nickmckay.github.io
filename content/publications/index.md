@@ -3,7 +3,7 @@ title: "Publications"
 subtitle: "My research publications"
 description: |
   My publications.
-date: "2025-08-04"
+date: "2025-08-05"
 author: "Nick McKay"
 draft: false
 # layout options: single, single-sidebar
@@ -37,25 +37,25 @@ layout: single
 
 ## Publications from the last 2 years
 
-<strong><a href=' https://scholar.google.com/scholar?q=Evidence%20for%20millennial-scale%20interactions%20between%20Hg%20cycling%20and%20hydroclimate%20from%20Lake%20Bosumtwi%2C%20Ghana%20AR%20Paine%2C%20J%20Frieling%2C%20TM%20Shanahan%2C%20TA%20Mather%2C%20N%20McKay%2C%20SA%20Robinson%2C%20... ' target='_blank'> Evidence for millennial-scale interactions between Hg cycling and hydroclimate from Lake Bosumtwi, Ghana </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=Evidence%20for%20millennial-scale%20interactions%20between%20Hg%20cycling%20and%20hydroclimate%20from%20Lake%20Bosumtwi%2C%20Ghana%20AR%20Paine%2C%20J%20Frieling%2C%20TM%20Shanahan%2C%20TA%20Mather%2C%20N%20McKay%2C%20SA%20Robinson%2C%20DM%20Pyle%2C%20IM%20Fendley%2C%20R%20Kiely%2C%20WD%20Gosling ' target='_blank'> Evidence for millennial-scale interactions between Hg cycling and hydroclimate from Lake Bosumtwi, Ghana </a></strong>
 
-<em> AR Paine, J Frieling, TM Shanahan, TA Mather, N McKay, SA Robinson, ... </em>
+<em> AR Paine, J Frieling, TM Shanahan, TA Mather, N McKay, SA Robinson, DM Pyle, IM Fendley, R Kiely, WD Gosling </em>
 
 Climate of the Past  ( 2025 ) • Citations:  1
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=Early%20Holocene%20atmospheric%20circulation%20changes%20over%20northern%20Europe%20based%20on%20isotopic%20and%20biomarker%20evidence%20from%20Kola%20Peninsula%20H%20Holtzman%2C%20EK%20Thomas%2C%20M%20Erb%2C%20L%20Marshall%2C%20IS%20Casta%C3%B1eda%2C%20D%20Kaufman%2C%20... ' target='_blank'> Early Holocene atmospheric circulation changes over northern Europe based on isotopic and biomarker evidence from Kola Peninsula </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=Early%20Holocene%20atmospheric%20circulation%20changes%20over%20northern%20Europe%20based%20on%20isotopic%20and%20biomarker%20evidence%20from%20Kola%20Peninsula%20H%20Holtzman%2C%20EK%20Thomas%2C%20M%20Erb%2C%20L%20Marshall%2C%20IS%20Casta%C3%B1eda%2C%20D%20Kaufman%2C%20NP%20McKay%2C%20M%20Melles ' target='_blank'> Early Holocene atmospheric circulation changes over northern Europe based on isotopic and biomarker evidence from Kola Peninsula </a></strong>
 
-<em> H Holtzman, EK Thomas, M Erb, L Marshall, IS Castañeda, D Kaufman, ... </em>
+<em> H Holtzman, EK Thomas, M Erb, L Marshall, IS Castañeda, D Kaufman, NP McKay, M Melles </em>
 
 Paleoceanography and Paleoclimatology  ( 2025 )
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=The%204.2%20ka%20event%20is%20not%20remarkable%20in%20the%20context%20of%20Holocene%20climate%20variability%20NP%20McKay%2C%20DS%20Kaufman%2C%20SH%20Arcusa%2C%20HR%20Kolus%2C%20DC%20Edge%2C%20MP%20Erb%2C%20... ' target='_blank'> The 4.2 ka event is not remarkable in the context of Holocene climate variability </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=The%204.2%20ka%20event%20is%20not%20remarkable%20in%20the%20context%20of%20Holocene%20climate%20variability%20NP%20McKay%2C%20DS%20Kaufman%2C%20S%C3%A9pH%20Arcusa%2C%20HR%20Kolus%2C%20DC%20Edge%2C%20MP%20Erb%2C%20CL%20Hancock%2C%20CC%20Routson%2C%20M%20%C5%BBarczy%C5%84ski%2C%20LP%20Marshall%2C%20GK%20Roberts%2C%20F%20Telles ' target='_blank'> The 4.2 ka event is not remarkable in the context of Holocene climate variability </a></strong>
 
-<em> NP McKay, DS Kaufman, SH Arcusa, HR Kolus, DC Edge, MP Erb, ... </em>
+<em> NP McKay, DS Kaufman, SépH Arcusa, HR Kolus, DC Edge, MP Erb, CL Hancock, CC Routson, M Żarczyński, LP Marshall, GK Roberts, F Telles </em>
 
 Nature Communications  ( 2024 ) • Citations:  39
 
@@ -63,9 +63,9 @@ Nature Communications  ( 2024 ) • Citations:  39
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=Arctic%20glacier%20snowline%20altitudes%20rise%20150%20m%20over%20the%20last%204%20decades%20LJ%20Larocca%2C%20JM%20Lea%2C%20MP%20Erb%2C%20NP%20McKay%2C%20M%20Phillips%2C%20KA%20Lamantia%2C%20... ' target='_blank'> Arctic glacier snowline altitudes rise 150 m over the last 4 decades </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=Arctic%20glacier%20snowline%20altitudes%20rise%20150%20m%20over%20the%20last%204%20decades%20LJ%20Larocca%2C%20JM%20Lea%2C%20MP%20Erb%2C%20NP%20McKay%2C%20M%20Phillips%2C%20KA%20Lamantia%2C%20DS%20Kaufman ' target='_blank'> Arctic glacier snowline altitudes rise 150 m over the last 4 decades </a></strong>
 
-<em> LJ Larocca, JM Lea, MP Erb, NP McKay, M Phillips, KA Lamantia, ... </em>
+<em> LJ Larocca, JM Lea, MP Erb, NP McKay, M Phillips, KA Lamantia, DS Kaufman </em>
 
 The Cryosphere  ( 2024 ) • Citations:  5
 
@@ -73,17 +73,17 @@ The Cryosphere  ( 2024 ) • Citations:  5
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=Sedimentary%20ancient%20DNA%20reveals%20the%20impact%20of%20anthropogenic%20land%20use%20disturbance%20and%20ecological%20shifts%20on%20fish%20community%20structure%20in%20small%20lowland%20lake%20G%20Thomson-Laing%2C%20JD%20Howarth%2C%20J%20Atalah%2C%20MJ%20Vandergoes%2C%20X%20Li%2C%20... ' target='_blank'> Sedimentary ancient DNA reveals the impact of anthropogenic land use disturbance and ecological shifts on fish community structure in small lowland lake </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=Sedimentary%20ancient%20DNA%20reveals%20the%20impact%20of%20anthropogenic%20land%20use%20disturbance%20and%20ecological%20shifts%20on%20fish%20community%20structure%20in%20small%20lowland%20lake%20G%20Thomson-Laing%2C%20JD%20Howarth%2C%20J%20Atalah%2C%20MJ%20Vandergoes%2C%20X%20Li%2C%20JK%20Pearman%2C%20S%20Fitzsimons%2C%20C%20Moy%2C%20A%20Moody%2C%20C%20Shepherd%2C%20N%20McKay%2C%20SA%20Wood ' target='_blank'> Sedimentary ancient DNA reveals the impact of anthropogenic land use disturbance and ecological shifts on fish community structure in small lowland lake </a></strong>
 
-<em> G Thomson-Laing, JD Howarth, J Atalah, MJ Vandergoes, X Li, ... </em>
+<em> G Thomson-Laing, JD Howarth, J Atalah, MJ Vandergoes, X Li, JK Pearman, S Fitzsimons, C Moy, A Moody, C Shepherd, N McKay, SA Wood </em>
 
 Science of The Total Environment  ( 2024 ) • Citations:  4
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=A%20paleoecological%20investigation%20of%20recent%20cyanobacterial%20blooms%20and%20their%20drivers%20in%20two%20contrasting%20lakes%20C%20Wheeler%2C%20JK%20Pearman%2C%20JD%20Howarth%2C%20MJ%20Vandergoes%2C%20K%20Holt%2C%20SA%20Trewick%2C%20... ' target='_blank'> A paleoecological investigation of recent cyanobacterial blooms and their drivers in two contrasting lakes </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=A%20paleoecological%20investigation%20of%20recent%20cyanobacterial%20blooms%20and%20their%20drivers%20in%20two%20contrasting%20lakes%20C%20Wheeler%2C%20JK%20Pearman%2C%20JD%20Howarth%2C%20MJ%20Vandergoes%2C%20K%20Holt%2C%20SA%20Trewick%2C%20X%20Li%2C%20L%20Thompson%2C%20G%20Thomson-Laing%2C%20M%20Picard%2C%20C%20Moy%2C%20NP%20Mckay%2C%20A%20Moody%2C%20C%20Shepherd%2C%20Vvd%20Bos%2C%20K%20Steiner%2C%20SA%20Wood ' target='_blank'> A paleoecological investigation of recent cyanobacterial blooms and their drivers in two contrasting lakes </a></strong>
 
-<em> C Wheeler, JK Pearman, JD Howarth, MJ Vandergoes, K Holt, SA Trewick, ... </em>
+<em> C Wheeler, JK Pearman, JD Howarth, MJ Vandergoes, K Holt, SA Trewick, X Li, L Thompson, G Thomson-Laing, M Picard, C Moy, NP Mckay, A Moody, C Shepherd, Vvd Bos, K Steiner, SA Wood </em>
 
 Harmful algae  ( 2024 ) • Citations:  3
 
@@ -97,9 +97,9 @@ PLOS Climate  ( 2024 ) • Citations:  2
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=Coral%20skeletal%20proxy%20records%20database%20for%20the%20Great%20Barrier%20Reef%2C%20Australia%20AK%20Arzey%2C%20HV%20McGregor%2C%20TR%20Clark%2C%20JM%20Webster%2C%20SE%20Lewis%2C%20J%20Mallela%2C%20... ' target='_blank'> Coral skeletal proxy records database for the Great Barrier Reef, Australia </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=Coral%20skeletal%20proxy%20records%20database%20for%20the%20Great%20Barrier%20Reef%2C%20Australia%20AK%20Arzey%2C%20HV%20McGregor%2C%20TR%20Clark%2C%20JM%20Webster%2C%20SE%20Lewis%2C%20J%20Mallela%2C%20NP%20McKay%2C%20HW%20Fahey%2C%20S%20Chakraborty%2C%20TB%20Razak%2C%20MJ%20Fischer ' target='_blank'> Coral skeletal proxy records database for the Great Barrier Reef, Australia </a></strong>
 
-<em> AK Arzey, HV McGregor, TR Clark, JM Webster, SE Lewis, J Mallela, ... </em>
+<em> AK Arzey, HV McGregor, TR Clark, JM Webster, SE Lewis, J Mallela, NP McKay, HW Fahey, S Chakraborty, TB Razak, MJ Fischer </em>
 
 Earth System Science Data  ( 2024 ) • Citations:  1
 
@@ -119,7 +119,7 @@ Climate of the Past  ( 2024 )
 
 ## Complete Publications List
 
-<table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 14px; color: black; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:right;"> Year </th>
@@ -684,7 +684,7 @@ Quaternary Science Reviews  ( 2016 ) • <strong>Citations:  253 </strong>
 
 ## Research Impact by Journal
 
-<table class="table table-striped table-hover table-condensed" style="font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed" style="font-size: 12px; color: black; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Journal </th>

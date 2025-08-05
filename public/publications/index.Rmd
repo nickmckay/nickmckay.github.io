@@ -1,0 +1,232 @@
+---
+title: "Publications"
+subtitle: "My research publications"
+description: |
+  My publications.
+date: "`r Sys.Date()`"
+author: "Nick McKay"
+draft: false
+# layout options: single, single-sidebar
+layout: single
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, 
+  message = FALSE, 
+  warning = FALSE,
+  fig.width = 10,
+  fig.height = 6
+)
+
+# Load required libraries
+library(scholar)
+library(dplyr)
+library(ggplot2)
+library(DT)
+library(knitr)
+library(kableExtra)
+
+# Nick McKay's Google Scholar ID
+scholar_id <- "j8_CgoEAAAAJ"
+```
+
+
+## Publication Metrics
+
+```{r metrics, results='asis'}
+# Get citation data
+profile <- get_profile(scholar_id)
+citation_hist <- get_citation_history(scholar_id)
+
+# Get publications data (used throughout the document)
+pubs <- get_publications(scholar_id)
+
+# Display key metrics
+cat("**Publications:** ", nrow(pubs), "\n\n")
+cat("**Total Citations:** ", profile$total_cites, "\n\n")
+cat("**h-index:** ", profile$h_index, "\n\n") 
+cat("**i10-index:** ", profile$i10_index, "\n\n")
+```
+
+---
+
+## Citation History
+
+```{r citation_plot}
+# Plot citation history
+ggplot(citation_hist, aes(x = year, y = cites)) +
+  geom_col(fill = "darkgreen", alpha = 0.7) +
+  #geom_smooth(method = "loess", se = FALSE, color = "darkred", size = 1.2) +
+  labs(
+    title = "Citations per Year",
+    x = "Year",
+    y = "Citations",
+    caption = paste("Data retrieved:", Sys.Date())
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 16, face = "bold"),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+```
+
+---
+
+## Publications from the last 2 years
+
+```{r recent_pubs, results='asis'}
+# Filter for recent publications
+recent_pubs <- pubs %>%
+  filter(year >= (max(year, na.rm = TRUE) - 1)) %>%
+  arrange(desc(year), desc(cites))
+
+# Display recent publications with blog post links
+if(nrow(recent_pubs) > 0) {
+  for(i in 1:min(10, nrow(recent_pubs))) {
+    pub <- recent_pubs[i,]
+    
+    # Get full publication details to access complete author list
+    full_authors <- tryCatch({
+      pub_details <- get_publication_cite(scholar_id, pub$pubid)
+      pub_details$author
+    }, error = function(e) {
+      pub$author
+    })
+    
+    # Use full author list if available, otherwise fall back to truncated version
+    authors_to_display <- if(!is.null(full_authors) && full_authors != "" && !is.na(full_authors)) full_authors else pub$author
+    
+    # Create Google Scholar search URL for the paper
+    scholar_search_url <- paste0("https://scholar.google.com/scholar?q=", 
+                                URLencode(paste(pub$title, authors_to_display), reserved = TRUE))
+    
+    cat("<strong><a href='", scholar_search_url, "' target='_blank'>", pub$title, "</a></strong>\n\n")
+    cat("<em>", authors_to_display, "</em>\n\n")
+    cat(pub$journal, " (", pub$year, ")")
+    if(!is.na(pub$cites) && pub$cites > 0) {
+      cat(" • Citations: ", pub$cites)
+    }
+    cat("\n\n")
+    
+    # Add blog post links for specific papers
+    if(grepl("4.2 ka event is not remarkable", pub$title)) {
+      cat("📖 **[Read blog post about this research](/blog/4.2ka-event-not-remarkable/)**\n\n")
+    }
+    if(grepl("Globally coherent water cycle response", pub$title)) {
+      cat("📖 **[Read blog post about this research](/blog/global-water-cycle-response/)**\n\n")
+    }
+    if(grepl("global Data Assimilation of Moisture Patterns", pub$title)) {
+      cat("📖 **[Read blog post about this research](/blog/damp21ka-data-assimilation/)**\n\n")
+    }
+    if(grepl("Arctic glacier snowline altitudes", pub$title)) {
+      cat("📖 **[Read blog post about this research](/blog/arctic-snowline-rise/)**\n\n")
+    }
+    
+    cat("---\n\n")
+  }
+} else {
+  cat("No recent publications found.\n\n")
+}
+```
+
+---
+
+## Complete Publications List
+
+```{r publications_table}
+# Clean and format the data
+pubs_formatted <- pubs %>%
+  arrange(desc(year)) %>%
+  mutate(
+    # Create formatted citation
+    citation = paste0(
+      author, " (", year, "). ",
+      "<strong>", title, "</strong>. ",
+      "<em>", journal, "</em>",
+      ifelse(is.na(number) | number == "", "", paste0(", ", number)),
+      ifelse(is.na(cites) | cites == 0, "", paste0(" [Citations: ", cites, "]"))
+    ),
+    # Clean up journal names
+    journal = ifelse(is.na(journal) | journal == "", "In Review/Preprint", journal)
+  ) %>%
+  select(Year = year, Citation = citation, Journal = journal, Citations = cites)
+
+# Display as formatted table
+pubs_formatted %>%
+  select(Year, Citation, Citations) %>%
+  kable(format = "html", escape = FALSE) %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width = TRUE,
+    font_size = 14
+  ) %>%
+  column_spec(1, width = "8%", bold = TRUE) %>%
+  column_spec(2, width = "80%") %>%
+  column_spec(3, width = "12%", bold = TRUE)
+```
+
+---
+
+## Top Cited Publications
+
+```{r top_cited, results='asis'}
+# Get top cited publications
+top_cited <- pubs %>%
+  filter(!is.na(cites) & cites > 0) %>%
+  arrange(desc(cites)) %>%
+  head(10)
+
+if(nrow(top_cited) > 0) {
+  for(i in 1:nrow(top_cited)) {
+    pub <- top_cited[i,]
+    cat("<strong>", i, ".</strong> <strong>", pub$title, "</strong>\n\n")
+    cat("<em>", pub$author, "</em>\n\n")
+    cat(pub$journal, " (", pub$year, ") • <strong>Citations: ", pub$cites, "</strong>\n\n")
+    cat("---\n\n")
+  }
+} else {
+  cat("Citation data not available.\n\n")
+}
+```
+
+---
+
+## Research Impact by Journal
+
+```{r journal_analysis}
+# Analyze publications by journal
+journal_stats <- pubs %>%
+  filter(!is.na(journal) & journal != "" & !is.na(cites)) %>%
+  group_by(journal) %>%
+  summarise(
+    publications = n(),
+    total_citations = sum(cites, na.rm = TRUE),
+    avg_citations = round(mean(cites, na.rm = TRUE), 1),
+    .groups = 'drop'
+  ) %>%
+  filter(publications >= 2) %>%  # Only journals with 2+ publications
+  arrange(desc(total_citations))
+
+if(nrow(journal_stats) > 0) {
+  journal_stats %>%
+    head(15) %>%
+    kable(format = "html", 
+          col.names = c("Journal", "Publications", "Total Citations", "Avg Citations/Paper"),
+) %>%
+    kable_styling(
+      bootstrap_options = c("striped", "hover", "condensed"),
+      full_width = FALSE,
+      font_size = 12
+    )
+} else {
+  cat("Insufficient data for journal analysis.\n\n")
+}
+```
+
+---
+
+*This page is automatically generated from Google Scholar data and updates when the site is rebuilt. For the most current information, visit the [Google Scholar profile](https://scholar.google.com/citations?user=j8_CgoEAAAAJ&hl=en) directly.*
+
+**Note:** Google Scholar data may occasionally be incomplete or delayed. If you notice any discrepancies, please [contact me](/contact/) to report them.
