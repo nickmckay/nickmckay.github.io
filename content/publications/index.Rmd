@@ -153,7 +153,7 @@ ggplot(citation_hist, aes(x = year, y = cites)) +
 ```{r recent_pubs, results='asis'}
 # Filter for recent publications
 recent_pubs <- pubs %>%
-  filter(year >= (max(year, na.rm = TRUE) - 1)) %>%
+  filter(year >= (max(year, na.rm = TRUE) - 2)) %>%
   arrange(desc(year), desc(cites))
 
 # Display recent publications with blog post links
