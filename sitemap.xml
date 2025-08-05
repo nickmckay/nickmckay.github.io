@@ -131,78 +131,6 @@
     <loc>https://nickmckay.github.io/blog/4.2ka-event-not-remarkable/</loc>
     <lastmod>2024-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nickmckay.github.io/tags/data-interoperability/</loc>
-    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/data-standards/</loc>
-    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/informatics/</loc>
-    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/linked-earth/</loc>
-    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/lipd/</loc>
-    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/research/paleoclimate-informatics/</loc>
-    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/categories/research/</loc>
-    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/research/</loc>
-    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/arctic/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/climate-models/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/data-model-comparison/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/research/paleoclimate-synthesis/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/synthesis/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/glaciers/</loc>
-    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/lakes/</loc>
-    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/modeling/</loc>
-    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/research/process-modeling/</loc>
-    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/systems-modeling/</loc>
-    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/colorado/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/drought/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/dust/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/lake-sediments/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/tags/paleoclimate/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nickmckay.github.io/research/paleoclimate-records/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nickmckay.github.io/tags/hydroclimate/</loc>
     <lastmod>2023-10-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -234,6 +162,9 @@
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nickmckay.github.io/tags/linkedearth/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nickmckay.github.io/tags/paleoclimate/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nickmckay.github.io/project/</loc>
@@ -308,6 +239,9 @@
     <loc>https://nickmckay.github.io/tags/data-repository/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://nickmckay.github.io/tags/lipd/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nickmckay.github.io/project/lipdverse/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -339,6 +273,8 @@
     <loc>https://nickmckay.github.io/opportunities/</loc>
   </url><url>
     <loc>https://nickmckay.github.io/license/</loc>
+  </url><url>
+    <loc>https://nickmckay.github.io/research/</loc>
   </url><url>
     <loc>https://nickmckay.github.io/series/</loc>
   </url>
