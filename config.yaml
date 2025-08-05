@@ -7,6 +7,10 @@ copyright: '© 2025 Nick McKay'
 googleAnalytics: ''
 metaDataFormat: yaml
 footnoteReturnLinkContents: '&#8617;'
+enableRobotsTXT: true
+sitemap:
+  changefreq: monthly
+  priority: 0.5
 pagination:
   enableEmoji: yes
   ignoreFiles:

@@ -7,6 +7,7 @@ library(here)
 
 # Nick McKay's Google Scholar ID
 scholar_id <- "j8_CgoEAAAAJ"
+doneNow <- FALSE
 
 # Function to safely get complete authors with progressive backoff
 get_safe_complete_authors <- function(scholar_id, pubid, max_retries = 3) {
@@ -116,81 +117,85 @@ if (nrow(pubs_to_update) > 0) {
   }
 } else {
   cat("No publications need updating - database is current!\n")
+  doneNow <- TRUE
 }
 
-# Merge updated publications with existing database
-cat("Merging updated publications with existing database...\n")
-if (existing_db_exists && nrow(existing_pubs) > 0) {
-  # Start with existing database
-  final_pubs <- existing_pubs
-  
-  # Update or add new publications
-  for (i in 1:nrow(current_pubs)) {
-    current_pub <- current_pubs[i,]
-    existing_idx <- which(final_pubs$title == current_pub$title)
+if(!doneNow){
+  # Merge updated publications with existing database
+  cat("Merging updated publications with existing database...\n")
+  if (existing_db_exists && nrow(existing_pubs) > 0) {
+    # Start with existing database
+    final_pubs <- existing_pubs
     
-    if (length(existing_idx) > 0) {
-      # Update existing publication (in case citation counts changed)
-      final_pubs[existing_idx[1], ] <- current_pub
+    # Update or add new publications
+    for (i in 1:nrow(current_pubs)) {
+      current_pub <- current_pubs[i,]
+      existing_idx <- which(final_pubs$title == current_pub$title)
       
-      # Preserve complete author information if we have it
-      updated_pub <- pubs_to_update[pubs_to_update$title == current_pub$title, ]
-      if (nrow(updated_pub) > 0) {
-        final_pubs$author[existing_idx[1]] <- updated_pub$author[1]
-        final_pubs$complete_authors_fetched[existing_idx[1]] <- updated_pub$complete_authors_fetched[1]
-      }
-    } else {
-      # Add new publication
-      new_pub <- current_pub
-      updated_pub <- pubs_to_update[pubs_to_update$title == current_pub$title, ]
-      if (nrow(updated_pub) > 0) {
-        new_pub$author <- updated_pub$author[1]
-        new_pub$complete_authors_fetched <- updated_pub$complete_authors_fetched[1]
+      if (length(existing_idx) > 0) {
+        # Update existing publication (in case citation counts changed)
+        final_pubs[existing_idx[1], ] <- current_pub
+        
+        # Preserve complete author information if we have it
+        updated_pub <- pubs_to_update[pubs_to_update$title == current_pub$title, ]
+        if (nrow(updated_pub) > 0) {
+          final_pubs$author[existing_idx[1]] <- updated_pub$author[1]
+          final_pubs$complete_authors_fetched[existing_idx[1]] <- updated_pub$complete_authors_fetched[1]
+        }
       } else {
-        new_pub$complete_authors_fetched <- FALSE
+        # Add new publication
+        new_pub <- current_pub
+        updated_pub <- pubs_to_update[pubs_to_update$title == current_pub$title, ]
+        if (nrow(updated_pub) > 0) {
+          new_pub$author <- updated_pub$author[1]
+          new_pub$complete_authors_fetched <- updated_pub$complete_authors_fetched[1]
+        } else {
+          new_pub$complete_authors_fetched <- FALSE
+        }
+        final_pubs <- rbind(final_pubs, new_pub)
       }
-      final_pubs <- rbind(final_pubs, new_pub)
+    }
+  } else {
+    # No existing database - use current publications with updates
+    final_pubs <- current_pubs
+    final_pubs$complete_authors_fetched <- FALSE
+    
+    # Apply updates
+    for (i in 1:nrow(pubs_to_update)) {
+      updated_pub <- pubs_to_update[i,]
+      idx <- which(final_pubs$title == updated_pub$title)
+      if (length(idx) > 0) {
+        final_pubs$author[idx[1]] <- updated_pub$author
+        final_pubs$complete_authors_fetched[idx[1]] <- updated_pub$complete_authors_fetched
+      }
     }
   }
-} else {
-  # No existing database - use current publications with updates
-  final_pubs <- current_pubs
-  final_pubs$complete_authors_fetched <- FALSE
   
-  # Apply updates
-  for (i in 1:nrow(pubs_to_update)) {
-    updated_pub <- pubs_to_update[i,]
-    idx <- which(final_pubs$title == updated_pub$title)
-    if (length(idx) > 0) {
-      final_pubs$author[idx[1]] <- updated_pub$author
-      final_pubs$complete_authors_fetched[idx[1]] <- updated_pub$complete_authors_fetched
-    }
+  
+  pubs_with_complete_authors <- final_pubs
+  
+  # Save the data
+  cat("Saving publications database...\n")
+  write.csv(pubs_with_complete_authors, here("R", "data", "publications.csv"), row.names = FALSE)
+  write.csv(data.frame(
+    total_cites = profile$total_cites,
+    h_index = profile$h_index,
+    i10_index = profile$i10_index,
+    update_date = Sys.Date()
+  ), here("R", "data", "profile_metrics.csv"), row.names = FALSE)
+  write.csv(citation_hist, here("R", "data", "citation_history.csv"), row.names = FALSE)
+  
+  cat("Publications database updated successfully!\n")
+  cat(paste("Total publications:", nrow(pubs_with_complete_authors), "\n"))
+  cat(paste("Publications with complete authors:", 
+            sum(as.logical(pubs_with_complete_authors$complete_authors_fetched), na.rm = TRUE), "\n"))
+  cat(paste("Publications updated in this run:", nrow(pubs_to_update), "\n"))
+  
+  if (nrow(pubs_to_update) == 0) {
+    cat("Database was already current - no API calls needed!\n")
+  } else {
+    cat(paste("Complete author information fetched for", 
+              sum(as.logical(pubs_to_update$complete_authors_fetched), na.rm = TRUE), 
+              "of", nrow(pubs_to_update), "updated publications\n"))
   }
-}
-
-pubs_with_complete_authors <- final_pubs
-
-# Save the data
-cat("Saving publications database...\n")
-write.csv(pubs_with_complete_authors, here("R", "data", "publications.csv"), row.names = FALSE)
-write.csv(data.frame(
-  total_cites = profile$total_cites,
-  h_index = profile$h_index,
-  i10_index = profile$i10_index,
-  update_date = Sys.Date()
-), here("R", "data", "profile_metrics.csv"), row.names = FALSE)
-write.csv(citation_hist, here("R", "data", "citation_history.csv"), row.names = FALSE)
-
-cat("Publications database updated successfully!\n")
-cat(paste("Total publications:", nrow(pubs_with_complete_authors), "\n"))
-cat(paste("Publications with complete authors:", 
-          sum(as.logical(pubs_with_complete_authors$complete_authors_fetched), na.rm = TRUE), "\n"))
-cat(paste("Publications updated in this run:", nrow(pubs_to_update), "\n"))
-
-if (nrow(pubs_to_update) == 0) {
-  cat("Database was already current - no API calls needed!\n")
-} else {
-  cat(paste("Complete author information fetched for", 
-            sum(as.logical(pubs_to_update$complete_authors_fetched), na.rm = TRUE), 
-            "of", nrow(pubs_to_update), "updated publications\n"))
 }
