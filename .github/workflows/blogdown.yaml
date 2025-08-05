@@ -45,6 +45,18 @@ jobs:
         run: source('R/build.R')
         shell: Rscript {0}
 
+      - name: Commit updated data files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add R/data/*.csv
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update publications database [skip ci]"
+            git push
+          fi
+
       - name: Build site
         run: blogdown::build_site(TRUE)
         shell: Rscript {0}

@@ -29,6 +29,7 @@ library(ggplot2)
 library(DT)
 library(knitr)
 library(kableExtra)
+library(here)
 #library(readr) 
 
 # Nick McKay's Google Scholar ID
@@ -74,25 +75,11 @@ scholar_id <- "j8_CgoEAAAAJ"
 ## Publication Metrics
 
 ```{r metrics, include=FALSE}
-# Load data from local database (updated periodically via R/update_publications.R)
-# Try multiple potential paths for the CSV files
-data_paths <- c(
-  "R/data/publications.csv",
-  "../../R/data/publications.csv", 
-  "../../../R/data/publications.csv"
-)
-
-citation_paths <- c(
-  "R/data/citation_history.csv",
-  "../../R/data/citation_history.csv", 
-  "../../../R/data/citation_history.csv"
-)
-
-profile_paths <- c(
-  "R/data/profile_metrics.csv",
-  "../../R/data/profile_metrics.csv", 
-  "../../../R/data/profile_metrics.csv"
-)
+# Load data from local database (updated periodically via R/build.R)
+# Use here::here() for robust path resolution
+pub_file <- here("R", "data", "publications.csv")
+cit_file <- here("R", "data", "citation_history.csv") 
+prof_file <- here("R", "data", "profile_metrics.csv")
 
 # Initialize variables
 pubs <- NULL
@@ -102,37 +89,9 @@ profile <- NULL
 
 # Try to load local database
 tryCatch({
-  # Find publications file
-  pub_file <- NULL
-  for (path in data_paths) {
-    if (file.exists(path)) {
-      pub_file <- path
-      break
-    }
-  }
-  
-  # Find citation history file  
-  cit_file <- NULL
-  for (path in citation_paths) {
-    if (file.exists(path)) {
-      cit_file <- path
-      break
-    }
-  }
-  
-  # Find profile metrics file
-  prof_file <- NULL
-  for (path in profile_paths) {
-    if (file.exists(path)) {
-      prof_file <- path
-      break
-    }
-  }
-  
-  if (!is.null(pub_file) && !is.null(cit_file) && !is.null(prof_file)) {
+  if (file.exists(pub_file) && file.exists(cit_file) && file.exists(prof_file)) {
     cat("Loading local database from:", pub_file, "\n")
     pubs <- read.csv(pub_file, stringsAsFactors = FALSE)
-
     profile_metrics <- read.csv(prof_file, stringsAsFactors = FALSE)
     citation_hist <- read.csv(cit_file, stringsAsFactors = FALSE)
     
@@ -146,7 +105,6 @@ tryCatch({
     stop("Local database files not found")
   }
 }, error = function(e) {
-  stop("bad")
   # Fallback to Google Scholar if local database doesn't exist
   cat("Local database not found, fetching from Google Scholar...\n")
   cat("Error:", e$message, "\n")

@@ -3,6 +3,7 @@
 
 library(scholar)
 library(dplyr)
+library(here)
 
 # Nick McKay's Google Scholar ID
 scholar_id <- "j8_CgoEAAAAJ"
@@ -33,10 +34,11 @@ profile <- get_profile(scholar_id)
 citation_hist <- get_citation_history(scholar_id)
 
 # Load existing database if it exists
-existing_db_exists <- file.exists("R/data/publications.csv")
+pub_file <- here("R", "data", "publications.csv")
+existing_db_exists <- file.exists(pub_file)
 if (existing_db_exists) {
   cat("Loading existing publications database...\n")
-  existing_pubs <- read.csv("R/data/publications.csv", stringsAsFactors = FALSE)
+  existing_pubs <- read.csv(pub_file, stringsAsFactors = FALSE)
   cat(paste("Existing database contains", nrow(existing_pubs), "publications\n"))
 } else {
   cat("No existing database found - will create fresh database\n")
@@ -151,14 +153,14 @@ pubs_with_complete_authors <- final_pubs
 
 # Save the data
 cat("Saving publications database...\n")
-write.csv(pubs_with_complete_authors, "R/data/publications.csv", row.names = FALSE)
+write.csv(pubs_with_complete_authors, here("R", "data", "publications.csv"), row.names = FALSE)
 write.csv(data.frame(
   total_cites = profile$total_cites,
   h_index = profile$h_index,
   i10_index = profile$i10_index,
   update_date = Sys.Date()
-), "R/data/profile_metrics.csv", row.names = FALSE)
-write.csv(citation_hist, "R/data/citation_history.csv", row.names = FALSE)
+), here("R", "data", "profile_metrics.csv"), row.names = FALSE)
+write.csv(citation_hist, here("R", "data", "citation_history.csv"), row.names = FALSE)
 
 cat("Publications database updated successfully!\n")
 cat(paste("Total publications:", nrow(pubs_with_complete_authors), "\n"))
