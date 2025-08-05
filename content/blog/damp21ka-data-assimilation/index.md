@@ -1,7 +1,7 @@
 ---
-title: "Bridging Ancient Lakes and Climate Models: A Revolutionary Approach to Understanding 21,000 Years of Water History"
+title: "Bridging Ancient Lakes and Climate Models: A New Approach to Understanding 21,000 Years of Water History"
 subtitle: "How my former PhD student pioneered a new way to combine lake records with climate simulations"
-excerpt: "Sometimes the most innovative research comes from asking a simple question: What if we could use lake levels to improve our understanding of ancient climate across the entire globe?"
+excerpt: "What if we could use lake levels to improve our understanding of ancient climate across the entire globe?"
 date: 2024-12-15
 author: "Nick & Claude"
 draft: false

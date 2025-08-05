@@ -1,7 +1,7 @@
 ---
 title: "Rethinking Ancient Climate: The 4.2 ka Event Wasn't So Global After All"
-subtitle: "New research challenges our understanding of what constitutes a global climate event"
-excerpt: "What happens when you take a closer look at one of geology's newest markers? Sometimes you discover it might not be as globally significant as we thought."
+subtitle: "New research challenges our understanding of a 'global' climate event"
+excerpt: "When looking holistically, it really doesn't look like the 4.2 ka event is a global, or even particularly remarkable regional phenomenon."
 author: "Nick & Claude"
 date: 2024-08-02
 draft: false

@@ -1,7 +1,7 @@
 ---
-title: "When Mountains Lose Their White Caps: Arctic Glaciers Reveal 150 Meters of Climate Change"
+title: "When Mountain Glaciers Lose Their Snow: Arctic Glaciers Reveal 150 Meters of Climate Change"
 subtitle: "Four decades of data show dramatic upward migration of glacier snowlines across the Arctic"
-excerpt: "Sometimes the most powerful climate stories are written in the simple line where white snow meets dark rock. In the Arctic, that line has been climbing higher and higher."
+excerpt: "Across the Arctic, glacier snowlines have risen an average of 150 meters over the past four decades. To put that in perspective, that's like moving the snow boundary from the feet of the Statue of Liberty to the top of her torch—every single decade"
 date: 2024-09-20
 author: "Nick & Claude"
 draft: false
@@ -21,7 +21,7 @@ tags:
 
 On mountain glaciers, in the summer, the snow accumulated all summer begins to melt, starting at lower elevations and working its way up. By the end of summer the line is as high as it will get that year. This line, called the snowline, represents the elevation where winter snowfall balances summer melting. It's a simple concept, but it turns out to be good indicator of climate change.
 
-In our latest study published in *The Cryosphere*, my colleague Laura Larocca led a study where we documented something remarkable and concerning: across the Arctic, glacier snowlines have risen an average of 150 meters over the past four decades. To put that in perspective, that's like moving the snow boundary from the base of the Statue of Liberty to the top of her torch—every single decade.
+In our latest study published in *The Cryosphere*, my colleague Laura Larocca led a projecy where we documented something remarkable and concerning: across the Arctic, glacier snowlines have risen an average of 150 meters over the past four decades. To put that in perspective, that's like moving the snow boundary from the feet of the Statue of Liberty to the top of her torch—every single decade.
 
 ## Why Snowlines Matter More Than You Think
 

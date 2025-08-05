@@ -1,7 +1,7 @@
 ---
 title: "Tracing Water's Global Journey: How Temperature Has Always Driven Earth's Water Cycle"
 subtitle: "2,000 years of evidence reveals the intimate connection between global temperature and water circulation"
-excerpt: "What happens to water when the planet heats up? We looked back 2,000 years to find out—and the answer has major implications for our warming world."
+excerpt: "What happens to water when the planet heats up? We looked back 2,000 years to find out."
 date: 2023-10-12
 author: "Nick & Claude"
 draft: false

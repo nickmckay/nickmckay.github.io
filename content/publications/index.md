@@ -8,6 +8,9 @@ author: "Nick McKay"
 draft: false
 # layout options: single, single-sidebar
 layout: single
+output:
+  blogdown::html_page:
+    toc: false
 ---
 <script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
 <link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
@@ -538,7 +541,7 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2013 </td>
-   <td style="text-align:left;width: 80%; "> PAGES2 Consortium (2013). <strong>Continental-scale temperature variability during the past two millennia</strong>. <em>Nature geoscience</em>, 6 (5), 339-346 [Citations: 1089] </td>
+   <td style="text-align:left;width: 80%; "> 2013/5 (2013). <strong>Continental-scale temperature variability during the past two millennia</strong>. <em>Nature geoscience</em>, 6 (5), 339-346 [Citations: 1089] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 1089 </td>
   </tr>
   <tr>
@@ -605,7 +608,7 @@ Climate of the Past  ( 2024 )
 
 <strong> 1 .</strong> <strong> Continental-scale temperature variability during the past two millennia </strong>
 
-<em> PAGES2 Consortium </em>
+<em> 2013/5 </em>
 
 Nature geoscience  ( 2013 ) • <strong>Citations:  1089 </strong>
 
