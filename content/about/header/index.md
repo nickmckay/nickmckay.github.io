@@ -3,7 +3,7 @@
 text_align_right: false
 show_title_as_headline: false
 headline: |
-  Hi, I'm Nick McKay. Nice to meet you.
+  Hi, I'm Nick McKay. 
 ---
 
 <!-- this is a subheadline -->

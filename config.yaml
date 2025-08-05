@@ -4,7 +4,7 @@ languageCode: en
 title: Nick McKay - Paleoclimate Scientist
 author: Nick McKay
 copyright: '© 2025 Nick McKay'
-googleAnalytics: ''
+googleAnalytics: 'G-DL0JCFY9KX'
 metaDataFormat: yaml
 footnoteReturnLinkContents: '&#8617;'
 enableRobotsTXT: true
@@ -55,13 +55,12 @@ params:
   mainSections:
     - blog
     - project
-    - talk
   math:
     renderer: katex
   navallcaps: yes
   orgLocal: Flagstaff, Arizona
   orgName: Northern Arizona University
-  sharing_image: /img/papillons.jpg
+  sharing_image: /img/nm.png
   social:
     - icon: github
       icon_pack: fab
