@@ -29,9 +29,28 @@ get_safe_complete_authors <- function(scholar_id, pubid, max_retries = 3) {
 
 # Get basic publication data from Google Scholar
 cat("Fetching basic publication data from Google Scholar...\n")
-current_pubs <- get_publications(scholar_id)
-profile <- get_profile(scholar_id)
-citation_hist <- get_citation_history(scholar_id)
+tryCatch({
+  current_pubs <- get_publications(scholar_id)
+  profile <- get_profile(scholar_id)
+  citation_hist <- get_citation_history(scholar_id)
+  
+  # Check if Scholar data was retrieved successfully
+  if (is.null(current_pubs) || nrow(current_pubs) == 0) {
+    stop("No publications retrieved from Google Scholar")
+  }
+  if (is.null(profile) || is.null(citation_hist)) {
+    stop("Profile or citation history not retrieved from Google Scholar")
+  }
+  
+  cat(paste("Successfully retrieved", nrow(current_pubs), "publications from Google Scholar\n"))
+}, error = function(e) {
+  cat("Failed to fetch data from Google Scholar:", e$message, "\n")
+  cat("GitHub Actions may be blocked by Google Scholar. Skipping database update.\n")
+  cat("Using existing database without updates.\n")
+  
+  # Exit gracefully - database will remain unchanged
+  quit(status = 0)
+})
 
 # Load existing database if it exists
 pub_file <- here("R", "data", "publications.csv")
