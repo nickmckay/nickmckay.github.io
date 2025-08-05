@@ -30,6 +30,7 @@ library(DT)
 library(knitr)
 library(kableExtra)
 library(here)
+library(stringr)
 #library(readr) 
 
 # Nick McKay's Google Scholar ID
@@ -158,7 +159,7 @@ recent_pubs <- pubs %>%
 
 # Display recent publications with blog post links
 if(nrow(recent_pubs) > 0) {
-  for(i in 1:min(10, nrow(recent_pubs))) {
+  for(i in 1:nrow(recent_pubs)) {
     pub <- recent_pubs[i,]
     
     # Use author data from local database (complete authors fetched during database update)
@@ -262,10 +263,55 @@ if(nrow(top_cited) > 0) {
 ## Research Impact by Journal
 
 ```{r journal_analysis}
-# Analyze publications by journal
+# Function to standardize journal names
+standardize_journal_name <- function(journal_name) {
+  if (is.na(journal_name) || journal_name == "") return(journal_name)
+  
+  # Convert to title case and trim whitespace
+  clean_name <- stringr::str_to_title(stringr::str_trim(journal_name))
+  
+  # Common journal name standardizations
+  standardizations <- c(
+    "^Nature$" = "Nature",
+    "^Nature Clim.*" = "Nature Climate Change",
+    "^Nature Commun.*" = "Nature Communications", 
+    "^Nature Geosci.*" = "Nature Geoscience",
+    "^Science$" = "Science",
+    "^Science Adv.*" = "Science Advances",
+    "^Proc.*Natl.*Acad.*Sci.*" = "Proceedings of the National Academy of Sciences",
+    "^Pnas$" = "Proceedings of the National Academy of Sciences",
+    "^J.*Geophys.*Res.*" = "Journal of Geophysical Research",
+    "^Jgr.*" = "Journal of Geophysical Research",
+    "^Geophys.*Res.*Lett.*" = "Geophysical Research Letters",
+    "^Grl$" = "Geophysical Research Letters",
+    "^Clim.*Past$" = "Climate of the Past",
+    "^Clim.*Dyn.*" = "Climate Dynamics",
+    "^J.*Clim.*" = "Journal of Climate",
+    "^Paleoceanogr.*" = "Paleoceanography and Paleoclimatology",
+    "^Quat.*Sci.*Rev.*" = "Quaternary Science Reviews",
+    "^Qsr$" = "Quaternary Science Reviews",
+    "^Earth.*Planet.*Sci.*Lett.*" = "Earth and Planetary Science Letters",
+    "^Epsl$" = "Earth and Planetary Science Letters",
+    "^Geology$" = "Geology",
+    "^Paleobiology$" = "Paleobiology",
+    "^Holocene$" = "The Holocene"
+  )
+  
+  # Apply standardizations
+  for (pattern in names(standardizations)) {
+    if (grepl(pattern, clean_name, ignore.case = TRUE)) {
+      return(standardizations[[pattern]])
+    }
+  }
+  
+  return(clean_name)
+}
+
+# Analyze publications by journal with standardized names
 journal_stats <- pubs %>%
   filter(!is.na(journal) & journal != "" & !is.na(cites)) %>%
-  group_by(journal) %>%
+  mutate(journal_standardized = sapply(journal, standardize_journal_name)) %>%
+  group_by(journal_standardized) %>%
   summarise(
     publications = n(),
     total_citations = sum(cites, na.rm = TRUE),
@@ -273,7 +319,8 @@ journal_stats <- pubs %>%
     .groups = 'drop'
   ) %>%
   filter(publications >= 2) %>%  # Only journals with 2+ publications
-  arrange(desc(total_citations))
+  arrange(desc(total_citations)) %>%
+  rename(journal = journal_standardized)
 
 if(nrow(journal_stats) > 0) {
   journal_stats %>%
