@@ -17,9 +17,14 @@ layout: single
 
 
 
+---
+
 ## Publication Metrics
 
-**Publications:**  93 
+
+
+
+**Publications:**  117 
 
 **Total Citations:**  8039 
 
@@ -37,25 +42,25 @@ layout: single
 
 ## Publications from the last 2 years
 
-<strong><a href=' https://scholar.google.com/scholar?q=Evidence%20for%20millennial-scale%20interactions%20between%20Hg%20cycling%20and%20hydroclimate%20from%20Lake%20Bosumtwi%2C%20Ghana%20AR%20Paine%2C%20J%20Frieling%2C%20TM%20Shanahan%2C%20TA%20Mather%2C%20N%20McKay%2C%20SA%20Robinson%2C%20DM%20Pyle%2C%20IM%20Fendley%2C%20R%20Kiely%2C%20WD%20Gosling ' target='_blank'> Evidence for millennial-scale interactions between Hg cycling and hydroclimate from Lake Bosumtwi, Ghana </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=Evidence%20for%20millennial-scale%20interactions%20between%20Hg%20cycling%20and%20hydroclimate%20from%20Lake%20Bosumtwi%2C%20Ghana%20AR%20Paine%2C%20J%20Frieling%2C%20TM%20Shanahan%2C%20TA%20Mather%2C%20N%20McKay%2C%20SA%20Robinson%2C%20... ' target='_blank'> Evidence for millennial-scale interactions between Hg cycling and hydroclimate from Lake Bosumtwi, Ghana </a></strong>
 
-<em> AR Paine, J Frieling, TM Shanahan, TA Mather, N McKay, SA Robinson, DM Pyle, IM Fendley, R Kiely, WD Gosling </em>
+<em> AR Paine, J Frieling, TM Shanahan, TA Mather, N McKay, SA Robinson, ... </em>
 
 Climate of the Past  ( 2025 ) • Citations:  1
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=Early%20Holocene%20atmospheric%20circulation%20changes%20over%20northern%20Europe%20based%20on%20isotopic%20and%20biomarker%20evidence%20from%20Kola%20Peninsula%20H%20Holtzman%2C%20EK%20Thomas%2C%20M%20Erb%2C%20L%20Marshall%2C%20IS%20Casta%C3%B1eda%2C%20D%20Kaufman%2C%20NP%20McKay%2C%20M%20Melles ' target='_blank'> Early Holocene atmospheric circulation changes over northern Europe based on isotopic and biomarker evidence from Kola Peninsula </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=Early%20Holocene%20atmospheric%20circulation%20changes%20over%20northern%20Europe%20based%20on%20isotopic%20and%20biomarker%20evidence%20from%20Kola%20Peninsula%20H%20Holtzman%2C%20EK%20Thomas%2C%20M%20Erb%2C%20L%20Marshall%2C%20IS%20Casta%C3%B1eda%2C%20D%20Kaufman%2C%20... ' target='_blank'> Early Holocene atmospheric circulation changes over northern Europe based on isotopic and biomarker evidence from Kola Peninsula </a></strong>
 
-<em> H Holtzman, EK Thomas, M Erb, L Marshall, IS Castañeda, D Kaufman, NP McKay, M Melles </em>
+<em> H Holtzman, EK Thomas, M Erb, L Marshall, IS Castañeda, D Kaufman, ... </em>
 
 Paleoceanography and Paleoclimatology  ( 2025 )
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=The%204.2%20ka%20event%20is%20not%20remarkable%20in%20the%20context%20of%20Holocene%20climate%20variability%20NP%20McKay%2C%20DS%20Kaufman%2C%20S%C3%A9pH%20Arcusa%2C%20HR%20Kolus%2C%20DC%20Edge%2C%20MP%20Erb%2C%20CL%20Hancock%2C%20CC%20Routson%2C%20M%20%C5%BBarczy%C5%84ski%2C%20LP%20Marshall%2C%20GK%20Roberts%2C%20F%20Telles ' target='_blank'> The 4.2 ka event is not remarkable in the context of Holocene climate variability </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=The%204.2%20ka%20event%20is%20not%20remarkable%20in%20the%20context%20of%20Holocene%20climate%20variability%20NP%20McKay%2C%20DS%20Kaufman%2C%20SH%20Arcusa%2C%20HR%20Kolus%2C%20DC%20Edge%2C%20MP%20Erb%2C%20... ' target='_blank'> The 4.2 ka event is not remarkable in the context of Holocene climate variability </a></strong>
 
-<em> NP McKay, DS Kaufman, SépH Arcusa, HR Kolus, DC Edge, MP Erb, CL Hancock, CC Routson, M Żarczyński, LP Marshall, GK Roberts, F Telles </em>
+<em> NP McKay, DS Kaufman, SH Arcusa, HR Kolus, DC Edge, MP Erb, ... </em>
 
 Nature Communications  ( 2024 ) • Citations:  39
 
@@ -63,9 +68,9 @@ Nature Communications  ( 2024 ) • Citations:  39
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=Arctic%20glacier%20snowline%20altitudes%20rise%20150%20m%20over%20the%20last%204%20decades%20LJ%20Larocca%2C%20JM%20Lea%2C%20MP%20Erb%2C%20NP%20McKay%2C%20M%20Phillips%2C%20KA%20Lamantia%2C%20DS%20Kaufman ' target='_blank'> Arctic glacier snowline altitudes rise 150 m over the last 4 decades </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=Arctic%20glacier%20snowline%20altitudes%20rise%20150%20m%20over%20the%20last%204%20decades%20LJ%20Larocca%2C%20JM%20Lea%2C%20MP%20Erb%2C%20NP%20McKay%2C%20M%20Phillips%2C%20KA%20Lamantia%2C%20... ' target='_blank'> Arctic glacier snowline altitudes rise 150 m over the last 4 decades </a></strong>
 
-<em> LJ Larocca, JM Lea, MP Erb, NP McKay, M Phillips, KA Lamantia, DS Kaufman </em>
+<em> LJ Larocca, JM Lea, MP Erb, NP McKay, M Phillips, KA Lamantia, ... </em>
 
 The Cryosphere  ( 2024 ) • Citations:  5
 
@@ -73,17 +78,17 @@ The Cryosphere  ( 2024 ) • Citations:  5
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=Sedimentary%20ancient%20DNA%20reveals%20the%20impact%20of%20anthropogenic%20land%20use%20disturbance%20and%20ecological%20shifts%20on%20fish%20community%20structure%20in%20small%20lowland%20lake%20G%20Thomson-Laing%2C%20JD%20Howarth%2C%20J%20Atalah%2C%20MJ%20Vandergoes%2C%20X%20Li%2C%20JK%20Pearman%2C%20S%20Fitzsimons%2C%20C%20Moy%2C%20A%20Moody%2C%20C%20Shepherd%2C%20N%20McKay%2C%20SA%20Wood ' target='_blank'> Sedimentary ancient DNA reveals the impact of anthropogenic land use disturbance and ecological shifts on fish community structure in small lowland lake </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=Sedimentary%20ancient%20DNA%20reveals%20the%20impact%20of%20anthropogenic%20land%20use%20disturbance%20and%20ecological%20shifts%20on%20fish%20community%20structure%20in%20small%20lowland%20lake%20G%20Thomson-Laing%2C%20JD%20Howarth%2C%20J%20Atalah%2C%20MJ%20Vandergoes%2C%20X%20Li%2C%20... ' target='_blank'> Sedimentary ancient DNA reveals the impact of anthropogenic land use disturbance and ecological shifts on fish community structure in small lowland lake </a></strong>
 
-<em> G Thomson-Laing, JD Howarth, J Atalah, MJ Vandergoes, X Li, JK Pearman, S Fitzsimons, C Moy, A Moody, C Shepherd, N McKay, SA Wood </em>
+<em> G Thomson-Laing, JD Howarth, J Atalah, MJ Vandergoes, X Li, ... </em>
 
 Science of The Total Environment  ( 2024 ) • Citations:  4
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=A%20paleoecological%20investigation%20of%20recent%20cyanobacterial%20blooms%20and%20their%20drivers%20in%20two%20contrasting%20lakes%20C%20Wheeler%2C%20JK%20Pearman%2C%20JD%20Howarth%2C%20MJ%20Vandergoes%2C%20K%20Holt%2C%20SA%20Trewick%2C%20X%20Li%2C%20L%20Thompson%2C%20G%20Thomson-Laing%2C%20M%20Picard%2C%20C%20Moy%2C%20NP%20Mckay%2C%20A%20Moody%2C%20C%20Shepherd%2C%20Vvd%20Bos%2C%20K%20Steiner%2C%20SA%20Wood ' target='_blank'> A paleoecological investigation of recent cyanobacterial blooms and their drivers in two contrasting lakes </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=A%20paleoecological%20investigation%20of%20recent%20cyanobacterial%20blooms%20and%20their%20drivers%20in%20two%20contrasting%20lakes%20C%20Wheeler%2C%20JK%20Pearman%2C%20JD%20Howarth%2C%20MJ%20Vandergoes%2C%20K%20Holt%2C%20SA%20Trewick%2C%20... ' target='_blank'> A paleoecological investigation of recent cyanobacterial blooms and their drivers in two contrasting lakes </a></strong>
 
-<em> C Wheeler, JK Pearman, JD Howarth, MJ Vandergoes, K Holt, SA Trewick, X Li, L Thompson, G Thomson-Laing, M Picard, C Moy, NP Mckay, A Moody, C Shepherd, Vvd Bos, K Steiner, SA Wood </em>
+<em> C Wheeler, JK Pearman, JD Howarth, MJ Vandergoes, K Holt, SA Trewick, ... </em>
 
 Harmful algae  ( 2024 ) • Citations:  3
 
@@ -97,11 +102,21 @@ PLOS Climate  ( 2024 ) • Citations:  2
 
 ---
 
-<strong><a href=' https://scholar.google.com/scholar?q=Coral%20skeletal%20proxy%20records%20database%20for%20the%20Great%20Barrier%20Reef%2C%20Australia%20AK%20Arzey%2C%20HV%20McGregor%2C%20TR%20Clark%2C%20JM%20Webster%2C%20SE%20Lewis%2C%20J%20Mallela%2C%20NP%20McKay%2C%20HW%20Fahey%2C%20S%20Chakraborty%2C%20TB%20Razak%2C%20MJ%20Fischer ' target='_blank'> Coral skeletal proxy records database for the Great Barrier Reef, Australia </a></strong>
+<strong><a href=' https://scholar.google.com/scholar?q=Coral%20skeletal%20proxy%20records%20database%20for%20the%20Great%20Barrier%20Reef%2C%20Australia%20AK%20Arzey%2C%20HV%20McGregor%2C%20TR%20Clark%2C%20JM%20Webster%2C%20SE%20Lewis%2C%20J%20Mallela%2C%20... ' target='_blank'> Coral skeletal proxy records database for the Great Barrier Reef, Australia </a></strong>
 
-<em> AK Arzey, HV McGregor, TR Clark, JM Webster, SE Lewis, J Mallela, NP McKay, HW Fahey, S Chakraborty, TB Razak, MJ Fischer </em>
+<em> AK Arzey, HV McGregor, TR Clark, JM Webster, SE Lewis, J Mallela, ... </em>
 
 Earth System Science Data  ( 2024 ) • Citations:  1
+
+---
+
+<strong><a href=' https://scholar.google.com/scholar?q=A%20global%20Data%20Assimilation%20of%20Moisture%20Patterns%20from%2021%200000%20BP%20%28DAMP-21ka%29%20using%20lake%20level%20proxy%20records%20CL%20Hancock%2C%20MP%20Erb%2C%20NP%20McKay%2C%20SG%20Dee%2C%20RF%20Ivanovic ' target='_blank'> A global Data Assimilation of Moisture Patterns from 21 0000 BP (DAMP-21ka) using lake level proxy records </a></strong>
+
+<em> CL Hancock, MP Erb, NP McKay, SG Dee, RF Ivanovic </em>
+
+Climate of the Past  ( 2024 )
+
+📖 **[Read blog post about this research](/blog/damp21ka-data-assimilation/)**
 
 ---
 
@@ -119,7 +134,7 @@ Climate of the Past  ( 2024 )
 
 ## Complete Publications List
 
-<table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 14px; color: black; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 14px; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:right;"> Year </th>
@@ -170,6 +185,11 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2024 </td>
+   <td style="text-align:left;width: 80%; "> CL Hancock, MP Erb, NP McKay, SG Dee, RF Ivanovic (2024). <strong>A global Data Assimilation of Moisture Patterns from 21 0000 BP (DAMP-21ka) using lake level proxy records</strong>. <em>Climate of the Past</em>, 20 (12), 2663-2684 </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2024 </td>
    <td style="text-align:left;width: 80%; "> CL Hancock, MP Erb, NP McKay, SG Dee, RF Ivanovic (2024). <strong>A global Data Assimilation of Moisture Patterns from 21 000–0 BP (DAMP-21ka) using lake level proxy records</strong>. <em>Climate of the Past</em>, 20 (12), 2663-2684 </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 0 </td>
   </tr>
@@ -195,13 +215,23 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2023 </td>
-   <td style="text-align:left;width: 80%; "> LP Marshall, DS Kaufman, RS Anderson, NP McKay, EAG Schuur (2023). <strong>Organic‐Matter Accumulation and Degradation in Holocene Permafrost Deposits Along a Central Alaska Hillslope</strong>. <em>Journal of Geophysical Research: Biogeosciences</em>, 128 (9), e2022JG007290 [Citations: 4] </td>
+   <td style="text-align:left;width: 80%; "> LP Marshall, DS Kaufman, RS Anderson, NP McKay, EAG Schuur (2023). <strong>OrganicMatter Accumulation and Degradation in Holocene Permafrost Deposits Along a Central Alaska Hillslope</strong>. <em>Journal of Geophysical Research: Biogeosciences</em>, 128 (9), e2022JG007290 [Citations: 4] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 4 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2023 </td>
    <td style="text-align:left;width: 80%; "> EK Thomas, AA Cluett, MP Erb, NP McKay, JP Briner, IS Castañeda, ... (2023). <strong>Early Holocene Laurentide ice sheet retreat influenced summer atmospheric circulation in Baffin Bay</strong>. <em>Geophysical Research Letters</em>, 50 (13), e2023GL103428 [Citations: 3] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2023 </td>
+   <td style="text-align:left;width: 80%; "> LL Thurston, E Schiefer, NP McKay, DS Kaufman (2023). <strong>Suspended sediment deposition and sediment yields at Lake Peters, northeast Brooks Range, Alaska: Fluvialand lakebased approaches</strong>. <em>Earth Surface Processes and Landforms</em>, 48 (13), 2521-2535 [Citations: 2] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2023 </td>
+   <td style="text-align:left;width: 80%; "> LP Marshall, DS Kaufman, RS Anderson, NP McKay, EAG Schuur (2023). <strong>Organic‐Matter Accumulation and Degradation in Holocene Permafrost Deposits Along a Central Alaska Hillslope</strong>. <em>Journal of Geophysical Research: Biogeosciences</em>, 128 (9), e2022JG007290 [Citations: 4] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 4 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2023 </td>
@@ -215,12 +245,12 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2022 </td>
-   <td style="text-align:left;width: 80%; "> DM Thompson, JL Conroy, BL Konecky, S Stevenson, KL DeLong, ... (2022). <strong>Identifying Hydro‐Sensitive Coral δ18O Records for Improved High‐Resolution Temperature and Salinity Reconstructions</strong>. <em>Geophysical Research Letters</em>, 49 (9), e2021GL096153 [Citations: 26] </td>
+   <td style="text-align:left;width: 80%; "> DM Thompson, JL Conroy, BL Konecky, S Stevenson, KL DeLong, N McKay, E Reed, L Jonkers, M Carr (2022). <strong>Identifying HydroSensitive Coral 18O Records for Improved HighResolution Temperature and Salinity Reconstructions</strong>. <em>Geophysical Research Letters</em>, 49 (9), e2021GL096153 [Citations: 26] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 26 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2022 </td>
-   <td style="text-align:left;width: 80%; "> RM Walter, HR Sayani, T Felis, KM Cobb, NJ Abram, AK Arzey, ... (2022). <strong>The CoralHydro2k Database: a global, actively curated compilation of coral δ18O and Sr / Ca proxy records of tropical ocean hydrology and temperature for the …</strong>. <em>Earth System Science Data Discussions</em>, 2022, 1-56 [Citations: 23] </td>
+   <td style="text-align:left;width: 80%; "> RM Walter, HR Sayani, T Felis, KM Cobb, NJ Abram, AK Arzey, AR Atwood, LD Brenner, mP Dassi, KL DeLong, B Ellis, MJ Fischer, NF Goodkin, JA Hargreaves, KH Kilbourne, H Krawczyk, NP McKay, SA Murty, RD Ramos, EV Reed, D Samanta, SC Sanchez, J Zinke (2022). <strong>The CoralHydro2k Database: a global, actively curated compilation of coral 18O and Sr / Ca proxy records of tropical ocean hydrology and temperature for the</strong>. <em>Earth System Science Data Discussions</em>, 2022, 1-56 [Citations: 23] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 23 </td>
   </tr>
   <tr>
@@ -240,7 +270,7 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2022 </td>
-   <td style="text-align:left;width: 80%; "> DS Kaufman, NP McKay (2022). <strong>Past and future warming–direct comparison on multi-century timescales</strong>. <em>Climate of the Past</em>, 18 (4), 911-917 [Citations: 10] </td>
+   <td style="text-align:left;width: 80%; "> DS Kaufman, NP McKay (2022). <strong>Past and future warmingdirect comparison on multi-century timescales</strong>. <em>Climate of the Past</em>, 18 (4), 911-917 [Citations: 10] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 10 </td>
   </tr>
   <tr>
@@ -259,8 +289,23 @@ Climate of the Past  ( 2024 )
    <td style="text-align:right;width: 12%; font-weight: bold;"> 0 </td>
   </tr>
   <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2022 </td>
+   <td style="text-align:left;width: 80%; "> DM Thompson, JL Conroy, BL Konecky, S Stevenson, KL DeLong, N McKay, E Reed, L Jonkers, M Carré (2022). <strong>Identifying Hydro‐Sensitive Coral δ18O Records for Improved High‐Resolution Temperature and Salinity Reconstructions</strong>. <em>Geophysical Research Letters</em>, 49 (9), e2021GL096153 [Citations: 26] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 26 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2022 </td>
+   <td style="text-align:left;width: 80%; "> RM Walter, HR Sayani, T Felis, KM Cobb, NJ Abram, AK Arzey, AR Atwood, LD Brenner, ÉmP Dassié, KL DeLong, B Ellis, MJ Fischer, NF Goodkin, JA Hargreaves, KH Kilbourne, H Krawczyk, NP McKay, SA Murty, RD Ramos, EV Reed, D Samanta, SC Sanchez, J Zinke (2022). <strong>The CoralHydro2k Database: a global, actively curated compilation of coral δ18O and Sr / Ca proxy records of tropical ocean hydrology and temperature for the …</strong>. <em>Earth System Science Data Discussions</em>, 2022, 1-56 [Citations: 23] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 23 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2022 </td>
+   <td style="text-align:left;width: 80%; "> DS Kaufman, NP McKay (2022). <strong>Past and future warming–direct comparison on multi-century timescales</strong>. <em>Climate of the Past</em>, 18 (4), 911-917 [Citations: 10] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 10 </td>
+  </tr>
+  <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2021 </td>
-   <td style="text-align:left;width: 80%; "> NP McKay, J Emile-Geay, D Khider (2021). <strong>geoChronR–an R package to model, analyze, and visualize age-uncertain data</strong>. <em>Geochronology</em>, 3 (1), 149-169 [Citations: 59] </td>
+   <td style="text-align:left;width: 80%; "> NP McKay, J Emile-Geay, D Khider (2021). <strong>geoChronRan R package to model, analyze, and visualize age-uncertain data</strong>. <em>Geochronology</em>, 3 (1), 149-169 [Citations: 59] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 59 </td>
   </tr>
   <tr>
@@ -282,6 +327,11 @@ Climate of the Past  ( 2024 )
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2021 </td>
    <td style="text-align:left;width: 80%; "> E Schiefer, J Geck, JS Ostman, NP McKay, N Praet, MG Loso, ... (2021). <strong>Fluvial suspended sediment transfer and lacustrine sedimentation of recent flood turbidites in proglacial Eklutna Lake, western Chugach Mountains, Alaska</strong>. <em>Hydrological processes</em>, 35 (10), e14375 [Citations: 3] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2021 </td>
+   <td style="text-align:left;width: 80%; "> NP McKay, J Emile-Geay, D Khider (2021). <strong>geoChronR–an R package to model, analyze, and visualize age-uncertain data</strong>. <em>Geochronology</em>, 3 (1), 149-169 [Citations: 59] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 59 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2020 </td>
@@ -310,7 +360,7 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2020 </td>
-   <td style="text-align:left;width: 80%; "> CSM Turney, R Jones, NP McKay, E Van Sebille, ZA Thomas, ... (2020). <strong>A global mean sea-surface temperature dataset for the Last Interglacial (129–116 kyr) and contribution of thermal expansion to sea-level change</strong>. <em>Earth System Science Data Discussions</em>, 2020, 1-21 [Citations: 53] </td>
+   <td style="text-align:left;width: 80%; "> CSM Turney, R Jones, NP McKay, EV Sebille, ZA Thomas, C-D Hillenbrand, CJ Fogwill (2020). <strong>A global mean sea-surface temperature dataset for the Last Interglacial (129116 kyr) and contribution of thermal expansion to sea-level change</strong>. <em>Earth System Science Data Discussions</em>, 2020, 1-21 [Citations: 53] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 53 </td>
   </tr>
   <tr>
@@ -335,6 +385,21 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2020 </td>
+   <td style="text-align:left;width: 80%; "> SH Arcusa, NP McKay, CM Carrillo, TR Ault (2020). <strong>Dustdrought nexus in the southwestern United States: A proxymodel comparison approach</strong>. <em>Paleoceanography and Paleoclimatology</em>, 35 (12), e2020PA004046 [Citations: 13] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2020 </td>
+   <td style="text-align:left;width: 80%; "> LL Thurston, E Schiefer, NP McKay, DS Kaufman (2020). <strong>Modelling suspended sediment discharge in a glaciated Arctic catchmentLake Peters, northeast Brooks Range, Alaska</strong>. <em>Hydrological Processes</em>, 34 (19), 3910-3927 [Citations: 3] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2020 </td>
+   <td style="text-align:left;width: 80%; "> CSM Turney, R Jones, NP McKay, EV Sebille, ZëA Thomas, C-D Hillenbrand, CJ Fogwill (2020). <strong>A global mean sea-surface temperature dataset for the Last Interglacial (129–116 kyr) and contribution of thermal expansion to sea-level change</strong>. <em>Earth System Science Data Discussions</em>, 2020, 1-21 [Citations: 53] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 53 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2020 </td>
    <td style="text-align:left;width: 80%; "> SH Arcusa, NP McKay, CM Carrillo, TR Ault (2020). <strong>Dust‐drought nexus in the southwestern United States: A proxy‐model comparison approach</strong>. <em>Paleoceanography and Paleoclimatology</em>, 35 (12), e2020PA004046 [Citations: 13] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 13 </td>
   </tr>
@@ -355,7 +420,7 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2019 </td>
-   <td style="text-align:left;width: 80%; "> HR Kolus, DN Huntzinger, CR Schwalm, JB Fisher, N McKay, Y Fang, ... (2019). <strong>Land carbon models underestimate the severity and duration of drought’s impact on plant productivity</strong>. <em>Scientific Reports</em>, 9 (1), 2758 [Citations: 72] </td>
+   <td style="text-align:left;width: 80%; "> HR Kolus, DN Huntzinger, CR Schwalm, JB Fisher, N McKay, Y Fang, AM Michalak, K Schaefer, Y Wei, B Poulter, J Mao, NC Parazoo, X Shi (2019). <strong>Land carbon models underestimate the severity and duration of droughts impact on plant productivity</strong>. <em>Scientific Reports</em>, 9 (1), 2758 [Citations: 72] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 72 </td>
   </tr>
   <tr>
@@ -370,12 +435,12 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2019 </td>
-   <td style="text-align:left;width: 80%; "> D Fortin, N Praet, NP McKay, DS Kaufman, BJL Jensen, PJ Haeussler, ... (2019). <strong>New approach to assessing age uncertainties–The 2300-year varve chronology from Eklutna Lake, Alaska (USA)</strong>. <em>Quaternary Science Reviews</em>, 203, 90-101 [Citations: 27] </td>
+   <td style="text-align:left;width: 80%; "> D Fortin, N Praet, NP McKay, DS Kaufman, BJL Jensen, PJ Haeussler, C Buchanan, MD Batist (2019). <strong>New approach to assessing age uncertaintiesThe 2300-year varve chronology from Eklutna Lake, Alaska (USA)</strong>. <em>Quaternary Science Reviews</em>, 203, 90-101 [Citations: 27] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 27 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2019 </td>
-   <td style="text-align:left;width: 80%; "> CC Routson, SH Arcusa, NP McKay, JT Overpeck (2019). <strong>A 4,500‐year‐long record of southern Rocky Mountain dust deposition</strong>. <em>Geophysical Research Letters</em>, 46 (14), 8281-8288 [Citations: 18] </td>
+   <td style="text-align:left;width: 80%; "> CC Routson, SpH Arcusa, NP McKay, JT Overpeck (2019). <strong>A 4,500yearlong record of southern Rocky Mountain dust deposition</strong>. <em>Geophysical Research Letters</em>, 46 (14), 8281-8288 [Citations: 18] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 18 </td>
   </tr>
   <tr>
@@ -385,13 +450,33 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2019 </td>
-   <td style="text-align:left;width: 80%; "> E Broadman, LL Thurston, E Schiefer, NP McKay, D Fortin, J Geck, ... (2019). <strong>An Arctic watershed observatory at Lake Peters, Alaska: weather–glacier–river–lake system data for 2015–2018</strong>. <em>Earth System Science Data</em>, 11 (4), 1957-1970 [Citations: 6] </td>
+   <td style="text-align:left;width: 80%; "> E Broadman, LL Thurston, E Schiefer, NP McKay, D Fortin, J Geck, MG Loso, M Nolan, SpH Arcusa, CW Benson, RA Ellerbroek, MP Erb, CC Routson, C Wiman, AJ Wong, DS Kaufman (2019). <strong>An Arctic watershed observatory at Lake Peters, Alaska: weatherglacierriverlake system data for 20152018</strong>. <em>Earth System Science Data</em>, 11 (4), 1957-1970 [Citations: 6] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 6 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2019 </td>
    <td style="text-align:left;width: 80%; "> J Emile‐Geay, D Khider, D Garijo, NP McKay, Y Gil, V Ratnakar, ... (2019). <strong>The Linked Earth Ontology: A modular, extensible representation of open paleoclimate data</strong>. <em>Zenodo</em> [Citations: 3] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2019 </td>
+   <td style="text-align:left;width: 80%; "> HR Kolus, DN Huntzinger, CR Schwalm, JB Fisher, N McKay, Y Fang, AM Michalak, K Schaefer, Y Wei, B Poulter, J Mao, NC Parazoo, X Shi (2019). <strong>Land carbon models underestimate the severity and duration of drought’s impact on plant productivity</strong>. <em>Scientific Reports</em>, 9 (1), 2758 [Citations: 72] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 72 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2019 </td>
+   <td style="text-align:left;width: 80%; "> D Fortin, N Praet, NP McKay, DS Kaufman, BJL Jensen, PJ Haeussler, C Buchanan, MD Batist (2019). <strong>New approach to assessing age uncertainties–The 2300-year varve chronology from Eklutna Lake, Alaska (USA)</strong>. <em>Quaternary Science Reviews</em>, 203, 90-101 [Citations: 27] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 27 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2019 </td>
+   <td style="text-align:left;width: 80%; "> CC Routson, SépH Arcusa, NP McKay, JT Overpeck (2019). <strong>A 4,500‐year‐long record of southern Rocky Mountain dust deposition</strong>. <em>Geophysical Research Letters</em>, 46 (14), 8281-8288 [Citations: 18] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 18 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2019 </td>
+   <td style="text-align:left;width: 80%; "> E Broadman, LL Thurston, E Schiefer, NP McKay, D Fortin, J Geck, MG Loso, M Nolan, SépH Arcusa, CW Benson, RA Ellerbroek, MP Erb, CC Routson, C Wiman, AJ Wong, DS Kaufman (2019). <strong>An Arctic watershed observatory at Lake Peters, Alaska: weather–glacier–river–lake system data for 2015–2018</strong>. <em>Earth System Science Data</em>, 11 (4), 1957-1970 [Citations: 6] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 6 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2018 </td>
@@ -410,7 +495,7 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2018 </td>
-   <td style="text-align:left;width: 80%; "> E Schiefer, D Kaufman, N McKay, M Retelle, A Werner, S Roof (2018). <strong>Fluvial suspended sediment yields over hours to millennia in the High Arctic at proglacial Lake Linnévatnet, Svalbard</strong>. <em>Earth Surface Processes and Landforms</em>, 43 (2), 482-498 [Citations: 15] </td>
+   <td style="text-align:left;width: 80%; "> E Schiefer, D Kaufman, N McKay, M Retelle, A Werner, S Roof (2018). <strong>Fluvial suspended sediment yields over hours to millennia in the High Arctic at proglacial Lake Linnvatnet, Svalbard</strong>. <em>Earth Surface Processes and Landforms</em>, 43 (2), 482-498 [Citations: 15] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 15 </td>
   </tr>
   <tr>
@@ -439,6 +524,11 @@ Climate of the Past  ( 2024 )
    <td style="text-align:right;width: 12%; font-weight: bold;"> 1 </td>
   </tr>
   <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2018 </td>
+   <td style="text-align:left;width: 80%; "> E Schiefer, D Kaufman, N McKay, M Retelle, A Werner, S Roof (2018). <strong>Fluvial suspended sediment yields over hours to millennia in the High Arctic at proglacial Lake Linnévatnet, Svalbard</strong>. <em>Earth Surface Processes and Landforms</em>, 43 (2), 482-498 [Citations: 15] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 15 </td>
+  </tr>
+  <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2017 </td>
    <td style="text-align:left;width: 80%; "> PAGES2k Consortium (2017). <strong>A global multiproxy database for temperature reconstructions of the Common Era</strong>. <em>Scientific data</em>, 4, 170088 [Citations: 395] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 395 </td>
@@ -465,12 +555,12 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2016 </td>
-   <td style="text-align:left;width: 80%; "> DS Kaufman, YL Axford, ACG Henderson, NP McKay, WW Oswald, ... (2016). <strong>Holocene climate changes in eastern Beringia (NW North America)–A systematic review of multi-proxy evidence</strong>. <em>Quaternary Science Reviews</em>, 147, 312-339 [Citations: 185] </td>
+   <td style="text-align:left;width: 80%; "> DS Kaufman, YL Axford, ACG Henderson, NP McKay, WW Oswald, C Saenger, RS Anderson, HL Bailey, B Clegg, K Gajewski, FS Hu, MC Jones, C Massa, CC Routson, A Werner, MJ Wooller, Z Yu (2016). <strong>Holocene climate changes in eastern Beringia (NW North America)A systematic review of multi-proxy evidence</strong>. <em>Quaternary Science Reviews</em>, 147, 312-339 [Citations: 185] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 185 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2016 </td>
-   <td style="text-align:left;width: 80%; "> NP McKay, J Emile-Geay (2016). <strong>The Linked Paleo Data framework–a common tongue for paleoclimatology</strong>. <em>Climate of the Past</em>, 12 (4), 1093-1100 [Citations: 79] </td>
+   <td style="text-align:left;width: 80%; "> NP McKay, J Emile-Geay (2016). <strong>The Linked Paleo Data frameworka common tongue for paleoclimatology</strong>. <em>Climate of the Past</em>, 12 (4), 1093-1100 [Citations: 79] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 79 </td>
   </tr>
   <tr>
@@ -492,6 +582,16 @@ Climate of the Past  ( 2024 )
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2016 </td>
    <td style="text-align:left;width: 80%; "> J Emile-Geay, NP McKay (2016). <strong>Paleoclimate data standards</strong>. <em>Past Global Change Magazine</em>, 24 (1) [Citations: 4] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2016 </td>
+   <td style="text-align:left;width: 80%; "> DS Kaufman, YL Axford, ACG Henderson, NP McKay, WW Oswald, C Saenger, RS Anderson, HL Bailey, B Clegg, K Gajewski, FS Hu, MC Jones, C Massa, CC Routson, A Werner, MJ Wooller, Z Yu (2016). <strong>Holocene climate changes in eastern Beringia (NW North America)–A systematic review of multi-proxy evidence</strong>. <em>Quaternary Science Reviews</em>, 147, 312-339 [Citations: 185] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 185 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2016 </td>
+   <td style="text-align:left;width: 80%; "> NP McKay, J Emile-Geay (2016). <strong>The Linked Paleo Data framework–a common tongue for paleoclimatology</strong>. <em>Climate of the Past</em>, 12 (4), 1093-1100 [Citations: 79] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 79 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2015 </td>
@@ -520,12 +620,22 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2014 </td>
-   <td style="text-align:left;width: 80%; "> HS Sundqvist, DS Kaufman, NP McKay, NL Balascio, JP Briner, ... (2014). <strong>Arctic Holocene proxy climate database–new approaches to assessing geochronological accuracy and encoding climate variables</strong>. <em>Climate of the Past</em>, 10 (4), 1605-1631 [Citations: 158] </td>
+   <td style="text-align:left;width: 80%; "> HS Sundqvist, DS Kaufman, NP McKay, NL Balascio, JP Briner, LC Cwynar, HP Sejrup, H Sepp, DA Subetto, JT Andrews, Y Axford, J Bakke, HJB Birks, SJ Brooks, AD Vernal, AE Jennings, FC Ljungqvist, KM Rhland, C Saenger, JP Smol, AE Viau (2014). <strong>Arctic Holocene proxy climate databasenew approaches to assessing geochronological accuracy and encoding climate variables</strong>. <em>Climate of the Past</em>, 10 (4), 1605-1631 [Citations: 158] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 158 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2014 </td>
    <td style="text-align:left;width: 80%; "> NP McKay, DS Kaufman (2014). <strong>An extended Arctic proxy temperature database for the past 2,000 years</strong>. <em>Scientific data</em>, 1 (1), 1-10 [Citations: 158] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 158 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2014 </td>
+   <td style="text-align:left;width: 80%; "> D Kaufman (2014). <strong>A communitydriven framework for climate reconstructions</strong>. <em>Eos, Transactions American Geophysical Union</em>, 95 (40), 361-362 [Citations: 26] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 26 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2014 </td>
+   <td style="text-align:left;width: 80%; "> HS Sundqvist, DS Kaufman, NP McKay, NL Balascio, JP Briner, LC Cwynar, HP Sejrup, H Seppä, DA Subetto, JT Andrews, Y Axford, J Bakke, HJB Birks, SJ Brooks, AD Vernal, AE Jennings, FC Ljungqvist, KM Rühland, C Saenger, JP Smol, AE Viau (2014). <strong>Arctic Holocene proxy climate database–new approaches to assessing geochronological accuracy and encoding climate variables</strong>. <em>Climate of the Past</em>, 10 (4), 1605-1631 [Citations: 158] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 158 </td>
   </tr>
   <tr>
@@ -540,17 +650,37 @@ Climate of the Past  ( 2024 )
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2013 </td>
-   <td style="text-align:left;width: 80%; "> BL Otto-Bliesner, N Rosenbloom, EJ Stone, NP McKay, DJ Lunt, ... (2013). <strong>How warm was the last interglacial? New model–data comparisons</strong>. <em>Philosophical Transactions of the Royal Society A: Mathematical, Physical …</em> [Citations: 205] </td>
+   <td style="text-align:left;width: 80%; "> BL Otto-Bliesner, N Rosenbloom, EJ Stone, NP McKay, DJ Lunt, EC Brady, JT Overpeck (2013). <strong>How warm was the last interglacial? New modeldata comparisons</strong>. <em>Philosophical Transactions of the Royal Society A: Mathematical, Physical</em> [Citations: 205] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 205 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2013 </td>
-   <td style="text-align:left;width: 80%; "> TM Shanahan, JA Peck, N McKay, CW Heil Jr, J King, SL Forman, ... (2013). <strong>Age models for long lacustrine sediment records using multiple dating approaches–An example from Lake Bosumtwi, Ghana</strong>. <em>Quaternary Geochronology</em>, 15, 47-60 [Citations: 54] </td>
+   <td style="text-align:left;width: 80%; "> TM Shanahan, JA Peck, N McKay, CWH Jr, J King, SL Forman, DL Hoffmann, DA Richards, JT Overpeck, C Scholz (2013). <strong>Age models for long lacustrine sediment records using multiple dating approachesAn example from Lake Bosumtwi, Ghana</strong>. <em>Quaternary Geochronology</em>, 15, 47-60 [Citations: 54] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 54 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2013 </td>
-   <td style="text-align:left;width: 80%; "> TM Shanahan, N McKay, JT Overpeck, JA Peck, C Scholz, CW Heil Jr, ... (2013). <strong>Spatial and temporal variability in sedimentological and geochemical properties of sediments from an anoxic crater lake in West Africa: implications for paleoenvironmental …</strong>. <em>Palaeogeography, Palaeoclimatology, Palaeoecology</em>, 374, 96-109 [Citations: 30] </td>
+   <td style="text-align:left;width: 80%; "> TM Shanahan, N McKay, JT Overpeck, JA Peck, C Scholz, CWH Jr, J King (2013). <strong>Spatial and temporal variability in sedimentological and geochemical properties of sediments from an anoxic crater lake in West Africa: implications for paleoenvironmental</strong>. <em>Palaeogeography, Palaeoclimatology, Palaeoecology</em>, 374, 96-109 [Citations: 30] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 30 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2013 </td>
+   <td style="text-align:left;width: 80%; "> NP McKay, DL Dettman, RT Downs, JT Overpeck (2013). <strong>On the potential of Ramanspectroscopybased carbonate mass spectrometry</strong>. <em>Journal of Raman Spectroscopy</em>, 44 (3), 469-474 [Citations: 13] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2013 </td>
+   <td style="text-align:left;width: 80%; "> BL Otto-Bliesner, N Rosenbloom, EJ Stone, NP McKay, DJ Lunt, EC Brady, JT Overpeck (2013). <strong>How warm was the last interglacial? New model–data comparisons</strong>. <em>Philosophical Transactions of the Royal Society A: Mathematical, Physical …</em> [Citations: 205] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 205 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2013 </td>
+   <td style="text-align:left;width: 80%; "> TM Shanahan, JA Peck, N McKay, CWH Jr, J King, SL Forman, DL Hoffmann, DA Richards, JT Overpeck, C Scholz (2013). <strong>Age models for long lacustrine sediment records using multiple dating approaches–An example from Lake Bosumtwi, Ghana</strong>. <em>Quaternary Geochronology</em>, 15, 47-60 [Citations: 54] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 54 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2013 </td>
+   <td style="text-align:left;width: 80%; "> TM Shanahan, N McKay, JT Overpeck, JA Peck, C Scholz, CWH Jr, J King (2013). <strong>Spatial and temporal variability in sedimentological and geochemical properties of sediments from an anoxic crater lake in West Africa: implications for paleoenvironmental …</strong>. <em>Palaeogeography, Palaeoclimatology, Palaeoecology</em>, 374, 96-109 [Citations: 30] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 30 </td>
   </tr>
   <tr>
@@ -582,6 +712,11 @@ Climate of the Past  ( 2024 )
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2009 </td>
    <td style="text-align:left;width: 80%; "> NP McKay, DS Kaufman (2009). <strong>Holocene climate and glacier variability at Hallet and Greyling Lakes, Chugach Mountains, south-central Alaska</strong>. <em>Journal of Paleolimnology</em>, 41 (1), 143-159 [Citations: 68] </td>
    <td style="text-align:right;width: 12%; font-weight: bold;"> 68 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;width: 8%; font-weight: bold;"> 2008 </td>
+   <td style="text-align:left;width: 80%; "> NP McKay, DS Kaufman, N Michelutti (2008). <strong>Biogenic silica concentration as a highresolution, quantitative temperature proxy at Hallet Lake, southcentral Alaska</strong>. <em>Geophysical Research Letters</em>, 35 (5) [Citations: 94] </td>
+   <td style="text-align:right;width: 12%; font-weight: bold;"> 94 </td>
   </tr>
   <tr>
    <td style="text-align:right;width: 8%; font-weight: bold;"> 2008 </td>
@@ -684,7 +819,7 @@ Quaternary Science Reviews  ( 2016 ) • <strong>Citations:  253 </strong>
 
 ## Research Impact by Journal
 
-<table class="table table-striped table-hover table-condensed" style="font-size: 12px; color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed" style="font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Journal </th>
@@ -708,9 +843,9 @@ Quaternary Science Reviews  ( 2016 ) • <strong>Citations:  253 </strong>
   </tr>
   <tr>
    <td style="text-align:left;"> Quaternary Science Reviews </td>
-   <td style="text-align:right;"> 9 </td>
-   <td style="text-align:right;"> 869 </td>
-   <td style="text-align:right;"> 96.6 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 1081 </td>
+   <td style="text-align:right;"> 98.3 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Nature </td>
@@ -720,21 +855,21 @@ Quaternary Science Reviews  ( 2016 ) • <strong>Citations:  253 </strong>
   </tr>
   <tr>
    <td style="text-align:left;"> Geophysical Research Letters </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 539 </td>
-   <td style="text-align:right;"> 67.4 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 677 </td>
+   <td style="text-align:right;"> 61.5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Climate of the Past </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 597 </td>
+   <td style="text-align:right;"> 54.3 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Nature Geoscience </td>
    <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 518 </td>
    <td style="text-align:right;"> 172.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Climate of the Past </td>
-   <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> 350 </td>
-   <td style="text-align:right;"> 50.0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Proceedings of the National Academy of Sciences </td>
@@ -744,45 +879,45 @@ Quaternary Science Reviews  ( 2016 ) • <strong>Citations:  253 </strong>
   </tr>
   <tr>
    <td style="text-align:left;"> Earth System Science Data </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 150 </td>
-   <td style="text-align:right;"> 30.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Palaeogeography, Palaeoclimatology, Palaeoecology </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 78 </td>
-   <td style="text-align:right;"> 39.0 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 156 </td>
+   <td style="text-align:right;"> 26.0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Earth System Science Data Discussions </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 76 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 152 </td>
    <td style="text-align:right;"> 38.0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> Paleoceanography and Paleoclimatology </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 74 </td>
-   <td style="text-align:right;"> 18.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> The Holocene </td>
+   <td style="text-align:left;"> Scientific Reports </td>
    <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 67 </td>
-   <td style="text-align:right;"> 33.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Quaternary Geochronology </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 61 </td>
-   <td style="text-align:right;"> 30.5 </td>
+   <td style="text-align:right;"> 144 </td>
+   <td style="text-align:right;"> 72.0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Geochronology </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 60 </td>
-   <td style="text-align:right;"> 30.0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 119 </td>
+   <td style="text-align:right;"> 39.7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Quaternary Geochronology </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 115 </td>
+   <td style="text-align:right;"> 38.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Palaeogeography, Palaeoclimatology, Palaeoecology </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 108 </td>
+   <td style="text-align:right;"> 36.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Paleoceanography and Paleoclimatology </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 87 </td>
+   <td style="text-align:right;"> 17.4 </td>
   </tr>
 </tbody>
 </table>
