@@ -47,7 +47,7 @@ jobs:
         
     - name: Update publications database
       run: |
-        R -e "source('R/build.R')"
+        R -e "source('R/update_publication_database.R')"
         
     - name: Check for changes
       id: verify-changed-files
