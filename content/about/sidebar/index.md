@@ -2,7 +2,7 @@
 ## Configure sidebar content in narrow column
 author: "Nick McKay"
 role: "Professor, Paleoclimate Scientist"
-avatar_shape: rounded # circle, square, rounded, leave blank to exclude
+avatar_shape: circle # circle, square, rounded, leave blank to exclude
 show_social_links: true # specify social accounts in site config
 link_list_label: "Research Areas" # bookmarks, elsewhere, etc.
 link_list:

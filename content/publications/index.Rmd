@@ -118,6 +118,48 @@ if(nrow(recent_pubs) > 0) {
 }
 ```
 
+---
+
+## Complete Publications List
+
+```{r publications_table}
+# Get publications
+pubs <- get_publications(scholar_id)
+
+# Clean and format the data
+pubs_formatted <- pubs %>%
+  arrange(desc(year)) %>%
+  mutate(
+    # Create formatted citation
+    citation = paste0(
+      author, " (", year, "). ",
+      "<strong>", title, "</strong>. ",
+      "<em>", journal, "</em>",
+      ifelse(is.na(number) | number == "", "", paste0(", ", number)),
+      ifelse(is.na(cites) | cites == 0, "", paste0(" [Citations: ", cites, "]"))
+    ),
+    # Clean up journal names
+    journal = ifelse(is.na(journal) | journal == "", "In Review/Preprint", journal)
+  ) %>%
+  select(Year = year, Citation = citation, Journal = journal, Citations = cites)
+
+# Display as formatted table
+pubs_formatted %>%
+  select(Year, Citation, Citations) %>%
+  kable(format = "html", escape = FALSE, 
+        caption = "Complete publication list (automatically updated from Google Scholar)") %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width = TRUE,
+    font_size = 14
+  ) %>%
+  column_spec(1, width = "8%", bold = TRUE) %>%
+  column_spec(2, width = "80%") %>%
+  column_spec(3, width = "12%", bold = TRUE)
+```
+
+---
+
 ## Top Cited Publications
 
 ```{r top_cited}
