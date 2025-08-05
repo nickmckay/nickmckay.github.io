@@ -59,7 +59,7 @@ Paleoceanography and Paleoclimatology  ( 2025 )
 
 Nature Communications  ( 2024 ) • Citations:  39
 
-📖 **[Read my blog post about this research](/blog/4.2ka-event-not-remarkable/)**
+📖 **[Read blog post about this research](/blog/4.2ka-event-not-remarkable/)**
 
 ---
 
@@ -69,7 +69,7 @@ Nature Communications  ( 2024 ) • Citations:  39
 
 The Cryosphere  ( 2024 ) • Citations:  5
 
-📖 **[Read my blog post about this research](/blog/arctic-snowline-rise/)**
+📖 **[Read blog post about this research](/blog/arctic-snowline-rise/)**
 
 ---
 
@@ -111,7 +111,7 @@ Earth System Science Data  ( 2024 ) • Citations:  1
 
 Climate of the Past  ( 2024 )
 
-📖 **[Read my blog post about this research](/blog/damp21ka-data-assimilation/)**
+📖 **[Read blog post about this research](/blog/damp21ka-data-assimilation/)**
 
 ---
 

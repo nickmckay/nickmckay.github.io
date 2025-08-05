@@ -56,7 +56,7 @@ cat("**i10-index:** ", profile$i10_index, "\n\n")
 ```{r citation_plot}
 # Plot citation history
 ggplot(citation_hist, aes(x = year, y = cites)) +
-  geom_col(fill = "steelblue", alpha = 0.7) +
+  geom_col(fill = "darkgreen", alpha = 0.7) +
   #geom_smooth(method = "loess", se = FALSE, color = "darkred", size = 1.2) +
   labs(
     title = "Citations per Year",
@@ -101,16 +101,16 @@ if(nrow(recent_pubs) > 0) {
     
     # Add blog post links for specific papers
     if(grepl("4.2 ka event is not remarkable", pub$title)) {
-      cat("📖 **[Read my blog post about this research](/blog/4.2ka-event-not-remarkable/)**\n\n")
+      cat("📖 **[Read blog post about this research](/blog/4.2ka-event-not-remarkable/)**\n\n")
     }
     if(grepl("Globally coherent water cycle response", pub$title)) {
-      cat("📖 **[Read my blog post about this research](/blog/global-water-cycle-response/)**\n\n")
+      cat("📖 **[Read blog post about this research](/blog/global-water-cycle-response/)**\n\n")
     }
     if(grepl("global Data Assimilation of Moisture Patterns", pub$title)) {
-      cat("📖 **[Read my blog post about this research](/blog/damp21ka-data-assimilation/)**\n\n")
+      cat("📖 **[Read blog post about this research](/blog/damp21ka-data-assimilation/)**\n\n")
     }
     if(grepl("Arctic glacier snowline altitudes", pub$title)) {
-      cat("📖 **[Read my blog post about this research](/blog/arctic-snowline-rise/)**\n\n")
+      cat("📖 **[Read blog post about this research](/blog/arctic-snowline-rise/)**\n\n")
     }
     
     cat("---\n\n")
