@@ -26,43 +26,45 @@ library(ggplot2)
 library(DT)
 library(knitr)
 library(kableExtra)
-# library(readr)  # Using base R read.csv instead
+#library(readr) 
 
 # Nick McKay's Google Scholar ID
 scholar_id <- "j8_CgoEAAAAJ"
-
-# Update publications database before loading data
-cat("Updating publications database...\n")
-tryCatch({
-  # Find the project root directory
-  current_dir <- getwd()
-  cat("Current working directory:", current_dir, "\n")
-  
-  # Look for the update script in likely locations
-  script_paths <- c(
-    "R/update_publications.R",
-    "../../R/update_publications.R", 
-    "../../../R/update_publications.R"
-  )
-  
-  script_found <- FALSE
-  for (path in script_paths) {
-    if (file.exists(path)) {
-      cat("Found update script at:", path, "\n")
-      source(path)
-      script_found <- TRUE
-      break
-    }
-  }
-  
-  if (!script_found) {
-    cat("Update script not found, skipping database update\n")
-    cat("Searched paths:", paste(script_paths, collapse = ", "), "\n")
-  }
-}, error = function(e) {
-  cat("Database update failed:", e$message, "\n")
-  cat("Continuing with existing database...\n")
-})
+# 
+# #Should be handled by build.R now.
+#
+# # Update publications database before loading data
+# cat("Updating publications database...\n")
+# tryCatch({
+#   # Find the project root directory
+#   current_dir <- getwd()
+#   cat("Current working directory:", current_dir, "\n")
+#   
+#   # Look for the update script in likely locations
+#   script_paths <- c(
+#     "R/update_publications.R",
+#     "../../R/update_publications.R", 
+#     "../../../R/update_publications.R"
+#   )
+#   
+#   script_found <- FALSE
+#   for (path in script_paths) {
+#     if (file.exists(path)) {
+#       cat("Found update script at:", path, "\n")
+#       source(path)
+#       script_found <- TRUE
+#       break
+#     }
+#   }
+#   
+#   if (!script_found) {
+#     cat("Update script not found, skipping database update\n")
+#     cat("Searched paths:", paste(script_paths, collapse = ", "), "\n")
+#   }
+# }, error = function(e) {
+#   cat("Database update failed:", e$message, "\n")
+#   cat("Continuing with existing database...\n")
+# })
 ```
 ---
 
@@ -127,6 +129,7 @@ tryCatch({
   if (!is.null(pub_file) && !is.null(cit_file) && !is.null(prof_file)) {
     cat("Loading local database from:", pub_file, "\n")
     pubs <- read.csv(pub_file, stringsAsFactors = FALSE)
+
     profile_metrics <- read.csv(prof_file, stringsAsFactors = FALSE)
     citation_hist <- read.csv(cit_file, stringsAsFactors = FALSE)
     
@@ -140,6 +143,7 @@ tryCatch({
     stop("Local database files not found")
   }
 }, error = function(e) {
+  stop("bad")
   # Fallback to Google Scholar if local database doesn't exist
   cat("Local database not found, fetching from Google Scholar...\n")
   cat("Error:", e$message, "\n")
