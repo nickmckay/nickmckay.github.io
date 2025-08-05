@@ -15,7 +15,58 @@ I welcome applications from motivated students interested in paleoclimate scienc
 
 ## Current Opportunities
 
-*Currently, there are no specific funded positions advertised. However, we are always interested in hearing from motivated potential students and collaborators.*
+### PhD Position: Paleoclimate Data Assimilation for North American Ecosystem Research
+
+**Funding:** NSF-funded project  
+**Duration:** 4 years  
+**Start Date:** Spring or Fall 2026
+
+#### Project Overview
+
+We are seeking a motivated PhD student to join an exciting new NSF-funded project led by Jack Williams at the University of Wisconsin, with NAU as a partner institution. This interdisciplinary project aims to understand how ecosystems respond to climate change by studying past climate-ecosystem relationships from the Last Glacial Maximum to present.
+
+#### Your Role at NAU
+
+Working with Dr. McKay and collaborator Dr. Michael Erb (Appalachian State University), you will lead the development of cutting-edge paleoclimate reconstructions for North America using **paleoclimate data assimilation (PDA)**. This innovative approach combines:
+
+- **Proxy records** (lake sediments, speleothems, ice cores, etc.) with
+- **Physics-based climate models** to create spatially complete reconstructions
+- **Statistical downscaling** techniques for ecological applications
+
+#### What is Paleoclimate Data Assimilation?
+
+PDA uses a Kalman filter approach to optimally combine proxy observations with climate model simulations. The method:
+
+- Starts with an ensemble of climate model states
+- Compares model output with proxy data using statistical relationships
+- Updates reconstructions to better match observations
+- Spreads information across space and time using model covariance patterns
+
+This approach overcomes limitations of proxy-only or model-only reconstructions.
+
+#### Research Opportunities
+
+- Develop custom paleoclimate reconstructions for ecological research
+- Work with state-of-the-art data assimilation techniques
+- Collaborate with leading researchers across multiple institutions
+- Contribute to climate change policy and conservation science
+- Publish in high-impact journals
+
+#### Ideal Candidate
+
+- Strong background in Earth sciences, climate science, or related field
+- Interest in quantitative methods and statistical analysis
+- Experience with programming (R, Python)
+- Enthusiasm for interdisciplinary collaboration
+- Excellent communication skills
+
+#### How to Apply
+
+Contact Dr. McKay directly with your CV, research interests, and a brief statement of why this project appeals to you. Early inquiries are encouraged as the position will be filled for  either Spring or Fall 2026.
+
+---
+
+*We are also always interested in hearing from motivated potential students and collaborators for other projects.*
 
 ---
 
@@ -83,15 +134,12 @@ Successful students typically have backgrounds in:
 ## Contact Information
 
 **Dr. Nicholas McKay**  
-Associate Professor  
+Professor  
 School of Earth and Sustainability  
 Northern Arizona University  
 Flagstaff, AZ 86011
 
 **Email:** [nicholas.mckay@nau.edu](mailto:nicholas.mckay@nau.edu)  
-**Office:** Room XXX, Building XXX  
-**Phone:** (928) XXX-XXXX
-
 ---
 
 ## About Northern Arizona University
@@ -101,7 +149,6 @@ NAU is located in Flagstaff, Arizona, at 7,000 feet elevation in the Colorado Pl
 - High-elevation lakes in the San Juan Mountains (Colorado)
 - Desert and montane ecosystems
 - Colorado River basin
-- Arctic field sites (Alaska)
 
 Flagstaff offers excellent outdoor recreation opportunities and is home to Lowell Observatory and the U.S. Geological Survey Flagstaff Field Center.
 
