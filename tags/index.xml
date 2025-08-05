@@ -6,6 +6,7 @@
     <description>Recent content in Tags on Nick McKay - Paleoclimate Scientist</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <copyright>© 2025 Nick McKay</copyright>
     <lastBuildDate>Sun, 15 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nickmckay.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -268,10 +269,115 @@
       <description></description>
     </item>
     <item>
-      <title>Hugo-Site</title>
-      <link>https://nickmckay.github.io/tags/hugo-site/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/tags/hugo-site/</guid>
+      <title>Abrupt Change</title>
+      <link>https://nickmckay.github.io/tags/abrupt-change/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/abrupt-change/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Change Detection</title>
+      <link>https://nickmckay.github.io/tags/change-detection/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/change-detection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LinkedEarth</title>
+      <link>https://nickmckay.github.io/tags/linkedearth/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/linkedearth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>R Package</title>
+      <link>https://nickmckay.github.io/tags/r-package/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/r-package/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Age Modeling</title>
+      <link>https://nickmckay.github.io/tags/age-modeling/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/age-modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source</title>
+      <link>https://nickmckay.github.io/tags/open-source/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uncertainty Quantification</title>
+      <link>https://nickmckay.github.io/tags/uncertainty-quantification/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/uncertainty-quantification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Visualization</title>
+      <link>https://nickmckay.github.io/tags/data-visualization/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/data-visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Education</title>
+      <link>https://nickmckay.github.io/tags/education/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/education/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Outreach</title>
+      <link>https://nickmckay.github.io/tags/outreach/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/outreach/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Platform</title>
+      <link>https://nickmckay.github.io/tags/web-platform/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/web-platform/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Repository</title>
+      <link>https://nickmckay.github.io/tags/data-repository/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/data-repository/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Community Standard</title>
+      <link>https://nickmckay.github.io/tags/community-standard/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/community-standard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Framework</title>
+      <link>https://nickmckay.github.io/tags/data-framework/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/data-framework/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interoperability</title>
+      <link>https://nickmckay.github.io/tags/interoperability/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/interoperability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linked Data</title>
+      <link>https://nickmckay.github.io/tags/linked-data/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/tags/linked-data/</guid>
       <description></description>
     </item>
   </channel>

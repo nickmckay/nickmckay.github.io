@@ -6,6 +6,7 @@
     <description>Recent content in Categories on Nick McKay - Paleoclimate Scientist</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <copyright>© 2025 Nick McKay</copyright>
     <lastBuildDate>Sun, 15 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nickmckay.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -86,6 +87,20 @@
       <description></description>
     </item>
     <item>
+      <title>Data Analysis</title>
+      <link>https://nickmckay.github.io/categories/data-analysis/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/categories/data-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software</title>
+      <link>https://nickmckay.github.io/categories/software/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/categories/software/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Workshop</title>
       <link>https://nickmckay.github.io/categories/workshop/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
@@ -100,24 +115,38 @@
       <description></description>
     </item>
     <item>
-      <title>Package</title>
-      <link>https://nickmckay.github.io/categories/package/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/package/</guid>
+      <title>Education</title>
+      <link>https://nickmckay.github.io/categories/education/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/categories/education/</guid>
       <description></description>
     </item>
     <item>
-      <title>R</title>
-      <link>https://nickmckay.github.io/categories/r/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/r/</guid>
+      <title>Web Platform</title>
+      <link>https://nickmckay.github.io/categories/web-platform/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/categories/web-platform/</guid>
       <description></description>
     </item>
     <item>
-      <title>Theme Features</title>
-      <link>https://nickmckay.github.io/categories/theme-features/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/theme-features/</guid>
+      <title>Data Repository</title>
+      <link>https://nickmckay.github.io/categories/data-repository/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/categories/data-repository/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Framework</title>
+      <link>https://nickmckay.github.io/categories/data-framework/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/categories/data-framework/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Standards</title>
+      <link>https://nickmckay.github.io/categories/standards/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://nickmckay.github.io/categories/standards/</guid>
       <description></description>
     </item>
   </channel>
