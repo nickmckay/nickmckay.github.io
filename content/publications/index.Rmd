@@ -2,7 +2,7 @@
 title: "Publications"
 subtitle: "My research publications"
 description: |
-  My publications in paleoclimate science, automatically updated from Google Scholar.
+  My publications.
 date: "`r Sys.Date()`"
 author: "Nick McKay"
 draft: false
@@ -31,9 +31,6 @@ library(kableExtra)
 scholar_id <- "j8_CgoEAAAAJ"
 ```
 
-This page automatically updates with publications from [Google Scholar](https://scholar.google.com/citations?user=j8_CgoEAAAAJ&hl=en) using the R `scholar` package.
-
----
 
 ## Publication Metrics
 
@@ -42,22 +39,25 @@ This page automatically updates with publications from [Google Scholar](https://
 profile <- get_profile(scholar_id)
 citation_hist <- get_citation_history(scholar_id)
 
+# Get publications data (used throughout the document)
+pubs <- get_publications(scholar_id)
+
 # Display key metrics
+cat("**Publications:** ", nrow(pubs), "\n\n")
 cat("**Total Citations:** ", profile$total_cites, "\n\n")
 cat("**h-index:** ", profile$h_index, "\n\n") 
 cat("**i10-index:** ", profile$i10_index, "\n\n")
-cat("**Publications:** ", nrow(get_publications(scholar_id)), "\n\n")
 ```
 
 ---
 
 ## Citation History
 
-```{r citation_plot, fig.cap="Citation history over time"}
+```{r citation_plot}
 # Plot citation history
 ggplot(citation_hist, aes(x = year, y = cites)) +
   geom_col(fill = "steelblue", alpha = 0.7) +
-  geom_smooth(method = "loess", se = FALSE, color = "darkred", size = 1.2) +
+  #geom_smooth(method = "loess", se = FALSE, color = "darkred", size = 1.2) +
   labs(
     title = "Citations per Year",
     x = "Year",
@@ -74,41 +74,43 @@ ggplot(citation_hist, aes(x = year, y = cites)) +
 
 ---
 
-## Recent Publications (Last 2 Years)
+## Publications from the last 2 years
 
-```{r recent_pubs}
+```{r recent_pubs, results='asis'}
 # Filter for recent publications
 recent_pubs <- pubs %>%
   filter(year >= (max(year, na.rm = TRUE) - 1)) %>%
-  arrange(desc(year), desc(cites)) %>%
-  mutate(
-    formatted_citation = paste0(
-      "<strong>", title, "</strong><br>",
-      "<em>", author, "</em><br>",
-      journal, " (", year, ")",
-      ifelse(is.na(cites) | cites == 0, "", paste0("<br>Citations: ", cites))
-    )
-  )
+  arrange(desc(year), desc(cites))
 
 # Display recent publications with blog post links
 if(nrow(recent_pubs) > 0) {
   for(i in 1:min(10, nrow(recent_pubs))) {
     pub <- recent_pubs[i,]
-    cat("### ", pub$year, "\n\n")
-    cat(pub$formatted_citation, "\n\n")
+    
+    # Create Google Scholar search URL for the paper
+    scholar_search_url <- paste0("https://scholar.google.com/scholar?q=", 
+                                URLencode(paste(pub$title, pub$author), reserved = TRUE))
+    
+    cat("<strong><a href='", scholar_search_url, "' target='_blank'>", pub$title, "</a></strong>\n\n")
+    cat("<em>", pub$author, "</em>\n\n")
+    cat(pub$journal, " (", pub$year, ")")
+    if(!is.na(pub$cites) && pub$cites > 0) {
+      cat(" • Citations: ", pub$cites)
+    }
+    cat("\n\n")
     
     # Add blog post links for specific papers
     if(grepl("4.2 ka event is not remarkable", pub$title)) {
-      cat("📖 **[Read the story behind this research](/blog/4.2ka-event-not-remarkable/)**\n\n")
+      cat("📖 **[Read my blog post about this research](/blog/4.2ka-event-not-remarkable/)**\n\n")
     }
     if(grepl("Globally coherent water cycle response", pub$title)) {
-      cat("📖 **[Read the story behind this research](/blog/global-water-cycle-response/)**\n\n")
+      cat("📖 **[Read my blog post about this research](/blog/global-water-cycle-response/)**\n\n")
     }
     if(grepl("global Data Assimilation of Moisture Patterns", pub$title)) {
-      cat("📖 **[Read the story behind this research](/blog/damp21ka-data-assimilation/)**\n\n")
+      cat("📖 **[Read my blog post about this research](/blog/damp21ka-data-assimilation/)**\n\n")
     }
     if(grepl("Arctic glacier snowline altitudes", pub$title)) {
-      cat("📖 **[Read the story behind this research](/blog/arctic-snowline-rise/)**\n\n")
+      cat("📖 **[Read my blog post about this research](/blog/arctic-snowline-rise/)**\n\n")
     }
     
     cat("---\n\n")
@@ -123,9 +125,6 @@ if(nrow(recent_pubs) > 0) {
 ## Complete Publications List
 
 ```{r publications_table}
-# Get publications
-pubs <- get_publications(scholar_id)
-
 # Clean and format the data
 pubs_formatted <- pubs %>%
   arrange(desc(year)) %>%
@@ -146,8 +145,7 @@ pubs_formatted <- pubs %>%
 # Display as formatted table
 pubs_formatted %>%
   select(Year, Citation, Citations) %>%
-  kable(format = "html", escape = FALSE, 
-        caption = "Complete publication list (automatically updated from Google Scholar)") %>%
+  kable(format = "html", escape = FALSE) %>%
   kable_styling(
     bootstrap_options = c("striped", "hover", "condensed", "responsive"),
     full_width = TRUE,
@@ -162,25 +160,19 @@ pubs_formatted %>%
 
 ## Top Cited Publications
 
-```{r top_cited}
+```{r top_cited, results='asis'}
 # Get top cited publications
 top_cited <- pubs %>%
   filter(!is.na(cites) & cites > 0) %>%
   arrange(desc(cites)) %>%
-  head(10) %>%
-  mutate(
-    formatted_citation = paste0(
-      "<strong>", title, "</strong><br>",
-      "<em>", author, "</em><br>",
-      journal, " (", year, ")<br>",
-      "<strong>Citations: ", cites, "</strong>"
-    )
-  )
+  head(10)
 
 if(nrow(top_cited) > 0) {
   for(i in 1:nrow(top_cited)) {
     pub <- top_cited[i,]
-    cat("**", i, ".** ", pub$formatted_citation, "\n\n")
+    cat("<strong>", i, ".</strong> <strong>", pub$title, "</strong>\n\n")
+    cat("<em>", pub$author, "</em>\n\n")
+    cat(pub$journal, " (", pub$year, ") • <strong>Citations: ", pub$cites, "</strong>\n\n")
     cat("---\n\n")
   }
 } else {
@@ -211,7 +203,7 @@ if(nrow(journal_stats) > 0) {
     head(15) %>%
     kable(format = "html", 
           col.names = c("Journal", "Publications", "Total Citations", "Avg Citations/Paper"),
-          caption = "Publication and citation statistics by journal (minimum 2 publications)") %>%
+) %>%
     kable_styling(
       bootstrap_options = c("striped", "hover", "condensed"),
       full_width = FALSE,

@@ -2,7 +2,7 @@
 title: "Publications"
 subtitle: "My research publications"
 description: |
-  My publications in paleoclimate science, automatically updated from Google Scholar.
+  My publications.
 date: "2025-08-04"
 author: "Nick McKay"
 draft: false
@@ -16,11 +16,10 @@ layout: single
 
 
 
-This page automatically updates with publications from [Google Scholar](https://scholar.google.com/citations?user=j8_CgoEAAAAJ&hl=en) using the R `scholar` package.
-
----
 
 ## Publication Metrics
+
+**Publications:**  93 
 
 **Total Citations:**  8039 
 
@@ -28,23 +27,99 @@ This page automatically updates with publications from [Google Scholar](https://
 
 **i10-index:**  62 
 
-**Publications:**  93 
-
 ---
 
 ## Citation History
 
-<div class="figure">
-<img src="{{< blogdown/postref >}}index_files/figure-html/citation_plot-1.png" alt="Citation history over time" width="960" />
-<p class="caption">(\#fig:citation_plot)Citation history over time</p>
-</div>
+<img src="{{< blogdown/postref >}}index_files/figure-html/citation_plot-1.png" width="960" />
 
 ---
 
-## Publications
+## Publications from the last 2 years
+
+<strong><a href=' https://scholar.google.com/scholar?q=Evidence%20for%20millennial-scale%20interactions%20between%20Hg%20cycling%20and%20hydroclimate%20from%20Lake%20Bosumtwi%2C%20Ghana%20AR%20Paine%2C%20J%20Frieling%2C%20TM%20Shanahan%2C%20TA%20Mather%2C%20N%20McKay%2C%20SA%20Robinson%2C%20... ' target='_blank'> Evidence for millennial-scale interactions between Hg cycling and hydroclimate from Lake Bosumtwi, Ghana </a></strong>
+
+<em> AR Paine, J Frieling, TM Shanahan, TA Mather, N McKay, SA Robinson, ... </em>
+
+Climate of the Past  ( 2025 ) • Citations:  1
+
+---
+
+<strong><a href=' https://scholar.google.com/scholar?q=Early%20Holocene%20atmospheric%20circulation%20changes%20over%20northern%20Europe%20based%20on%20isotopic%20and%20biomarker%20evidence%20from%20Kola%20Peninsula%20H%20Holtzman%2C%20EK%20Thomas%2C%20M%20Erb%2C%20L%20Marshall%2C%20IS%20Casta%C3%B1eda%2C%20D%20Kaufman%2C%20... ' target='_blank'> Early Holocene atmospheric circulation changes over northern Europe based on isotopic and biomarker evidence from Kola Peninsula </a></strong>
+
+<em> H Holtzman, EK Thomas, M Erb, L Marshall, IS Castañeda, D Kaufman, ... </em>
+
+Paleoceanography and Paleoclimatology  ( 2025 )
+
+---
+
+<strong><a href=' https://scholar.google.com/scholar?q=The%204.2%20ka%20event%20is%20not%20remarkable%20in%20the%20context%20of%20Holocene%20climate%20variability%20NP%20McKay%2C%20DS%20Kaufman%2C%20SH%20Arcusa%2C%20HR%20Kolus%2C%20DC%20Edge%2C%20MP%20Erb%2C%20... ' target='_blank'> The 4.2 ka event is not remarkable in the context of Holocene climate variability </a></strong>
+
+<em> NP McKay, DS Kaufman, SH Arcusa, HR Kolus, DC Edge, MP Erb, ... </em>
+
+Nature Communications  ( 2024 ) • Citations:  39
+
+📖 **[Read my blog post about this research](/blog/4.2ka-event-not-remarkable/)**
+
+---
+
+<strong><a href=' https://scholar.google.com/scholar?q=Arctic%20glacier%20snowline%20altitudes%20rise%20150%20m%20over%20the%20last%204%20decades%20LJ%20Larocca%2C%20JM%20Lea%2C%20MP%20Erb%2C%20NP%20McKay%2C%20M%20Phillips%2C%20KA%20Lamantia%2C%20... ' target='_blank'> Arctic glacier snowline altitudes rise 150 m over the last 4 decades </a></strong>
+
+<em> LJ Larocca, JM Lea, MP Erb, NP McKay, M Phillips, KA Lamantia, ... </em>
+
+The Cryosphere  ( 2024 ) • Citations:  5
+
+📖 **[Read my blog post about this research](/blog/arctic-snowline-rise/)**
+
+---
+
+<strong><a href=' https://scholar.google.com/scholar?q=Sedimentary%20ancient%20DNA%20reveals%20the%20impact%20of%20anthropogenic%20land%20use%20disturbance%20and%20ecological%20shifts%20on%20fish%20community%20structure%20in%20small%20lowland%20lake%20G%20Thomson-Laing%2C%20JD%20Howarth%2C%20J%20Atalah%2C%20MJ%20Vandergoes%2C%20X%20Li%2C%20... ' target='_blank'> Sedimentary ancient DNA reveals the impact of anthropogenic land use disturbance and ecological shifts on fish community structure in small lowland lake </a></strong>
+
+<em> G Thomson-Laing, JD Howarth, J Atalah, MJ Vandergoes, X Li, ... </em>
+
+Science of The Total Environment  ( 2024 ) • Citations:  4
+
+---
+
+<strong><a href=' https://scholar.google.com/scholar?q=A%20paleoecological%20investigation%20of%20recent%20cyanobacterial%20blooms%20and%20their%20drivers%20in%20two%20contrasting%20lakes%20C%20Wheeler%2C%20JK%20Pearman%2C%20JD%20Howarth%2C%20MJ%20Vandergoes%2C%20K%20Holt%2C%20SA%20Trewick%2C%20... ' target='_blank'> A paleoecological investigation of recent cyanobacterial blooms and their drivers in two contrasting lakes </a></strong>
+
+<em> C Wheeler, JK Pearman, JD Howarth, MJ Vandergoes, K Holt, SA Trewick, ... </em>
+
+Harmful algae  ( 2024 ) • Citations:  3
+
+---
+
+<strong><a href=' https://scholar.google.com/scholar?q=The%20Hunt%20for%20Holocene%20Abrupt%20Climate%20Change%20N%20Scroxton%2C%20N%20McKay ' target='_blank'> The Hunt for Holocene Abrupt Climate Change </a></strong>
+
+<em> N Scroxton, N McKay </em>
+
+PLOS Climate  ( 2024 ) • Citations:  2
+
+---
+
+<strong><a href=' https://scholar.google.com/scholar?q=Coral%20skeletal%20proxy%20records%20database%20for%20the%20Great%20Barrier%20Reef%2C%20Australia%20AK%20Arzey%2C%20HV%20McGregor%2C%20TR%20Clark%2C%20JM%20Webster%2C%20SE%20Lewis%2C%20J%20Mallela%2C%20... ' target='_blank'> Coral skeletal proxy records database for the Great Barrier Reef, Australia </a></strong>
+
+<em> AK Arzey, HV McGregor, TR Clark, JM Webster, SE Lewis, J Mallela, ... </em>
+
+Earth System Science Data  ( 2024 ) • Citations:  1
+
+---
+
+<strong><a href=' https://scholar.google.com/scholar?q=A%20global%20Data%20Assimilation%20of%20Moisture%20Patterns%20from%2021%20000%E2%80%930%20BP%20%28DAMP-21ka%29%20using%20lake%20level%20proxy%20records%20CL%20Hancock%2C%20MP%20Erb%2C%20NP%20McKay%2C%20SG%20Dee%2C%20RF%20Ivanovic ' target='_blank'> A global Data Assimilation of Moisture Patterns from 21 000–0 BP (DAMP-21ka) using lake level proxy records </a></strong>
+
+<em> CL Hancock, MP Erb, NP McKay, SG Dee, RF Ivanovic </em>
+
+Climate of the Past  ( 2024 )
+
+📖 **[Read my blog post about this research](/blog/damp21ka-data-assimilation/)**
+
+---
+
+---
+
+## Complete Publications List
 
 <table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 14px; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">(\#tab:publications_table)Complete publication list (automatically updated from Google Scholar)</caption>
  <thead>
   <tr>
    <th style="text-align:right;"> Year </th>
@@ -523,122 +598,93 @@ This page automatically updates with publications from [Google Scholar](https://
 
 ---
 
-## Recent Publications (Last 2 Years)
-
-
-```
-## ###  2025 
-## 
-## <strong>Evidence for millennial-scale interactions between Hg cycling and hydroclimate from Lake Bosumtwi, Ghana</strong><br><em>AR Paine, J Frieling, TM Shanahan, TA Mather, N McKay, SA Robinson, ...</em><br>Climate of the Past (2025)<br>Citations: 1 
-## 
-## ---
-## 
-## ###  2025 
-## 
-## <strong>Early Holocene atmospheric circulation changes over northern Europe based on isotopic and biomarker evidence from Kola Peninsula</strong><br><em>H Holtzman, EK Thomas, M Erb, L Marshall, IS Castañeda, D Kaufman, ...</em><br>Paleoceanography and Paleoclimatology (2025) 
-## 
-## ---
-## 
-## ###  2024 
-## 
-## <strong>The 4.2 ka event is not remarkable in the context of Holocene climate variability</strong><br><em>NP McKay, DS Kaufman, SH Arcusa, HR Kolus, DC Edge, MP Erb, ...</em><br>Nature Communications (2024)<br>Citations: 39 
-## 
-## 📖 **[Read the story behind this research](/blog/4.2ka-event-not-remarkable/)**
-## 
-## ---
-## 
-## ###  2024 
-## 
-## <strong>Arctic glacier snowline altitudes rise 150 m over the last 4 decades</strong><br><em>LJ Larocca, JM Lea, MP Erb, NP McKay, M Phillips, KA Lamantia, ...</em><br>The Cryosphere (2024)<br>Citations: 5 
-## 
-## 📖 **[Read the story behind this research](/blog/arctic-snowline-rise/)**
-## 
-## ---
-## 
-## ###  2024 
-## 
-## <strong>Sedimentary ancient DNA reveals the impact of anthropogenic land use disturbance and ecological shifts on fish community structure in small lowland lake</strong><br><em>G Thomson-Laing, JD Howarth, J Atalah, MJ Vandergoes, X Li, ...</em><br>Science of The Total Environment (2024)<br>Citations: 4 
-## 
-## ---
-## 
-## ###  2024 
-## 
-## <strong>A paleoecological investigation of recent cyanobacterial blooms and their drivers in two contrasting lakes</strong><br><em>C Wheeler, JK Pearman, JD Howarth, MJ Vandergoes, K Holt, SA Trewick, ...</em><br>Harmful algae (2024)<br>Citations: 3 
-## 
-## ---
-## 
-## ###  2024 
-## 
-## <strong>The Hunt for Holocene Abrupt Climate Change</strong><br><em>N Scroxton, N McKay</em><br>PLOS Climate (2024)<br>Citations: 2 
-## 
-## ---
-## 
-## ###  2024 
-## 
-## <strong>Coral skeletal proxy records database for the Great Barrier Reef, Australia</strong><br><em>AK Arzey, HV McGregor, TR Clark, JM Webster, SE Lewis, J Mallela, ...</em><br>Earth System Science Data (2024)<br>Citations: 1 
-## 
-## ---
-## 
-## ###  2024 
-## 
-## <strong>A global Data Assimilation of Moisture Patterns from 21 000–0 BP (DAMP-21ka) using lake level proxy records</strong><br><em>CL Hancock, MP Erb, NP McKay, SG Dee, RF Ivanovic</em><br>Climate of the Past (2024) 
-## 
-## 📖 **[Read the story behind this research](/blog/damp21ka-data-assimilation/)**
-## 
-## ---
-```
-
 ## Top Cited Publications
 
+<strong> 1 .</strong> <strong> Continental-scale temperature variability during the past two millennia </strong>
 
-```
-## ** 1 .**  <strong>Continental-scale temperature variability during the past two millennia</strong><br><em></em><br>Nature geoscience (2013)<br><strong>Citations: 1089</strong> 
-## 
-## ---
-## 
-## ** 2 .**  <strong>Recent warming reverses long-term Arctic cooling</strong><br><em>DS Kaufman, DP Schneider, NP McKay, CM Ammann, RS Bradley, ...</em><br>Science (2009)<br><strong>Citations: 761</strong> 
-## 
-## ---
-## 
-## ** 3 .**  <strong>The time-transgressive termination of the African Humid Period</strong><br><em>TM Shanahan, NP McKay, KA Hughen, JT Overpeck, B Otto-Bliesner, ...</em><br>Nature Geoscience (2015)<br><strong>Citations: 489</strong> 
-## 
-## ---
-## 
-## ** 4 .**  <strong>Early onset of industrial-era warming across the oceans and continents</strong><br><em>NJ Abram, HV McGregor, JE Tierney, MN Evans, NP McKay, DS Kaufman</em><br>Nature (2016)<br><strong>Citations: 450</strong> 
-## 
-## ---
-## 
-## ** 5 .**  <strong>A global multiproxy database for temperature reconstructions of the Common Era</strong><br><em>PAGES2k Consortium</em><br>Scientific data (2017)<br><strong>Citations: 395</strong> 
-## 
-## ---
-## 
-## ** 6 .**  <strong>Consistent multidecadal variability in global temperature reconstructions and simulations over the Common Era</strong><br><em></em><br>Nature geoscience (2019)<br><strong>Citations: 380</strong> 
-## 
-## ---
-## 
-## ** 7 .**  <strong>Holocene global mean surface temperature, a multi-method reconstruction approach</strong><br><em>D Kaufman, N McKay, C Routson, M Erb, C Dätwyler, PS Sommer, O Heiri, ...</em><br>Scientific data (2020)<br><strong>Citations: 360</strong> 
-## 
-## ---
-## 
-## ** 8 .**  <strong>A global database of Holocene paleotemperature records</strong><br><em>D Kaufman, N McKay, C Routson, M Erb, B Davis, O Heiri, S Jaccard, ...</em><br>Scientific data (2020)<br><strong>Citations: 290</strong> 
-## 
-## ---
-## 
-## ** 9 .**  <strong>Mid-latitude net precipitation decreased with Arctic warming during the Holocene</strong><br><em>CC Routson, NP McKay, DS Kaufman, MP Erb, H Goosse, BN Shuman, ...</em><br>Nature (2019)<br><strong>Citations: 254</strong> 
-## 
-## ---
-## 
-## ** 10 .**  <strong>Holocene climate change in Arctic Canada and Greenland</strong><br><em>JP Briner, NP McKay, Y Axford, O Bennike, RS Bradley, A de Vernal, ...</em><br>Quaternary Science Reviews (2016)<br><strong>Citations: 253</strong> 
-## 
-## ---
-```
+<em>  </em>
+
+Nature geoscience  ( 2013 ) • <strong>Citations:  1089 </strong>
+
+---
+
+<strong> 2 .</strong> <strong> Recent warming reverses long-term Arctic cooling </strong>
+
+<em> DS Kaufman, DP Schneider, NP McKay, CM Ammann, RS Bradley, ... </em>
+
+Science  ( 2009 ) • <strong>Citations:  761 </strong>
+
+---
+
+<strong> 3 .</strong> <strong> The time-transgressive termination of the African Humid Period </strong>
+
+<em> TM Shanahan, NP McKay, KA Hughen, JT Overpeck, B Otto-Bliesner, ... </em>
+
+Nature Geoscience  ( 2015 ) • <strong>Citations:  489 </strong>
+
+---
+
+<strong> 4 .</strong> <strong> Early onset of industrial-era warming across the oceans and continents </strong>
+
+<em> NJ Abram, HV McGregor, JE Tierney, MN Evans, NP McKay, DS Kaufman </em>
+
+Nature  ( 2016 ) • <strong>Citations:  450 </strong>
+
+---
+
+<strong> 5 .</strong> <strong> A global multiproxy database for temperature reconstructions of the Common Era </strong>
+
+<em> PAGES2k Consortium </em>
+
+Scientific data  ( 2017 ) • <strong>Citations:  395 </strong>
+
+---
+
+<strong> 6 .</strong> <strong> Consistent multidecadal variability in global temperature reconstructions and simulations over the Common Era </strong>
+
+<em>  </em>
+
+Nature geoscience  ( 2019 ) • <strong>Citations:  380 </strong>
+
+---
+
+<strong> 7 .</strong> <strong> Holocene global mean surface temperature, a multi-method reconstruction approach </strong>
+
+<em> D Kaufman, N McKay, C Routson, M Erb, C Dätwyler, PS Sommer, O Heiri, ... </em>
+
+Scientific data  ( 2020 ) • <strong>Citations:  360 </strong>
+
+---
+
+<strong> 8 .</strong> <strong> A global database of Holocene paleotemperature records </strong>
+
+<em> D Kaufman, N McKay, C Routson, M Erb, B Davis, O Heiri, S Jaccard, ... </em>
+
+Scientific data  ( 2020 ) • <strong>Citations:  290 </strong>
+
+---
+
+<strong> 9 .</strong> <strong> Mid-latitude net precipitation decreased with Arctic warming during the Holocene </strong>
+
+<em> CC Routson, NP McKay, DS Kaufman, MP Erb, H Goosse, BN Shuman, ... </em>
+
+Nature  ( 2019 ) • <strong>Citations:  254 </strong>
+
+---
+
+<strong> 10 .</strong> <strong> Holocene climate change in Arctic Canada and Greenland </strong>
+
+<em> JP Briner, NP McKay, Y Axford, O Bennike, RS Bradley, A de Vernal, ... </em>
+
+Quaternary Science Reviews  ( 2016 ) • <strong>Citations:  253 </strong>
+
+---
 
 ---
 
 ## Research Impact by Journal
 
 <table class="table table-striped table-hover table-condensed" style="font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">(\#tab:journal_analysis)Publication and citation statistics by journal (minimum 2 publications)</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Journal </th>

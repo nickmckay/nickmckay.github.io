@@ -3,7 +3,7 @@ theme: hugo-apero
 languageCode: en
 title: Nick McKay - Paleoclimate Scientist
 author: Nick McKay
-copyright: ''
+copyright: '© 2025 Nick McKay'
 googleAnalytics: ''
 metaDataFormat: yaml
 footnoteReturnLinkContents: '&#8617;'
@@ -30,12 +30,12 @@ markup:
     ordered: no
     startLevel: 2
 params:
-  comments: utterances
+  comments: false
   custom_theme: ''
   customheadingFontFamily: Fraunces
   customtextFontFamily: Commissioner
   description: Professor at Northern Arizona University, studying paleoclimate dynamics using natural records of past climate variability to understand our climate future.
-  favicon: /img/favicon.ico
+  favicon: /img/nm.png
   giscus:
     category: Comments
     category_id: '[category ID]'
@@ -47,7 +47,7 @@ params:
     repo_id: '[REPO ID]='
     theme: light
   headingFontFamily: sans-serif
-  logo: /img/blogophonic-mark-dark.png
+  logo: /img/nm.png
   mainSections:
     - blog
     - project

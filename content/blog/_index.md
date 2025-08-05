@@ -3,7 +3,7 @@ author: Nick McKay
 cascade:
   author: Nick McKay
   show_author_byline: true
-  show_comments: true
+  show_comments: false
   show_post_date: true
   sidebar:
     show_sidebar_adunit: false
