@@ -8,6 +8,9 @@ author: "Nick McKay"
 draft: false
 # layout options: single, single-sidebar
 layout: single
+output:
+  blogdown::html_page:
+    toc: false
 ---
 
 ```{r setup, include=FALSE}
