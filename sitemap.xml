@@ -317,36 +317,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://nickmckay.github.io/talk/campfire/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.github.io/talk/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.github.io/categories/workshop/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.github.io/talk/second-seedling/</loc>
-    <lastmod>2021-01-01T14:15:59-06:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.github.io/categories/meetup/</loc>
-    <lastmod>2021-01-01T14:15:59-06:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.github.io/talk/seedling/</loc>
-    <lastmod>2020-01-13T14:15:59-06:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://nickmckay.github.io/tags/data-visualization/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
