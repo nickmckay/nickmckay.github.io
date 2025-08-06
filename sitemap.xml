@@ -2,51 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nickmckay.org/collection/day02/01-netlify/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.org/collection/day01/01-github/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.org/collection/prework/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.org/collection/day01/</loc>
-    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.org/collection/day01/02-postcards/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.org/collection/day02/02-blogdown/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.org/collection/day02/</loc>
-    <lastmod>2021-01-26T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.org/collection/day01/03-distill/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.org/collection/day02/03-blogdown/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://nickmckay.org/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -312,11 +267,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://nickmckay.org/collection/</loc>
-    <lastmod>2021-01-26T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://nickmckay.org/tags/data-visualization/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -349,11 +299,6 @@
   </url><url>
     <loc>https://nickmckay.org/tags/web-platform/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.org/elements/</loc>
-    <lastmod>2019-02-18T12:27:33-06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -416,15 +361,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://nickmckay.org/contributors/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://nickmckay.org/opportunities/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nickmckay.org/license/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
