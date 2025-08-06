@@ -2,144 +2,130 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Nick McKay - Paleoclimate Scientist</title>
-    <link>https://nickmckay.github.io/categories/</link>
+    <link>https://nickmckay.org/categories/</link>
     <description>Recent content in Categories on Nick McKay - Paleoclimate Scientist</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 Nick McKay</copyright>
     <lastBuildDate>Sun, 15 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nickmckay.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nickmckay.org/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Assimilation</title>
-      <link>https://nickmckay.github.io/categories/data-assimilation/</link>
+      <link>https://nickmckay.org/categories/data-assimilation/</link>
       <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/data-assimilation/</guid>
+      <guid>https://nickmckay.org/categories/data-assimilation/</guid>
       <description></description>
     </item>
     <item>
       <title>Hydroclimate</title>
-      <link>https://nickmckay.github.io/categories/hydroclimate/</link>
+      <link>https://nickmckay.org/categories/hydroclimate/</link>
       <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/hydroclimate/</guid>
+      <guid>https://nickmckay.org/categories/hydroclimate/</guid>
       <description></description>
     </item>
     <item>
       <title>Methodology</title>
-      <link>https://nickmckay.github.io/categories/methodology/</link>
+      <link>https://nickmckay.org/categories/methodology/</link>
       <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/methodology/</guid>
+      <guid>https://nickmckay.org/categories/methodology/</guid>
       <description></description>
     </item>
     <item>
       <title>Paleoclimate</title>
-      <link>https://nickmckay.github.io/categories/paleoclimate/</link>
+      <link>https://nickmckay.org/categories/paleoclimate/</link>
       <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/paleoclimate/</guid>
+      <guid>https://nickmckay.org/categories/paleoclimate/</guid>
       <description></description>
     </item>
     <item>
       <title>Arctic</title>
-      <link>https://nickmckay.github.io/categories/arctic/</link>
+      <link>https://nickmckay.org/categories/arctic/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/arctic/</guid>
+      <guid>https://nickmckay.org/categories/arctic/</guid>
       <description></description>
     </item>
     <item>
       <title>Climate Change</title>
-      <link>https://nickmckay.github.io/categories/climate-change/</link>
+      <link>https://nickmckay.org/categories/climate-change/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/climate-change/</guid>
+      <guid>https://nickmckay.org/categories/climate-change/</guid>
       <description></description>
     </item>
     <item>
       <title>Glaciers</title>
-      <link>https://nickmckay.github.io/categories/glaciers/</link>
+      <link>https://nickmckay.org/categories/glaciers/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/glaciers/</guid>
+      <guid>https://nickmckay.org/categories/glaciers/</guid>
       <description></description>
     </item>
     <item>
       <title>Climate Events</title>
-      <link>https://nickmckay.github.io/categories/climate-events/</link>
+      <link>https://nickmckay.org/categories/climate-events/</link>
       <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/climate-events/</guid>
+      <guid>https://nickmckay.org/categories/climate-events/</guid>
       <description></description>
     </item>
     <item>
       <title>Holocene</title>
-      <link>https://nickmckay.github.io/categories/holocene/</link>
+      <link>https://nickmckay.org/categories/holocene/</link>
       <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/holocene/</guid>
+      <guid>https://nickmckay.org/categories/holocene/</guid>
       <description></description>
     </item>
     <item>
       <title>Water Cycle</title>
-      <link>https://nickmckay.github.io/categories/water-cycle/</link>
+      <link>https://nickmckay.org/categories/water-cycle/</link>
       <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/water-cycle/</guid>
+      <guid>https://nickmckay.org/categories/water-cycle/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Analysis</title>
-      <link>https://nickmckay.github.io/categories/data-analysis/</link>
+      <link>https://nickmckay.org/categories/data-analysis/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/data-analysis/</guid>
+      <guid>https://nickmckay.org/categories/data-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Software</title>
-      <link>https://nickmckay.github.io/categories/software/</link>
+      <link>https://nickmckay.org/categories/software/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/software/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Workshop</title>
-      <link>https://nickmckay.github.io/categories/workshop/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/workshop/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Meetup</title>
-      <link>https://nickmckay.github.io/categories/meetup/</link>
-      <pubDate>Fri, 01 Jan 2021 14:15:59 -0600</pubDate>
-      <guid>https://nickmckay.github.io/categories/meetup/</guid>
+      <guid>https://nickmckay.org/categories/software/</guid>
       <description></description>
     </item>
     <item>
       <title>Education</title>
-      <link>https://nickmckay.github.io/categories/education/</link>
+      <link>https://nickmckay.org/categories/education/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/education/</guid>
+      <guid>https://nickmckay.org/categories/education/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Platform</title>
-      <link>https://nickmckay.github.io/categories/web-platform/</link>
+      <link>https://nickmckay.org/categories/web-platform/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/web-platform/</guid>
+      <guid>https://nickmckay.org/categories/web-platform/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Repository</title>
-      <link>https://nickmckay.github.io/categories/data-repository/</link>
+      <link>https://nickmckay.org/categories/data-repository/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/data-repository/</guid>
+      <guid>https://nickmckay.org/categories/data-repository/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Framework</title>
-      <link>https://nickmckay.github.io/categories/data-framework/</link>
+      <link>https://nickmckay.org/categories/data-framework/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/data-framework/</guid>
+      <guid>https://nickmckay.org/categories/data-framework/</guid>
       <description></description>
     </item>
     <item>
       <title>Standards</title>
-      <link>https://nickmckay.github.io/categories/standards/</link>
+      <link>https://nickmckay.org/categories/standards/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/categories/standards/</guid>
+      <guid>https://nickmckay.org/categories/standards/</guid>
       <description></description>
     </item>
   </channel>

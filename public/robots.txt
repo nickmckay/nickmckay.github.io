@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Allow AI crawlers for better visibility in chatbots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Sitemap location
+Sitemap: https://nickmckay.org/sitemap.xml

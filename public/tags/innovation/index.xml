@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Innovation on Nick McKay - Paleoclimate Scientist</title>
-    <link>https://nickmckay.github.io/tags/innovation/</link>
+    <link>https://nickmckay.org/tags/innovation/</link>
     <description>Recent content in Innovation on Nick McKay - Paleoclimate Scientist</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 Nick McKay</copyright>
     <lastBuildDate>Sun, 15 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nickmckay.github.io/tags/innovation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nickmckay.org/tags/innovation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bridging Ancient Lakes and Climate Models: A New Approach to Understanding 21,000 Years of Water History</title>
-      <link>https://nickmckay.github.io/blog/damp21ka-data-assimilation/</link>
+      <link>https://nickmckay.org/blog/damp21ka-data-assimilation/</link>
       <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://nickmckay.github.io/blog/damp21ka-data-assimilation/</guid>
+      <guid>https://nickmckay.org/blog/damp21ka-data-assimilation/</guid>
       <description>&lt;p&gt;One of the most rewarding aspects of being a professor is watching your students push the boundaries of what&amp;rsquo;s possible in science. Today, I want to tell you about a study that makes me incredibly proud—not just because of the groundbreaking science, but because it represents everything I love about mentoring the next generation of climate scientists.&lt;/p&gt;&#xA;&lt;p&gt;My former PhD student Chris Hancock has just published something that&amp;rsquo;s never been done before: the world&amp;rsquo;s first global data assimilation of hydroclimate patterns spanning the last 21,000 years, using a clever approach centered on lake level records.&lt;/p&gt;</description>
     </item>
   </channel>
