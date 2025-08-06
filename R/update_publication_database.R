@@ -17,7 +17,7 @@ setup_proxy <- function() {
     cat("Setting up proxy configuration...\n")
     
     # Get a free proxy
-    proxy_list <- getProxy::getProxy(type = "https", country = "US", timeout = 10)
+    proxy_list <- getProxy::getProxy(type = "https", country = "US")
     
     if (length(proxy_list) > 0) {
       # Use the first available proxy
