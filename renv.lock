@@ -1013,6 +1013,29 @@
       "Maintainer": "Hadley Wickham <hadley@posit.co>",
       "Repository": "CRAN"
     },
+    "getProxy": {
+      "Package": "getProxy",
+      "Version": "1.13",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Get Free Proxy IP and Port",
+      "Date": "2022-01-05",
+      "Author": "Alexey Seleznev <selesnow@gmail.com>",
+      "Maintainer": "Alexey Seleznev <selesnow@gmail.com>",
+      "Description": "Allows get address and port  of the free proxy server, from one of two services <http://gimmeproxy.com/> or <https://getproxylist.com/>.  And it's easy to redirect your Internet connection through a proxy server.",
+      "Depends": [
+        "R (>= 3.5.0)"
+      ],
+      "BugReports": "https://github.com/selesnow/getProxy/issues",
+      "Imports": [
+        "httr",
+        "cli"
+      ],
+      "URL": "https://selesnow.github.io/getProxy/",
+      "License": "GPL-2",
+      "NeedsCompilation": "no",
+      "Repository": "CRAN"
+    },
     "ggforce": {
       "Package": "ggforce",
       "Version": "0.5.0",

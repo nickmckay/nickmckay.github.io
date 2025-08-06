@@ -18,4 +18,4 @@ User-agent: Claude-Web
 Allow: /
 
 # Sitemap location
-Sitemap: https://nickmckay.github.io/sitemap.xml
+Sitemap: https://nickmckay.org/sitemap.xml
