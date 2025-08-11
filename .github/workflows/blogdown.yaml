@@ -29,9 +29,9 @@ jobs:
         with:
           use-public-rspm: true
           r-version: renv
-
-      - name: Install system dependencies
+            - name: Install system dependencies
         run: |
+        
           sudo apt-get update
           sudo apt-get install -y libglpk-dev libxml2-dev libcurl4-openssl-dev libssl-dev libfontconfig1-dev
 
@@ -41,21 +41,10 @@ jobs:
         run: blogdown::install_hugo()
         shell: Rscript {0}
 
-      - name: Update publications database
-        run: source('R/update_publication_database.R')
-        shell: Rscript {0}
-
-      - name: Commit updated data files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add R/data/*.csv
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Auto-update publications database [skip ci]"
-            git push
-          fi
+      # Publications database is updated locally via scheduled script
+      # - name: Update publications database
+      #   run: source('R/update_publication_database.R')
+      #   shell: Rscript {0}
 
       - name: Build site
         run: blogdown::build_site(build_rmd = TRUE)

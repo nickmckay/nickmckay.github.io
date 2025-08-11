@@ -37,19 +37,25 @@ hugo --environment production
 
 **Publications Database Management:**
 ```bash
-# Update publications database from Google Scholar (run periodically)
-cd /path/to/site && Rscript R/update_publications.R
+# Update publications database from Google Scholar (run weekly via cron)
+Rscript R/update_publication_database.R
 
-# Note: This should be run manually when you want to refresh publication data
-# The script fetches complete author lists for recent publications (last 3 years)
-# Rate limiting is built in to avoid hitting Google Scholar limits
+# Automated weekly updates via local cron job (Sunday nights):
+# 0 23 * * 0 /Users/nicholas/GitHub/nickmckay.github.io/update_and_commit.sh
+
+# Manual update script that commits changes:
+./update_and_commit.sh
+
+# Note: GitHub Actions cannot access Google Scholar (blocked)
+# Publications are updated locally and committed automatically
 ```
 
 **Deployment:**
-- Automatic deployment via Netlify when pushing to main branch
-- Build command: `hugo`
-- Publish directory: `public/`
+- Automatic deployment via GitHub Pages when pushing to main branch
+- Build command: Hugo via GitHub Actions (`.github/workflows/blogdown.yaml`)
+- Publish directory: `public/` to `gh-pages` branch
 - Hugo version: 0.148.2
+- Site URL: https://nickmckay.org
 
 ## Content Architecture
 
@@ -63,7 +69,8 @@ cd /path/to/site && Rscript R/update_publications.R
     - `profile_metrics.csv`: Scholar profile metrics (citations, h-index, etc.)
     - `citation_history.csv`: Citation history data for visualizations
   - `project/`: Project portfolio entries
-  - `talk/`: Speaking engagements and presentations
+  - `research/`: Research areas (3 main focus areas)
+  - `opportunities/`: Graduate student opportunities
   - `collection/`: Grouped content series
   - `form/`: Contact forms
 
@@ -80,10 +87,13 @@ cd /path/to/site && Rscript R/update_publications.R
 
 ## Key Configuration Files
 
-- `config.yaml`: Main Hugo configuration including theme settings, menus, and site parameters
+- `config.yaml`: Main Hugo configuration including theme settings, menus, site parameters, and Google Analytics (G-DL0JCFY9KX)
 - `renv.lock`: R package dependencies
-- `.github/workflows/blogdown.yaml`: Github actions for building the site
+- `.github/workflows/blogdown.yaml`: GitHub Actions for building the site (publications update disabled)
 - `index.Rmd`: Blogdown site configuration (minimal file for blogdown)
+- `static/robots.txt`: SEO configuration allowing AI crawlers
+- `layouts/partials/head-custom.html`: Schema.org structured data for academic profile
+- `update_and_commit.sh`: Weekly publication update script
 
 ## Content Creation Workflow
 
@@ -102,18 +112,23 @@ The publications page (`content/publications/index.Rmd`) automatically pulls dat
 source("R/install_publications_deps.R")
 ```
 
-**Required packages:** scholar, dplyr, ggplot2, DT, knitr, kableExtra
+**Required packages:** scholar, dplyr, ggplot2, DT, knitr, kableExtra, here, stringr
 
 **Google Scholar ID:** j8_CgoEAAAAJ (Nick McKay)
 
 **Features:**
 - Automatic citation metrics and history
-- Interactive publications table
-- Recent publications highlighting
+- Interactive publications table with journal name standardization
+- Recent publications highlighting (last 2 years)
 - Top cited papers analysis
-- Journal impact analysis
+- Journal impact analysis with smart name matching
 
-**Updating:** Rebuilds automatically when site is generated via blogdown
+**Data Files:**
+- `R/data/publications.csv`: Main publications database
+- `R/data/profile_metrics.csv`: Scholar profile metrics
+- `R/data/citation_history.csv`: Citation counts by year
+
+**Updating:** Updated weekly via local cron job, not in GitHub Actions (Scholar blocks CI)
 5. Images and assets go in `static/` directory or page bundles
 
 ## Development Notes
@@ -123,3 +138,37 @@ source("R/install_publications_deps.R")
 - Site uses academic icons and FontAwesome for social links
 - Supports mathematical rendering via KaTeX
 - Comments system configured for Utterances (GitHub-based)
+
+## SEO & Discoverability
+
+**Current SEO Setup:**
+- Google Analytics: G-DL0JCFY9KX
+- robots.txt with AI crawler permissions (GPTBot, Claude-Web, etc.)
+- Schema.org structured data for academic profile
+- Automatic sitemap generation enabled
+- Meta tags optimized for academic content
+
+**Website Structure:**
+- Main sections: About, Research (3 areas), Blog, Projects, Publications, Opportunities, Contact
+- Research areas: Paleoclimate Synthesis, Paleoclimate Informatics, Paleoclimate Record Development
+- Talk section removed from navigation
+
+## Maintenance Tasks
+
+**Weekly (Automated):**
+- Publications database update via cron job (Sunday 11 PM)
+- Automatic commit and push of updated data
+
+**As Needed:**
+- Manual publication updates: `./update_and_commit.sh`
+- Site rebuilds automatically on git push via GitHub Actions
+- Research content updates in `content/research/_index.md`
+- Opportunity postings in `content/opportunities/_index.md`
+
+## Troubleshooting
+
+**Common Issues:**
+- Google Scholar blocking: Use local updates, not GitHub Actions
+- Path issues in R scripts: Use `here()` package for robust paths
+- Journal name variations: Handled by standardization function in publications page
+- Missing dependencies: `renv::restore()` to reinstall packages

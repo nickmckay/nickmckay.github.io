@@ -4,59 +4,11 @@
 library(scholar)
 library(dplyr)
 library(here)
-library(getProxy)
-library(httr)
 
 # Nick McKay's Google Scholar ID
 scholar_id <- "j8_CgoEAAAAJ"
 doneNow <- FALSE
 
-# Set up proxy configuration for GitHub Actions
-setup_proxy <- function() {
-  tryCatch({
-    cat("Setting up proxy configuration...\n")
-    
-    # Get a free proxy
-    proxy_list <- getProxy::getProxy(type = "https", country = "US")
-    
-    if (length(proxy_list) > 0) {
-      # Use the first available proxy
-      proxy <- proxy_list[1]
-      proxy_parts <- strsplit(proxy, ":")[[1]]
-      
-      if (length(proxy_parts) >= 2) {
-        proxy_host <- proxy_parts[1]
-        proxy_port <- as.numeric(proxy_parts[2])
-        
-        cat(paste("Using proxy:", proxy_host, ":", proxy_port, "\n"))
-        
-        # Set proxy for httr/curl
-        httr::set_config(httr::use_proxy(proxy_host, proxy_port))
-        
-        # Set proxy environment variables (for other packages)
-        Sys.setenv(https_proxy = paste0("http://", proxy))
-        Sys.setenv(http_proxy = paste0("http://", proxy))
-        
-        return(TRUE)
-      }
-    }
-    
-    cat("No suitable proxy found, proceeding without proxy\n")
-    return(FALSE)
-  }, error = function(e) {
-    cat("Proxy setup failed:", e$message, "\n")
-    cat("Proceeding without proxy\n")
-    return(FALSE)
-  })
-}
-
-# Only use proxy in GitHub Actions environment
-if (Sys.getenv("GITHUB_ACTIONS") == "true") {
-  cat("GitHub Actions environment detected\n")
-  setup_proxy()
-} else {
-  cat("Local environment detected, skipping proxy setup\n")
-}
 
 # Function to safely get complete authors with progressive backoff
 get_safe_complete_authors <- function(scholar_id, pubid, max_retries = 3) {
