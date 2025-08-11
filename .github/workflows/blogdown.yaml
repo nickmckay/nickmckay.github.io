@@ -31,7 +31,6 @@ jobs:
           r-version: renv
             - name: Install system dependencies
         run: |
-        
           sudo apt-get update
           sudo apt-get install -y libglpk-dev libxml2-dev libcurl4-openssl-dev libssl-dev libfontconfig1-dev
 
