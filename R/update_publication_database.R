@@ -5,6 +5,9 @@ library(scholar)
 library(dplyr)
 library(here)
 
+# Source email notification function
+source(here("R", "send_email.R"))
+
 # Nick McKay's Google Scholar ID
 scholar_id <- "j8_CgoEAAAAJ"
 doneNow <- FALSE
@@ -49,6 +52,9 @@ tryCatch({
   cat("Failed to fetch data from Google Scholar:", e$message, "\n")
   cat("GitHub Actions may be blocked by Google Scholar. Skipping database update.\n")
   cat("Using existing database without updates.\n")
+  
+  # Send error notification
+  send_email_notification("error", error_msg = paste("Failed to fetch data from Google Scholar:", e$message))
   
   # Exit gracefully - database will remain unchanged
   quit(status = 0)
@@ -122,6 +128,9 @@ if (nrow(pubs_to_update) > 0) {
 }
 
 if(!doneNow){
+  # Track new publications for email notification
+  new_publications <- data.frame()
+  
   # Merge updated publications with existing database
   cat("Merging updated publications with existing database...\n")
   if (existing_db_exists && nrow(existing_pubs) > 0) {
@@ -154,12 +163,19 @@ if(!doneNow){
           new_pub$complete_authors_fetched <- FALSE
         }
         final_pubs <- rbind(final_pubs, new_pub)
+        
+        # Track this as a new publication
+        new_publications <- rbind(new_publications, new_pub)
+        cat("NEW PUBLICATION FOUND:", new_pub$title, "\n")
       }
     }
   } else {
     # No existing database - use current publications with updates
+    # All publications are "new" in this case
     final_pubs <- current_pubs
     final_pubs$complete_authors_fetched <- FALSE
+    new_publications <- final_pubs  # All publications are new
+    cat("Creating new database - all publications are new!\n")
     
     # Apply updates
     for (i in 1:nrow(pubs_to_update)) {
@@ -168,6 +184,9 @@ if(!doneNow){
       if (length(idx) > 0) {
         final_pubs$author[idx[1]] <- updated_pub$author
         final_pubs$complete_authors_fetched[idx[1]] <- updated_pub$complete_authors_fetched
+        # Also update in new_publications
+        new_publications$author[idx[1]] <- updated_pub$author
+        new_publications$complete_authors_fetched[idx[1]] <- updated_pub$complete_authors_fetched
       }
     }
   }
@@ -192,11 +211,49 @@ if(!doneNow){
             sum(as.logical(pubs_with_complete_authors$complete_authors_fetched), na.rm = TRUE), "\n"))
   cat(paste("Publications updated in this run:", nrow(pubs_to_update), "\n"))
   
+  # Prepare success details for email
+  success_details <- paste0(
+    "Total publications: ", nrow(pubs_with_complete_authors), "\n",
+    "Publications with complete authors: ", 
+    sum(as.logical(pubs_with_complete_authors$complete_authors_fetched), na.rm = TRUE), "\n",
+    "Publications updated in this run: ", nrow(pubs_to_update)
+  )
+  
+  # Add information about new publications
+  if (nrow(new_publications) > 0) {
+    cat(paste("NEW PUBLICATIONS FOUND:", nrow(new_publications), "\n"))
+    success_details <- paste0(success_details, "\n\nNEW PUBLICATIONS FOUND (", nrow(new_publications), "):")
+    
+    for (i in 1:min(nrow(new_publications), 5)) { # Show up to 5 new publications
+      pub <- new_publications[i,]
+      pub_info <- paste0(
+        "\n- Title: ", pub$title,
+        "\n  Authors: ", pub$author,
+        "\n  Journal: ", pub$journal,
+        "\n  Year: ", pub$year,
+        "\n  Citations: ", pub$cites
+      )
+      success_details <- paste0(success_details, pub_info)
+    }
+    
+    if (nrow(new_publications) > 5) {
+      success_details <- paste0(success_details, "\n... and ", nrow(new_publications) - 5, " more new publications")
+    }
+    success_details <- paste0(success_details, "\n")
+  }
+  
   if (nrow(pubs_to_update) == 0) {
     cat("Database was already current - no API calls needed!\n")
+    success_details <- paste0(success_details, "\nDatabase was already current - no API calls needed!")
   } else {
+    complete_authors_fetched <- sum(as.logical(pubs_to_update$complete_authors_fetched), na.rm = TRUE)
     cat(paste("Complete author information fetched for", 
-              sum(as.logical(pubs_to_update$complete_authors_fetched), na.rm = TRUE), 
+              complete_authors_fetched, 
               "of", nrow(pubs_to_update), "updated publications\n"))
+    success_details <- paste0(success_details, "\nComplete author information fetched for ", 
+                            complete_authors_fetched, " of ", nrow(pubs_to_update), " updated publications")
   }
+  
+  # Send success notification
+  send_email_notification("r_script_success", details = success_details)
 }

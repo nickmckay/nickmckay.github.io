@@ -45,8 +45,8 @@ Rscript R/build2.R
 # Update publications database from Google Scholar (run weekly via cron)
 Rscript R/update_publication_database.R
 
-# Automated weekly updates via local cron job (Sunday nights):
-# 0 23 * * 0 /Users/nicholas/GitHub/nickmckay.github.io/update_and_commit.sh
+# Automated weekly updates via local cron job (Monday nights):
+# 0 23 * * 1 /Users/nicholas/GitHub/nickmckay.github.io/update_and_commit.sh
 
 # Manual update script that commits changes:
 ./update_and_commit.sh
@@ -116,7 +116,7 @@ Rscript R/update_publication_database.R
 4. GitHub Actions deploys `public/` directory to `gh-pages` branch for hosting
 
 **Data Flow for Publications:**
-1. Local cron job runs `update_and_commit.sh` weekly (Sunday 11 PM)
+1. Local cron job runs `update_and_commit.sh` weekly (Monday 11 PM)
 2. Script executes `R/update_publication_database.R` to fetch from Google Scholar
 3. Updates CSV files in `R/data/` (publications.csv, profile_metrics.csv, citation_history.csv)
 4. Commits and pushes changes to main branch
@@ -184,7 +184,7 @@ source("R/install_publications_deps.R")
 ## Maintenance Tasks
 
 **Weekly (Automated):**
-- Publications database update via cron job (Sunday 11 PM)
+- Publications database update via cron job (Monday 11 PM)
 - Automatic commit and push of updated data
 
 **As Needed:**
