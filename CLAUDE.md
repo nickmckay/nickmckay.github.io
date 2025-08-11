@@ -25,14 +25,19 @@ This is a personal academic website built with Hugo using the Apéro theme and R
 # Install R dependencies (first time setup)
 R -e "renv::restore()"
 
-# Serve site locally using blogdown
+# Serve site locally using blogdown (primary development method)
 R -e "blogdown::serve_site()"
 
+# Alternative build methods:
 # Build site manually with Hugo (if Hugo is installed)
 hugo
 
 # Build for production
 hugo --environment production
+
+# Build using R scripts
+Rscript R/build_site.R
+Rscript R/build2.R
 ```
 
 **Publications Database Management:**
@@ -52,10 +57,11 @@ Rscript R/update_publication_database.R
 
 **Deployment:**
 - Automatic deployment via GitHub Pages when pushing to main branch
-- Build command: Hugo via GitHub Actions (`.github/workflows/blogdown.yaml`)
-- Publish directory: `public/` to `gh-pages` branch
-- Hugo version: 0.148.2
+- Build pipeline: GitHub Actions (`.github/workflows/blogdown.yaml`) using Ubuntu, R, and blogdown
+- Build process: `blogdown::build_site(build_rmd = TRUE)` then deploy `public/` to `gh-pages` branch
+- Hugo version: 0.148.2 (installed via `blogdown::install_hugo()`)
 - Site URL: https://nickmckay.org
+- Note: Publications database updates are disabled in GitHub Actions due to Google Scholar access restrictions
 
 ## Content Architecture
 
@@ -77,8 +83,13 @@ Rscript R/update_publication_database.R
 **Theme Configuration:**
 - Uses Hugo Apéro theme located in `themes/hugo-apero/`
 - Main config in `config.yaml`
-- Custom styling in `assets/` directory
-- Supports multiple color themes (currently using "sky" theme)
+- Custom styling in `assets/` directory with SCSS files
+  - `assets/custom.scss`: Main custom styles
+  - `assets/theme/`: Color theme variations (earth, forest, grayscale, magma, paper, peach, plum, poppy, primer, sky, violet, water)
+  - `assets/academicons/`: Academic icon fonts
+  - `assets/fontawesome-free-6.5.2-web/`: FontAwesome icons
+- Currently using "sky" theme (config.yaml params.theme)
+- Custom fonts: Fraunces (headings) and Commissioner (body text)
 
 **R Markdown Integration:**
 - R Markdown files (.Rmd) are processed by blogdown
@@ -88,12 +99,29 @@ Rscript R/update_publication_database.R
 ## Key Configuration Files
 
 - `config.yaml`: Main Hugo configuration including theme settings, menus, site parameters, and Google Analytics (G-DL0JCFY9KX)
-- `renv.lock`: R package dependencies
-- `.github/workflows/blogdown.yaml`: GitHub Actions for building the site (publications update disabled)
-- `index.Rmd`: Blogdown site configuration (minimal file for blogdown)
-- `static/robots.txt`: SEO configuration allowing AI crawlers
-- `layouts/partials/head-custom.html`: Schema.org structured data for academic profile
-- `update_and_commit.sh`: Weekly publication update script
+- `renv.lock`: R package dependencies (managed by renv)
+- `nickmckay.github.io.Rproj`: R project configuration
+- `.github/workflows/blogdown.yaml`: GitHub Actions workflow for automatic site building and deployment
+- `index.Rmd`: Minimal blogdown site configuration file
+- `static/robots.txt`: SEO configuration allowing AI crawlers (GPTBot, Claude-Web, etc.)
+- `layouts/partials/head-custom.html`: Custom HTML head content with Schema.org structured data for academic profile
+- `update_and_commit.sh`: Local shell script for weekly publication database updates via cron job
+
+## Architecture Overview
+
+**Site Generation Flow:**
+1. Content authored in Markdown (.md) or R Markdown (.Rmd) in `content/` directory
+2. R Markdown files processed by blogdown/knitr to generate HTML
+3. Hugo processes all content using Apéro theme to generate static site in `public/`
+4. GitHub Actions deploys `public/` directory to `gh-pages` branch for hosting
+
+**Data Flow for Publications:**
+1. Local cron job runs `update_and_commit.sh` weekly (Sunday 11 PM)
+2. Script executes `R/update_publication_database.R` to fetch from Google Scholar
+3. Updates CSV files in `R/data/` (publications.csv, profile_metrics.csv, citation_history.csv)
+4. Commits and pushes changes to main branch
+5. GitHub Actions rebuilds site with updated data
+6. `content/publications/index.Rmd` renders interactive tables and visualizations
 
 ## Content Creation Workflow
 
