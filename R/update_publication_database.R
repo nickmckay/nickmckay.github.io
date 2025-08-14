@@ -140,7 +140,35 @@ if(!doneNow){
     # Update or add new publications
     for (i in 1:nrow(current_pubs)) {
       current_pub <- current_pubs[i,]
-      existing_idx <- which(final_pubs$title == current_pub$title)
+      
+      # Clean titles for better matching (handle encoding differences)
+      clean_current_title <- gsub("[[:space:]]+", " ", trimws(current_pub$title))
+      clean_existing_titles <- gsub("[[:space:]]+", " ", trimws(final_pubs$title))
+      
+      # Find exact match first, then try fuzzy matching for encoding issues
+      existing_idx <- which(clean_existing_titles == clean_current_title)
+      
+      # If no exact match, try with normalized unicode characters
+      if (length(existing_idx) == 0) {
+        # Replace common unicode variants
+        norm_current <- gsub("–|—", "-", clean_current_title)
+        norm_current <- gsub("'|'", "'", norm_current)
+        norm_current <- gsub(""|"", '"', norm_current)
+        
+        norm_existing <- gsub("–|—", "-", clean_existing_titles)
+        norm_existing <- gsub("'|'", "'", norm_existing)
+        norm_existing <- gsub(""|"", '"', norm_existing)
+        
+        existing_idx <- which(norm_existing == norm_current)
+      }
+      
+      # Final safety check: match by pubid if title matching failed
+      if (length(existing_idx) == 0 && !is.na(current_pub$pubid) && current_pub$pubid != "") {
+        existing_idx <- which(final_pubs$pubid == current_pub$pubid)
+        if (length(existing_idx) > 0) {
+          cat("Matched by pubid:", current_pub$title, "\n")
+        }
+      }
       
       if (length(existing_idx) > 0) {
         # Preserve existing complete author information
