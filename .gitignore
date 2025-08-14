@@ -7,3 +7,4 @@
 R/send_email.R
 send_email.py
 update_and_commit.sh
+~/.config/github/pat.txt
