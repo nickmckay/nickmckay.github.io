@@ -10,6 +10,13 @@ export PATH="/usr/local/bin:/usr/bin:/bin"
 git config user.name "Nick McKay"
 git config user.email "nick@mckays.us"
 
+# GitHub Personal Access Token for authentication
+# Replace YOUR_PAT_HERE with your actual GitHub Personal Access Token
+GITHUB_PAT="YOUR_PAT_HERE"
+
+# Set the remote URL with authentication for this session only
+git remote set-url origin "https://nickmckay:${GITHUB_PAT}@github.com/nickmckay/nickmckay.github.io.git"
+
 # Run the R script locally (no proxy needed)
 # R script now handles its own email notifications
 echo "Running R script to fetch publications..."
@@ -43,5 +50,8 @@ else
         exit 1
     fi
 fi
+
+# Restore original remote URL (without PAT) for security
+git remote set-url origin "https://github.com/nickmckay/nickmckay.github.io.git"
 
 echo "Update complete"

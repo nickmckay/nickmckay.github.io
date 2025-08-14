@@ -6,3 +6,5 @@
 .DS_Store
 R/send_email.R
 send_email.py
+update_and_commit.sh
+update_and_commit.sh
