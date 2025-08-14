@@ -143,14 +143,29 @@ if(!doneNow){
       existing_idx <- which(final_pubs$title == current_pub$title)
       
       if (length(existing_idx) > 0) {
+        # Preserve existing complete author information
+        existing_author <- final_pubs$author[existing_idx[1]]
+        existing_complete_flag <- final_pubs$complete_authors_fetched[existing_idx[1]]
+        
         # Update existing publication (in case citation counts changed)
         final_pubs[existing_idx[1], ] <- current_pub
         
-        # Preserve complete author information if we have it
-        updated_pub <- pubs_to_update[pubs_to_update$title == current_pub$title, ]
-        if (nrow(updated_pub) > 0) {
-          final_pubs$author[existing_idx[1]] <- updated_pub$author[1]
-          final_pubs$complete_authors_fetched[existing_idx[1]] <- updated_pub$complete_authors_fetched[1]
+        # Only update author information if we don't already have complete authors
+        # or if we fetched new complete authors in this run
+        if (!is.na(existing_complete_flag) && (existing_complete_flag == TRUE || existing_complete_flag == "TRUE")) {
+          # Keep existing complete authors - don't overwrite
+          final_pubs$author[existing_idx[1]] <- existing_author
+          final_pubs$complete_authors_fetched[existing_idx[1]] <- existing_complete_flag
+        } else {
+          # We don't have complete authors yet, check if we fetched them in this run
+          updated_pub <- pubs_to_update[pubs_to_update$title == current_pub$title, ]
+          if (nrow(updated_pub) > 0) {
+            final_pubs$author[existing_idx[1]] <- updated_pub$author[1]
+            final_pubs$complete_authors_fetched[existing_idx[1]] <- updated_pub$complete_authors_fetched[1]
+          } else {
+            # Set flag to indicate we don't have complete authors
+            final_pubs$complete_authors_fetched[existing_idx[1]] <- FALSE
+          }
         }
       } else {
         # Add new publication
