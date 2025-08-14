@@ -11,8 +11,8 @@ git config user.name "Nick McKay"
 git config user.email "nick@mckays.us"
 
 # GitHub Personal Access Token for authentication
-# Replace YOUR_PAT_HERE with your actual GitHub Personal Access Token
-GITHUB_PAT="YOUR_PAT_HERE"
+# Read PAT from secure file outside of git repository
+GITHUB_PAT=$(cat ~/.config/github/pat.txt)
 
 # Set the remote URL with authentication for this session only
 git remote set-url origin "https://nickmckay:${GITHUB_PAT}@github.com/nickmckay/nickmckay.github.io.git"
