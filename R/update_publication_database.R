@@ -142,22 +142,22 @@ if(!doneNow){
       current_pub <- current_pubs[i,]
       
       # Clean titles for better matching (handle encoding differences)
-      clean_current_title <- gsub("[[:space:]]+", " ", trimws(current_pub$title))
-      clean_existing_titles <- gsub("[[:space:]]+", " ", trimws(final_pubs$title))
+      if (is.null(current_pub$title) || is.na(current_pub$title) || current_pub$title == "") {
+        cat("Warning: Empty title found for publication, skipping...\n")
+        next
+      }
+      
+      clean_current_title <- gsub("[[:space:]]+", " ", trimws(as.character(current_pub$title)))
+      clean_existing_titles <- gsub("[[:space:]]+", " ", trimws(as.character(final_pubs$title)))
       
       # Find exact match first, then try fuzzy matching for encoding issues
       existing_idx <- which(clean_existing_titles == clean_current_title)
       
-      # If no exact match, try with normalized unicode characters
+      # If no exact match, try with basic character normalization
       if (length(existing_idx) == 0) {
-        # Replace common unicode variants
-        norm_current <- gsub("–|—", "-", clean_current_title)
-        norm_current <- gsub("'|'", "'", norm_current)
-        norm_current <- gsub(""|"", '"', norm_current)
-        
-        norm_existing <- gsub("–|—", "-", clean_existing_titles)
-        norm_existing <- gsub("'|'", "'", norm_existing)
-        norm_existing <- gsub(""|"", '"', norm_existing)
+        # Simple normalization - remove extra spaces and convert to lowercase for comparison
+        norm_current <- tolower(gsub("[[:space:]]+", " ", trimws(clean_current_title)))
+        norm_existing <- tolower(gsub("[[:space:]]+", " ", trimws(clean_existing_titles)))
         
         existing_idx <- which(norm_existing == norm_current)
       }

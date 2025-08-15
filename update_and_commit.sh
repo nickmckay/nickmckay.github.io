@@ -6,7 +6,21 @@ echo "Starting publication database update..."
 cd /Users/nicholas/GitHub/nickmckay.github.io
 
 # Set up Git environment for cron (cron has minimal environment)
-export PATH="/usr/local/bin:/usr/bin:/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin"
+export HOME="/Users/nicholas"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Debug info for troubleshooting
+echo "=== DEBUG INFO ==="
+echo "Current PATH: $PATH"
+echo "Current working directory: $(pwd)"
+echo "Current user: $(whoami)"
+echo "Date: $(date)"
+echo "R location: $(which Rscript)"
+echo "Git location: $(which git)"
+echo "=================="
+
 git config user.name "Nick McKay"
 git config user.email "nick@mckays.us"
 
@@ -28,6 +42,13 @@ else
 fi
 
 # Check if files changed
+echo "=== CHECKING FOR CHANGES ==="
+echo "Git status:"
+git status R/data/
+echo "Git diff (first 10 lines):"
+git diff R/data/ | head -10
+echo "=========================="
+
 if git diff --quiet R/data/; then
     echo "No changes detected"
     # Send notification for no changes using R
