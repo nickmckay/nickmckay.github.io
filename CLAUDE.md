@@ -45,8 +45,8 @@ Rscript R/build2.R
 # Update publications database from Google Scholar (run weekly via cron)
 Rscript R/update_publication_database.R
 
-# Automated weekly updates via local cron job (Monday nights):
-# 0 23 * * 1 /Users/nicholas/GitHub/nickmckay.github.io/update_and_commit.sh
+# Automated weekly updates via local cron job (Thursday nights):
+# 0 23 * * 4 /Users/nicholas/GitHub/nickmckay.github.io/update_and_commit.sh
 
 # Manual update script that commits changes:
 ./update_and_commit.sh
@@ -157,6 +157,45 @@ source("R/install_publications_deps.R")
 - `R/data/citation_history.csv`: Citation counts by year
 
 **Updating:** Updated weekly via local cron job, not in GitHub Actions (Scholar blocks CI)
+
+## Automated Publications System
+
+**Security & Authentication:**
+- GitHub Personal Access Token stored securely in `~/.config/github/pat.txt` (600 permissions, outside git repo)
+- Repository-scoped PAT with Contents (Write) and Metadata (Read) permissions only
+- Authentication handled via temporary remote URL modification during script execution
+- PAT file path added to `.gitignore` for additional security
+
+**Cron Job Configuration:**
+```bash
+# Current schedule: Thursday nights at 11 PM
+0 23 * * 4 /Users/nicholas/GitHub/nickmckay.github.io/update_and_commit.sh
+
+# Check current cron job:
+crontab -l
+
+# Edit cron job:
+crontab -e
+```
+
+**Script Components:**
+- `update_and_commit.sh`: Main automation script with environment setup and error handling
+- `R/update_publication_database.R`: Core R script for Scholar data fetching and processing
+- `R/send_email.R`: Email notification system for automation status
+- Comprehensive debugging output for troubleshooting cron environment issues
+
+**Data Protection Features:**
+- Preserves publications with complete author information (never overwrites with incomplete data)
+- Robust duplicate detection using title normalization and Google Scholar pubid matching
+- Handles Unicode character differences and encoding variations
+- Maintains database integrity with proper merging logic
+
+**Troubleshooting:**
+- Debug information included in script output for cron environment diagnosis
+- Email notifications for success/failure/no-changes scenarios
+- Manual testing available via `./update_and_commit.sh`
+- Environment variables set for proper PATH, locale, and Git configuration
+
 5. Images and assets go in `static/` directory or page bundles
 
 ## Development Notes
