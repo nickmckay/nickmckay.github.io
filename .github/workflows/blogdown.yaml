@@ -38,7 +38,7 @@ jobs:
       - uses: r-lib/actions/setup-renv@v2
 
       - name: Install hugo
-        run: 
+        run: blogdown::install_hugo(version = "0.148.2")
         shell: Rscript {0}
 
       # Publications database is updated locally via scheduled script
