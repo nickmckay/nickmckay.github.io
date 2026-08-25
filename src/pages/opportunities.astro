@@ -1,6 +1,39 @@
 ---
 import Base from "../layouts/Base.astro";
 import PageHero from "../components/PageHero.astro";
+
+const positions = [
+  {
+    id: "data-assimilation",
+    title: "Paleoclimate Data Assimilation",
+    blurb:
+      "Reconstruct 21,000 years of North American climate by fusing proxy records with climate models, powering continent-scale ecosystem research.",
+    image: "/img/opps-cores.jpg",
+    alt: "Labeled lake sediment core tubes laid out after fieldwork",
+    funding: "NSF-funded",
+    pos: "object-center",
+  },
+  {
+    id: "wildfire-smoke",
+    title: "Wildfire Smoke & Aerosols",
+    blurb:
+      "Measure firefighter smoke exposure in the field and build high-resolution smoke forecasts with our Cornell and Flagstaff fire partners.",
+    image: "/img/opps-balloon.jpg",
+    alt: "Weather balloon carrying an aerosol sensor package into a cloudy sky",
+    funding: "Privately funded",
+    pos: "object-top",
+  },
+  {
+    id: "lake-emulators",
+    title: "AI Lake Model Emulators",
+    blurb:
+      "Build machine-learning emulators of lake models to test whether seasonal proxy biases explain the Holocene climate conundrum.",
+    image: "/img/opps-lake.jpg",
+    alt: "Researchers coring sediments from a raft on a turquoise alpine lake",
+    funding: "NSF-funded",
+    pos: "object-center",
+  },
+];
 ---
 
 <Base
@@ -11,18 +44,53 @@ import PageHero from "../components/PageHero.astro";
     title="Graduate Students"
     lede="I'm recruiting three funded PhD students this year, starting Spring or Fall 2027."
   />
-  <div class="mx-auto max-w-3xl px-4 py-12 prose-nm">
-    <p>
+  <div class="mx-auto max-w-4xl px-4 pt-12">
+    <p class="mx-auto max-w-3xl leading-relaxed text-slate-700">
       I welcome applications from motivated students interested in paleoclimate science and
       environmental data science. Through the Paleoclimate Dynamics Laboratory at Northern Arizona
       University, I offer opportunities for graduate students and postdoctoral researchers to
-      engage in cutting-edge research. <strong>Three funded PhD positions are currently open</strong>,
-      each on a different project; all can begin in Spring or Fall 2027.
+      engage in cutting-edge research.
+      <strong class="text-slate-900">Three funded PhD positions are currently open</strong>, each
+      on a different project; all can begin in Spring or Fall 2027.
     </p>
 
+    <div class="mt-8 grid gap-6 sm:grid-cols-3">
+      {
+        positions.map((p) => (
+          <a
+            href={`#${p.id}`}
+            class="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+          >
+            <img
+              src={p.image}
+              alt={p.alt}
+              class:list={["h-36 w-full object-cover", p.pos ?? "object-center"]}
+              width="400"
+              height="144"
+              loading="lazy"
+            />
+            <div class="p-4">
+              <p class="text-[10px] font-semibold uppercase tracking-wide text-clay-700">
+                {p.funding} · Spring or Fall 2027
+              </p>
+              <h2 class="mt-1 font-serif text-lg font-semibold text-sky-900 group-hover:text-sky-700">
+                {p.title}
+              </h2>
+              <p class="mt-1.5 text-sm leading-relaxed text-slate-600">{p.blurb}</p>
+              <p class="mt-2 text-sm font-medium text-sky-700">Details ↓</p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-3xl px-4 py-12 prose-nm">
     <h2>Current Opportunities</h2>
 
-    <h3>PhD Position: Paleoclimate Data Assimilation for North American Ecosystem Research</h3>
+    <h3 id="data-assimilation">
+      PhD Position: Paleoclimate Data Assimilation for North American Ecosystem Research
+    </h3>
 
     <p>
       <strong>Funding:</strong> NSF-funded project<br />
@@ -32,41 +100,46 @@ import PageHero from "../components/PageHero.astro";
 
     <h4>Project Overview</h4>
     <p>
-      We are seeking a motivated PhD student to join an exciting NSF-funded project led by Jack
-      Williams at the University of Wisconsin, with NAU as a partner institution. This
-      interdisciplinary project aims to understand how ecosystems respond to climate change by
-      studying past climate-ecosystem relationships from the Last Glacial Maximum to present.
+      How much climate change can an ecosystem absorb before its boundaries move? North America
+      warmed by roughly 6°C between the Last Glacial Maximum and today, a natural experiment
+      comparable in magnitude to the warming projected for this century. This NSF-funded
+      collaboration, led by Jack Williams at the University of Wisconsin-Madison, uses that
+      21,000-year record to quantify how the continent's major ecosystem boundaries, from Arctic
+      treeline to the prairie-forest edge, responded as climate changed around them. NAU leads
+      the climate side of the project: building the reconstructions the ecosystem analysis
+      depends on.
     </p>
 
     <h4>Your Role at NAU</h4>
     <p>
-      Working with Dr. McKay and collaborator Dr. Michael Erb (Appalachian State University), you
-      will lead the development of cutting-edge paleoclimate reconstructions for North America
-      using <strong>paleoclimate data assimilation (PDA)</strong>. This innovative approach
-      combines:
+      Working with Dr. McKay and Dr. Michael Erb, you will lead the development of new
+      paleoclimate reconstructions for North America using
+      <strong>paleoclimate data assimilation</strong>, which fuses what proxies and models each
+      do best:
     </p>
     <ul>
-      <li><strong>Proxy records</strong> (lake sediments, speleothems, ice cores, etc.) with</li>
-      <li><strong>Physics-based climate models</strong> to create spatially complete reconstructions</li>
-      <li><strong>Statistical downscaling</strong> techniques for ecological applications</li>
+      <li>
+        <strong>Proxy records</strong> (lake sediments, speleothems, ice cores) anchor the
+        reconstruction in evidence of what actually happened
+      </li>
+      <li>
+        <strong>Physics-based climate models</strong> spread that information across space and
+        time, producing complete maps rather than scattered points
+      </li>
+      <li>
+        <strong>Statistical downscaling</strong> sharpens the results to the fine resolution that
+        ecological analysis demands
+      </li>
     </ul>
-
-    <h4>What is Paleoclimate Data Assimilation?</h4>
     <p>
-      PDA uses a Kalman filter approach to optimally combine proxy observations with climate model
-      simulations. The method:
+      You will build on infrastructure our group develops and maintains, including the LiPDverse
+      proxy database and the PReSto reconstruction platform, and your reconstructions will flow
+      directly into the ecosystem-sensitivity analyses at partner institutions.
     </p>
-    <ul>
-      <li>Starts with an ensemble of climate model states</li>
-      <li>Compares model output with proxy data using statistical relationships</li>
-      <li>Updates reconstructions to better match observations</li>
-      <li>Spreads information across space and time using model covariance patterns</li>
-    </ul>
-    <p>This approach overcomes limitations of proxy-only or model-only reconstructions.</p>
 
     <h4>Ideal Candidate</h4>
     <ul>
-      <li>Strong background in Earth sciences, climate science, or related field</li>
+      <li>Strong background in Earth sciences, climate science, or a related field</li>
       <li>Interest in quantitative methods and statistical analysis</li>
       <li>Experience with programming (R, Python)</li>
       <li>Enthusiasm for interdisciplinary collaboration</li>
@@ -75,7 +148,7 @@ import PageHero from "../components/PageHero.astro";
 
     <hr />
 
-    <h3>PhD Position: Wildfire Smoke Exposure and Aerosol Science</h3>
+    <h3 id="wildfire-smoke">PhD Position: Wildfire Smoke Exposure and Aerosol Science</h3>
 
     <p>
       <strong>Funding:</strong> Privately funded NAU-Cornell research collaboration (research
@@ -132,7 +205,9 @@ import PageHero from "../components/PageHero.astro";
 
     <hr />
 
-    <h3>PhD Position: AI Lake Model Emulators and the Holocene Climate Conundrum</h3>
+    <h3 id="lake-emulators">
+      PhD Position: AI Lake Model Emulators and the Holocene Climate Conundrum
+    </h3>
 
     <p>
       <strong>Funding:</strong> NSF-funded collaborative project (NAU, University at Buffalo,
