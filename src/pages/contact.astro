@@ -1,0 +1,83 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+---
+
+<Base
+  title="Contact"
+  description="Get in touch with Dr. Nick McKay about paleoclimate research, research opportunities, collaborations, and questions about his work."
+>
+  <PageHero
+    title="Contact"
+    lede="Whether you're interested in joining our research team, exploring collaboration opportunities, or have questions about paleoclimate science, I'd love to hear from you."
+  />
+  <div class="mx-auto grid max-w-5xl gap-10 px-4 py-12 md:grid-cols-2">
+    <div class="prose-nm">
+      <h2>Get in Touch</h2>
+
+      <h3>Research Inquiries</h3>
+      <ul>
+        <li>Graduate student opportunities</li>
+        <li>Postdoctoral positions</li>
+        <li>Collaborative research projects</li>
+        <li>Questions about our methods or findings</li>
+      </ul>
+
+      <h3>General Information</h3>
+      <ul>
+        <li><strong>Office:</strong> School of Earth and Sustainability, Northern Arizona University</li>
+        <li><strong>Location:</strong> Flagstaff, Arizona</li>
+        <li><strong>Email:</strong> <a href="mailto:nick@nau.edu">nick@nau.edu</a></li>
+      </ul>
+
+      <h3>Response Time</h3>
+      <p>
+        I typically respond to emails within 1-2 business days. For urgent matters, please
+        indicate this in your subject line.
+      </p>
+    </div>
+
+    <div>
+      <form
+        action="https://formspree.io/f/mblkzdyk"
+        method="POST"
+        class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
+      >
+        <label class="block text-sm font-medium text-slate-700" for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          required
+          class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-sky-500 focus:outline-none"
+        />
+        <label class="mt-4 block text-sm font-medium text-slate-700" for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="_replyto"
+          required
+          class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-sky-500 focus:outline-none"
+        />
+        <label class="mt-4 block text-sm font-medium text-slate-700" for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-sky-500 focus:outline-none"
+        ></textarea>
+        <button
+          type="submit"
+          class="mt-5 rounded-lg bg-sky-800 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-sky-700"
+        >
+          Send Message
+        </button>
+        <p class="mt-3 text-xs text-slate-500">
+          This form delivers messages directly to nick@nau.edu. For technical issues with the
+          website, please mention that in your message.
+        </p>
+      </form>
+    </div>
+  </div>
+</Base>

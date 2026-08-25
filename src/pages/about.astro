@@ -1,0 +1,71 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import SocialLinks from "../components/SocialLinks.astro";
+
+const researchAreas = [
+  "Paleoclimate synthesis",
+  "Paleoclimate informatics",
+  "Paleoclimate record development",
+  "Process-based modeling",
+];
+---
+
+<Base
+  title="About"
+  description="Nick McKay is a Professor in the School of Earth and Sustainability at Northern Arizona University, where he directs the Paleoclimate Dynamics Laboratory."
+>
+  <PageHero
+    title="Hi, I'm Nick McKay."
+    lede="I'm a climate scientist working to understand how Earth's climate system has changed in the past and what that means for our future."
+  />
+  <div class="mx-auto grid max-w-5xl gap-10 px-4 py-12 md:grid-cols-[2fr_1fr]">
+    <div class="prose-nm">
+      <p>
+        I'm a Professor in the
+        <a href="https://ses-nau.org/">School of Earth and Sustainability</a> at Northern Arizona
+        University, where I direct the Paleoclimate Dynamics Laboratory. My research uses natural
+        records of past climate variability to inform our understanding of climate dynamics and
+        help prepare for future climate changes.
+      </p>
+      <p>
+        Human activity has caused large changes to Earth's climate and landscapes, and has
+        committed us to even more dramatic climatic and environmental changes in the
+        not-so-distant future. To better prepare for, and adapt to these changes, we must better
+        understand the complex details of our climate and earth systems. I study natural climate
+        variability in places ranging from the tropics to the Arctic, on timescales ranging from
+        years to millennia and on spatial scales ranging from hemispheres to meters.
+      </p>
+      <p>
+        Interested in paleoclimate research? Check out our
+        <a href="/opportunities/">opportunities</a> or <a href="/contact/">get in touch</a>!
+      </p>
+    </div>
+    <aside class="md:pt-2">
+      <img
+        src="/img/avatar.jpg"
+        alt="Portrait of Nick McKay"
+        class="mx-auto h-44 w-44 rounded-full object-cover shadow-md"
+        width="176"
+        height="176"
+      />
+      <p class="mt-4 text-center font-serif text-lg font-semibold text-sky-900">Nick McKay</p>
+      <p class="text-center text-sm text-slate-600">Professor, Paleoclimate Scientist</p>
+      <SocialLinks class="mt-4 justify-center text-sky-800" />
+      <h2 class="mt-8 text-sm font-semibold uppercase tracking-wide text-sky-700">
+        Research Areas
+      </h2>
+      <ul class="mt-2 space-y-1 text-sm">
+        {
+          researchAreas.map((a) => (
+            <li>
+              <a href="/research/" class="text-sky-600 hover:text-sky-800 hover:underline">
+                {a}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </aside>
+  </div>
+</Base>

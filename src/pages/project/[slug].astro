@@ -1,0 +1,39 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("projects");
+  return projects.map((p) => ({ params: { slug: p.id }, props: { project: p } }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+---
+
+<Base title={project.data.title} description={project.data.excerpt}>
+  <PageHero title={project.data.title} lede={project.data.subtitle} />
+  <div class="mx-auto max-w-3xl px-4 py-12">
+    {
+      project.data.links.length > 0 && (
+        <div class="mb-8 flex flex-wrap gap-3">
+          {project.data.links.map((l) => (
+            <a
+              href={l.url}
+              class="rounded-lg border border-sky-300 px-4 py-2 text-sm font-medium text-sky-800 hover:bg-sky-50"
+            >
+              {l.name}
+            </a>
+          ))}
+        </div>
+      )
+    }
+    <div class="prose-nm">
+      <Content />
+    </div>
+    <p class="mt-10 text-sm">
+      <a href="/project/" class="text-sky-600 hover:underline">← View all projects</a>
+    </p>
+  </div>
+</Base>

@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* nickmckay.org design tokens: sky blue carried over from the old Apéro "sky"
+   theme, warmed with a desert-clay accent. Fraunces display over Commissioner
+   body, matching the previous site's typography. Single light theme. */
+@theme {
+  --font-sans: "Commissioner Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces Variable", ui-serif, Georgia, serif;
+
+  --color-sky-50: #f0f7fc;
+  --color-sky-100: #dcecf7;
+  --color-sky-200: #bcdcf0;
+  --color-sky-300: #8ec4e4;
+  --color-sky-400: #59a5d2;
+  --color-sky-500: #3689bd;
+  --color-sky-600: #266d9f;
+  --color-sky-700: #205881;
+  --color-sky-800: #1e4a6b;
+  --color-sky-900: #1e3f5a;
+  --color-sky-950: #14293c;
+
+  --color-clay-50: #fdf5ef;
+  --color-clay-300: #f0b98a;
+  --color-clay-400: #e69a5b;
+  --color-clay-500: #d97e35;
+  --color-clay-600: #c06423;
+  --color-clay-700: #9a4f1c; /* AA-contrast text on white */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Long-form markdown content */
+.prose-nm {
+  @apply text-slate-700 leading-relaxed;
+}
+.prose-nm h2 {
+  @apply font-serif text-2xl font-semibold text-sky-900 mt-10 mb-4;
+}
+.prose-nm h3 {
+  @apply font-serif text-xl font-semibold text-sky-800 mt-8 mb-3;
+}
+.prose-nm h4 {
+  @apply font-semibold text-slate-900 mt-6 mb-2;
+}
+.prose-nm p {
+  @apply my-4;
+}
+.prose-nm a {
+  @apply text-sky-600 underline decoration-clay-400 decoration-2 underline-offset-2 hover:text-sky-800;
+}
+.prose-nm ul {
+  @apply list-disc pl-6 my-4 space-y-1;
+}
+.prose-nm ol {
+  @apply list-decimal pl-6 my-4 space-y-1;
+}
+.prose-nm strong {
+  @apply font-semibold text-slate-900;
+}
+.prose-nm img {
+  @apply rounded-lg my-6;
+}
+.prose-nm blockquote {
+  @apply border-l-4 border-clay-400 pl-4 italic text-slate-600 my-6;
+}
+.prose-nm hr {
+  @apply my-8 border-slate-200;
+}
+.prose-nm code {
+  @apply rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] text-sky-800;
+}
+.prose-nm pre {
+  @apply rounded-lg bg-slate-900 p-4 my-6 overflow-x-auto;
+}
+.prose-nm pre code {
+  @apply bg-transparent p-0 text-slate-100;
+}
+.prose-nm table {
+  @apply w-full text-sm my-6;
+}
+.prose-nm th {
+  @apply text-left font-semibold text-sky-900 border-b-2 border-sky-200 px-3 py-2;
+}
+.prose-nm td {
+  @apply border-b border-slate-200 px-3 py-2 align-top;
+}

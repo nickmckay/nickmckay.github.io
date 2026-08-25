@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
+
+const projects = (await getCollection("projects")).sort(
+  (a, b) => b.data.date.localeCompare(a.data.date),
+);
+---
+
+<Base
+  title="Projects"
+  description="Open-source software tools and platforms Nick McKay has developed for paleoclimate research, data analysis, and community collaboration."
+>
+  <PageHero
+    title="Projects"
+    lede="Open-source tools and platforms for paleoclimate data analysis and visualization."
+  />
+  <div class="mx-auto grid max-w-5xl gap-6 px-4 py-12 sm:grid-cols-2 lg:grid-cols-3">
+    {
+      projects.map((p) => (
+        <a
+          href={`/project/${p.id}/`}
+          class="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+        >
+          <img
+            src={p.data.image}
+            alt=""
+            class="h-40 w-full bg-sky-50 object-contain p-4"
+            width="400"
+            height="160"
+            loading="lazy"
+          />
+          <div class="p-5">
+            <h2 class="font-serif text-xl font-semibold text-sky-900 group-hover:text-sky-700">
+              {p.data.title}
+            </h2>
+            {p.data.subtitle && <p class="mt-0.5 text-sm font-medium text-clay-600">{p.data.subtitle}</p>}
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{p.data.excerpt}</p>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+  <p class="mx-auto max-w-5xl px-4 pb-12 text-sm text-slate-500">
+    More on <a href="https://github.com/nickmckay" class="text-sky-600 hover:underline">GitHub</a>.
+  </p>
+</Base>

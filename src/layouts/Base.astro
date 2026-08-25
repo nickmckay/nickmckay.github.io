@@ -1,0 +1,120 @@
+---
+import "@fontsource-variable/fraunces";
+import "@fontsource-variable/commissioner";
+import "../styles/global.css";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  noindex?: boolean;
+  /** Absolute URL for the social-share image; defaults to the portrait. */
+  ogImage?: string;
+  /** Extra JSON-LD object rendered alongside the site-wide Person. */
+  jsonLd?: Record<string, unknown>;
+}
+
+const {
+  title,
+  description = "Nick McKay is a professor at Northern Arizona University using natural records of past climate variability to understand climate dynamics, from the tropics to the Arctic.",
+  noindex = false,
+  ogImage = new URL("/img/nm.png", Astro.site).href,
+  jsonLd,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Nick McKay",
+  jobTitle: "Professor of Climate Science",
+  affiliation: {
+    "@type": "Organization",
+    name: "Northern Arizona University",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Flagstaff",
+      addressRegion: "Arizona",
+      addressCountry: "US",
+    },
+  },
+  description:
+    "Paleoclimate scientist studying climate dynamics using natural records of past climate variability to understand how climate works.",
+  url: "https://nickmckay.org",
+  sameAs: [
+    "https://github.com/nickmckay",
+    "https://twitter.com/npmckay",
+    "https://orcid.org/0000-0003-3598-5113",
+    "https://scholar.google.com/citations?user=j8_CgoEAAAAJ",
+    "https://ses-nau.org/faculty-profiles/nicholas-mckay/",
+  ],
+  knowsAbout: [
+    "Paleoclimatology",
+    "Climate Dynamics",
+    "Paleoclimate Synthesis",
+    "Paleoclimate Informatics",
+    "Lake Sediments",
+    "Climate Modeling",
+    "Data Science",
+  ],
+  alumniOf: "University of Arizona",
+  image: "https://nickmckay.org/img/nm.png",
+};
+const fullTitle = title === "Home" ? "Nick McKay | Paleoclimate Scientist" : `${title} | Nick McKay`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Nick McKay - Climate Scientist" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:site" content="@npmckay" />
+    <meta name="twitter:creator" content="@npmckay" />
+    <meta name="DC.creator" content="Nick McKay" />
+    <meta name="DC.subject" content="Paleoclimatology, Climate Science, Earth Science" />
+    <meta name="citation_author" content="McKay, Nicholas P." />
+    <meta name="citation_author_institution" content="Northern Arizona University" />
+    <script type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL0JCFY9KX"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-DL0JCFY9KX");
+    </script>
+  </head>
+  <body class="min-h-screen bg-white font-sans text-slate-800 antialiased flex flex-col">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-sky-900 focus:shadow-lg"
+    >
+      Skip to content
+    </a>
+    <Nav />
+    <main id="main" class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
