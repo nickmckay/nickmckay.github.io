@@ -1,0 +1,37 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import { getProfileMetrics, getPublications } from "../lib/publications";
+
+const metrics = getProfileMetrics();
+const pubCount = getPublications().length;
+const fmt = (n: number) => n.toLocaleString("en-US");
+---
+
+<Base
+  title="Curriculum Vitae"
+  description="Curriculum vitae of Nick McKay, Professor of climate science at Northern Arizona University: publications, funding, teaching, mentorship, and service."
+>
+  <PageHero title="Curriculum Vitae" />
+  <div class="mx-auto max-w-3xl px-4 py-12">
+    <p class="leading-relaxed text-slate-700">
+      Full academic CV covering appointments, {fmt(pubCount)} publications, funded research,
+      teaching, student mentorship, and service.
+    </p>
+    <div class="mt-6 flex flex-wrap items-center gap-4">
+      <a
+        href="/files/McKay-CV.pdf"
+        class="rounded-lg bg-sky-800 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-sky-700"
+      >
+        Download CV (PDF)
+      </a>
+      <a href="/publications/" class="text-sm font-medium text-sky-700 hover:underline">
+        Or browse the live publications database →
+      </a>
+    </div>
+    <p class="mt-8 text-sm text-slate-500">
+      Snapshot: {fmt(pubCount)} publications · {fmt(metrics.totalCites)} citations · h-index
+      {metrics.hIndex} (Google Scholar, updated {metrics.updateDate}).
+    </p>
+  </div>
+</Base>

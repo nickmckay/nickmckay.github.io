@@ -1,0 +1,208 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+
+// Edit this list to update the lab roster: each entry is name, role, photo
+// (in /public/img/people/, or omit for an initials placeholder), and bio.
+interface Person {
+  name: string;
+  role: string;
+  photo?: string;
+  bio: string;
+}
+
+const current: Person[] = [
+  {
+    name: "Nick McKay",
+    role: "Professor & Lab Director",
+    photo: "/img/avatar.jpg",
+    bio: "Nick's research interests are mostly aimed at using natural records of past climate variability to inform our understanding of climate dynamics, or developing better ways to do so, in places ranging from the tropics to the Arctic and on timescales ranging from years to millennia.",
+  },
+  {
+    name: "Cody Routson",
+    role: "Associate Research Professor",
+    photo: "/img/people/cody.jpg",
+    bio: "Cody researches, develops, and uses natural climate archives to extend observational records, establish baseline conditions, and characterize the climate system and risks of climate-related natural hazards, helping inform adaptation strategies for climate change.",
+  },
+  {
+    name: "Michael Erb",
+    role: "Research Professor",
+    photo: "/img/people/michael.jpg",
+    bio: "Michael uses data assimilation to leverage the strengths of climate model output and proxy records, quantifying climate variations over the past several millennia. His interests include hydroclimate topics such as monsoons and drought. He received his doctorate from Rutgers University.",
+  },
+  {
+    name: "Chris Hancock",
+    role: "Research Scientist",
+    photo: "/img/people/chrisHancock.jpg",
+    bio: "Chris completed his PhD in the lab with the first global data assimilation of Holocene hydroclimate, built around lake level records. He continues to develop paleoclimate data assimilation methods, including the reconstructions behind our North American ecoclimate work.",
+  },
+  {
+    name: "Frank Telles",
+    role: "PhD Student, Earth Sciences & Environmental Sustainability",
+    photo: "/img/people/frank.jpg",
+    bio: "Frank uses proxy and model data to improve our understanding of Arctic climate over the last 14,500 years, and develops Next Generation Science Standards-aligned curricula, including education partnerships with tribal environmental professionals.",
+  },
+  {
+    name: "Laura Schley",
+    role: "PhD Student, Earth Sciences & Environmental Sustainability",
+    photo: "/img/people/laura.jpg",
+    bio: "Laura researches past climate variability and periods of rapid warming in the Arctic over the last ~14,500 years. She received her BS in Geographical Sciences and MS in Geographical Environmental Research from Freie Universität Berlin.",
+  },
+  {
+    name: "Delila Medlin",
+    role: "Graduate Student",
+    bio: "Delila works on statistical downscaling of paleoclimate model output, including precipitation quantile mapping, for high-resolution North American climate reconstructions.",
+  },
+  {
+    name: "Hunter Thomas-Allen",
+    role: "Graduate Student",
+    bio: "Hunter works on glacier and hydroclimate reconstructions from proglacial lake sediments in Alaska, and leads the Allison Lake glacier reconstruction.",
+  },
+  {
+    name: "Eli Allred",
+    role: "MS Student",
+    bio: "Eli studies proglacial lake sediments in Alaska to reconstruct past glacier and climate variability.",
+  },
+  {
+    name: "Ryan Ellis",
+    role: "MS Student",
+    bio: "Ryan works on paleolimnology and geochronology of proglacial lake systems in Alaska.",
+  },
+];
+
+const alumni: Person[] = [
+  {
+    name: "Stephanie Arcusa",
+    role: "PhD, Earth Sciences & Environmental Sustainability",
+    photo: "/img/people/steph.jpg",
+    bio: "Stephanie's PhD research reconstructed drought and dustiness over the past 10,000 years for the Four Corners region of the U.S. Southwest.",
+  },
+  {
+    name: "Allison Cluett",
+    role: "NSF-AGS Postdoctoral Fellow",
+    photo: "/img/people/allison.jpg",
+    bio: "Allison studied long-term Arctic hydroclimate change through proxy data synthesis and model comparison, after a PhD at the University at Buffalo on Greenland temperature and precipitation dynamics.",
+  },
+  {
+    name: "Ethan Yackulic",
+    role: "PhD Student, Ecoinformatics",
+    photo: "/img/people/ethan.jpg",
+    bio: "Ethan worked on paleoclimate informatics and paleoproductivity in New Zealand, after an MS reconstructing paleoclimate from hyperspectral scanning of Crater Lake sediments in Colorado.",
+  },
+  {
+    name: "Sela Patterson",
+    role: "MS, Geology",
+    photo: "/img/people/sela.jpg",
+    bio: "Sela's Master's research examined what drives variability in the surface sediments of lakes in the San Juan Mountains of southern Colorado.",
+  },
+  {
+    name: "Hannah Kolus",
+    role: "Research Assistant · now at Rhodium Group",
+    photo: "/img/people/Hannah.jpg",
+    bio: "Hannah worked on abrupt climate change in the Holocene and process models of glacier-hydrology-lake systems. She now works on climate analytics at the Rhodium Group.",
+  },
+  {
+    name: "Charlotte Wiman",
+    role: "MS, Environmental Science & Policy · PhD at Northeastern",
+    photo: "/img/people/charlotte.jpg",
+    bio: "Charlotte's thesis focused on varved sediments in Columbine Lake in southern Colorado. She went on to pursue her PhD at Northeastern University.",
+  },
+  {
+    name: "Chris Heiser",
+    role: "Software Engineer · now at Carvana",
+    photo: "/img/people/chrisHeiser.jpg",
+    bio: "Chris was the lead developer of the LiPD utilities and helped build the Linked Paleo Data framework and the LinkedEarth cyberinfrastructure.",
+  },
+];
+
+const initials = (name: string) =>
+  name
+    .split(/\s+/)
+    .map((w) => w[0])
+    .slice(0, 2)
+    .join("");
+---
+
+<Base
+  title="People"
+  description="The Paleoclimate Dynamics Laboratory at Northern Arizona University: current researchers, graduate students, and alumni of Nick McKay's research group."
+>
+  <PageHero
+    title="People"
+    lede="The Paleoclimate Dynamics Laboratory at Northern Arizona University."
+  />
+  <div class="mx-auto max-w-4xl px-4 py-12">
+    <div class="grid gap-6 sm:grid-cols-2">
+      {
+        current.map((p) => (
+          <div class="flex gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+            {p.photo ? (
+              <img
+                src={p.photo}
+                alt={`Portrait of ${p.name}`}
+                class="h-20 w-20 shrink-0 rounded-full object-cover object-top"
+                width="80"
+                height="80"
+                loading="lazy"
+              />
+            ) : (
+              <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-sky-100 font-serif text-xl font-semibold text-sky-700">
+                {initials(p.name)}
+              </div>
+            )}
+            <div>
+              <h2 class="font-serif text-lg font-semibold text-sky-900">{p.name}</h2>
+              <p class="text-xs font-medium uppercase tracking-wide text-clay-700">{p.role}</p>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">{p.bio}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <h2 class="mt-14 font-serif text-2xl font-semibold text-sky-900">Alumni</h2>
+    <p class="mt-1 text-sm text-slate-500">
+      Lab alumni have gone on to positions in academia, climate analytics, and technology.
+    </p>
+    <div class="mt-5 grid gap-6 sm:grid-cols-2">
+      {
+        alumni.map((p) => (
+          <div class="flex gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+            {p.photo ? (
+              <img
+                src={p.photo}
+                alt={`Portrait of ${p.name}`}
+                class="h-16 w-16 shrink-0 rounded-full object-cover object-top"
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            ) : (
+              <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-sky-100 font-serif text-lg font-semibold text-sky-700">
+                {initials(p.name)}
+              </div>
+            )}
+            <div>
+              <h3 class="font-serif text-base font-semibold text-sky-900">{p.name}</h3>
+              <p class="text-xs font-medium uppercase tracking-wide text-slate-400">{p.role}</p>
+              <p class="mt-1.5 text-sm leading-relaxed text-slate-600">{p.bio}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="mt-14 rounded-xl bg-sky-50 p-6 text-center">
+      <p class="font-serif text-lg font-semibold text-sky-900">Want to join the lab?</p>
+      <p class="mt-1 text-sm text-slate-600">
+        Three funded PhD positions are open for Spring or Fall 2027.
+      </p>
+      <a
+        href="/opportunities/"
+        class="mt-4 inline-block rounded-lg bg-sky-800 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-sky-700"
+      >
+        See open positions
+      </a>
+    </div>
+  </div>
+</Base>

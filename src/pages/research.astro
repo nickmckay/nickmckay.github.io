@@ -1,6 +1,21 @@
 ---
 import Base from "../layouts/Base.astro";
 import PageHero from "../components/PageHero.astro";
+import { getPublications, type Publication } from "../lib/publications";
+
+const byId = new Map(getPublications().map((p) => [p.pubid, p]));
+const picks = (...ids: string[]) =>
+  ids.map((id) => byId.get(id)).filter((p): p is Publication => Boolean(p));
+
+// Signature papers per area (Scholar pubids; stable across weekly updates)
+const synthesisPubs = picks("ufrVoPGSRksC", "t-hv7AR41mYC", "Vr2j17o0sqMC");
+const informaticsPubs = picks("aDl3D7KC1E4C", "27LrP4qxOz0C");
+const recordPubs = picks("u5HHmVD_uO8C", "unp9ATQDT5gC");
+
+const link = (p: Publication) =>
+  p.doi
+    ? `https://doi.org/${p.doi}`
+    : `https://scholar.google.com/citations?view_op=view_citation&user=j8_CgoEAAAAJ&citation_for_view=j8_CgoEAAAAJ:${p.pubid}`;
 ---
 
 <Base
@@ -29,6 +44,16 @@ import PageHero from "../components/PageHero.astro";
       organization, we work to advance our understanding of how climate systems have evolved and
       what this means for future changes.
     </p>
+    <p class="text-sm">
+      <strong>Selected papers:</strong>
+      {
+        synthesisPubs.map((p, i) => (
+          <>
+            <a href={link(p)}>{p.title}</a> ({p.year}){i < synthesisPubs.length - 1 ? " · " : ""}
+          </>
+        ))
+      }
+    </p>
 
     <h2>Paleoclimate Informatics</h2>
     <p>
@@ -37,9 +62,22 @@ import PageHero from "../components/PageHero.astro";
       visualization tools, and training resources that streamline paleoclimate research workflows.
       These tools help researchers spend less time on data wrangling and more time on scientific
       discovery. This work bridges computer science and paleoclimatology to create open-source
-      solutions that benefit the broader scientific community. Explore the
-      <a href="/project/">projects page</a> for the tools and platforms that have come out of this
-      work.
+      solutions that benefit the broader scientific community.
+    </p>
+    <p class="text-sm">
+      <strong>Tools and platforms:</strong> <a href="/project/lipd/">LiPD</a> ·
+      <a href="/project/lipdverse/">LiPDverse</a> · <a href="/project/geochronr/">geoChronR</a> ·
+      <a href="/project/presto/">PReSto</a> · <a href="/project/actr/">actR</a>
+    </p>
+    <p class="text-sm">
+      <strong>Selected papers:</strong>
+      {
+        informaticsPubs.map((p, i) => (
+          <>
+            <a href={link(p)}>{p.title}</a> ({p.year}){i < informaticsPubs.length - 1 ? " · " : ""}
+          </>
+        ))
+      }
     </p>
 
     <h2>Paleoclimate Record Development</h2>
@@ -51,6 +89,47 @@ import PageHero from "../components/PageHero.astro";
       conducted in close collaboration with graduate students and international partners, help us
       understand how natural systems respond to climate change over timescales from years to
       millennia.
+    </p>
+    <div class="my-6 grid gap-4 sm:grid-cols-2">
+      <figure class="m-0">
+        <img
+          src="/img/opps-lake.jpg"
+          alt="Researchers coring lake sediments from a raft on a turquoise alpine lake"
+          class="m-0 h-52 w-full rounded-lg object-cover"
+          loading="lazy"
+        />
+        <figcaption class="mt-1 text-xs text-slate-500">
+          Coring an alpine lake in the San Juan Mountains, Colorado
+        </figcaption>
+      </figure>
+      <figure class="m-0">
+        <img
+          src="/img/opps-cores.jpg"
+          alt="Labeled lake sediment core tubes laid out after fieldwork"
+          class="m-0 h-52 w-full rounded-lg object-cover"
+          loading="lazy"
+        />
+        <figcaption class="mt-1 text-xs text-slate-500">
+          Sediment cores headed back to the lab
+        </figcaption>
+      </figure>
+    </div>
+    <p class="text-sm">
+      <strong>Selected papers:</strong>
+      {
+        recordPubs.map((p, i) => (
+          <>
+            <a href={link(p)}>{p.title}</a> ({p.year}){i < recordPubs.length - 1 ? " · " : ""}
+          </>
+        ))
+      }
+    </p>
+
+    <hr />
+    <p class="text-sm">
+      Meet the people doing this work on the <a href="/people/">lab page</a>, or see it in numbers
+      on the <a href="/publications/">publications page</a>. Interested in joining? Three
+      <a href="/opportunities/">funded PhD positions</a> are open now.
     </p>
   </div>
 </Base>
