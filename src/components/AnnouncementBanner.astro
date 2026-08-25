@@ -1,0 +1,33 @@
+---
+/**
+ * Seasonal recruitment banner shown on the home page.
+ *
+ * To turn it off after application season, set ENABLED = false (or update
+ * the text for the next campaign). Keep the message to one sentence.
+ */
+const ENABLED = true;
+const LEAD = "Now recruiting.";
+const MESSAGE =
+  "I'm recruiting three funded PhD students this year, starting Spring or Fall 2027.";
+const CTA = "See the positions";
+const HREF = "/opportunities/";
+---
+
+{
+  ENABLED && (
+    <div class="border-b border-clay-600/30 bg-gradient-to-r from-clay-300 to-clay-400">
+      <div class="mx-auto flex max-w-5xl flex-col items-center justify-center gap-x-6 gap-y-2.5 px-4 py-3.5 sm:flex-row">
+        <p class="text-center text-sm text-sky-950 sm:text-left">
+          <span class="font-bold">{LEAD}</span>
+          <span class="ml-1.5">{MESSAGE}</span>
+        </p>
+        <a
+          href={HREF}
+          class="shrink-0 whitespace-nowrap rounded-full bg-sky-900 px-4 py-1.5 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-700"
+        >
+          {CTA} →
+        </a>
+      </div>
+    </div>
+  )
+}
