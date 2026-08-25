@@ -28,11 +28,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://nickmckay.org/#person",
   name: "Nick McKay",
+  alternateName: "Nicholas P. McKay",
   jobTitle: "Professor of Climate Science",
   affiliation: {
     "@type": "Organization",
     name: "Northern Arizona University",
+    url: "https://nau.edu/",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Flagstaff",
@@ -49,6 +52,7 @@ const personJsonLd = {
     "https://orcid.org/0000-0003-3598-5113",
     "https://scholar.google.com/citations?user=j8_CgoEAAAAJ",
     "https://ses-nau.org/faculty-profiles/nicholas-mckay/",
+    "https://www.wikidata.org/wiki/Q91892221",
   ],
   knowsAbout: [
     "Paleoclimatology",

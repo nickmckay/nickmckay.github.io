@@ -3,6 +3,15 @@ import Base from "../layouts/Base.astro";
 import PageHero from "../components/PageHero.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 
+// Marks /about/ as the canonical profile page for the site-wide Person
+// entity (helps Google's Knowledge Graph tie the site to the person).
+const profileJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  mainEntity: { "@id": "https://nickmckay.org/#person" },
+  url: "https://nickmckay.org/about/",
+};
+
 const researchAreas = [
   "Paleoclimate synthesis",
   "Paleoclimate informatics",
@@ -14,6 +23,7 @@ const researchAreas = [
 <Base
   title="About"
   description="Nick McKay is a Professor in the School of Earth and Sustainability at Northern Arizona University, where he directs the Paleoclimate Dynamics Laboratory."
+  jsonLd={profileJsonLd}
 >
   <PageHero
     title="Hi, I'm Nick McKay."
