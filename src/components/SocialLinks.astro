@@ -1,0 +1,42 @@
+---
+/** Inline SVG icon links: GitHub, ORCID, Google Scholar, X, email. */
+interface Props {
+  class?: string;
+}
+const { class: klass = "" } = Astro.props;
+
+const links = [
+  { name: "GitHub", href: "https://github.com/nickmckay" },
+  { name: "ORCID", href: "https://orcid.org/0000-0003-3598-5113" },
+  { name: "Google Scholar", href: "https://scholar.google.com/citations?user=j8_CgoEAAAAJ" },
+  { name: "X (Twitter)", href: "https://twitter.com/npmckay" },
+  { name: "Email", href: "mailto:nick@nau.edu" },
+];
+
+const icons: Record<string, string> = {
+  GitHub:
+    "M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.66.41.35.77 1.05.77 2.12v3.15c0 .3.21.66.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z",
+  ORCID:
+    "M12 .5C5.65.5.5 5.65.5 12S5.65 23.5 12 23.5 23.5 18.35 23.5 12 18.35.5 12 .5ZM7.9 17.5H6.1V9.1h1.8v8.4Zm-.9-9.6a1.13 1.13 0 1 1 0-2.26 1.13 1.13 0 0 1 0 2.26Zm10.1 9.6h-4.8V9.1h4.5c2.9 0 4.5 1.9 4.5 4.2 0 2.4-1.8 4.2-4.2 4.2Zm-.3-6.8h-2.7v5.2h2.7c1.6 0 2.7-1.1 2.7-2.6 0-1.5-1.1-2.6-2.7-2.6Z",
+  "Google Scholar":
+    "M12 .5 1 9.5l4.84 3.14A7 7 0 0 1 12 9.05a7 7 0 0 1 6.16 3.6L23 9.5 12 .5Zm0 10.55a5.45 5.45 0 1 0 0 10.9 5.45 5.45 0 0 0 0-10.9Z",
+  "X (Twitter)":
+    "M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.66l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23Zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64Z",
+  Email:
+    "M2 4.5h20a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1Zm10 7.94L21.3 6H2.7L12 12.44Zm0 2.42L2.5 8.3v9.7h19V8.3L12 14.86Z",
+};
+---
+
+<ul class:list={["flex items-center gap-4", klass]}>
+  {
+    links.map((l) => (
+      <li>
+        <a href={l.href} aria-label={l.name} title={l.name} class="opacity-80 transition-opacity hover:opacity-100">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true">
+            <path d={icons[l.name]} />
+          </svg>
+        </a>
+      </li>
+    ))
+  }
+</ul>

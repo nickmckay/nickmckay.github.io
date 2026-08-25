@@ -1,0 +1,24 @@
+---
+import SocialLinks from "./SocialLinks.astro";
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-sky-950 text-sky-100">
+  <div class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-10 sm:flex-row sm:justify-between">
+    <div>
+      <p class="font-serif text-lg font-semibold text-white">Nick McKay</p>
+      <p class="mt-1 text-sm">
+        Paleoclimate Dynamics Laboratory<br />
+        School of Earth and Sustainability, Northern Arizona University
+      </p>
+      <p class="mt-2 text-sm">
+        <a href="mailto:nick@nau.edu" class="hover:text-clay-300">nick@nau.edu</a> ·
+        <a href="/contact/" class="hover:text-clay-300">Contact</a>
+      </p>
+    </div>
+    <SocialLinks class="text-sky-100" />
+  </div>
+  <div class="border-t border-sky-800 py-4 text-center text-xs text-sky-300">
+    © {year} Nick McKay
+  </div>
+</footer>

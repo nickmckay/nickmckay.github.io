@@ -1,0 +1,96 @@
+---
+import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
+import StatTile from "../../components/StatTile.astro";
+import BarChart from "../../components/BarChart.astro";
+import PublicationExplorer from "../../components/PublicationExplorer";
+import {
+  getCitationHistory,
+  getProfileMetrics,
+  getPublications,
+  getPubsPerYear,
+} from "../../lib/publications";
+
+const pubs = getPublications();
+const metrics = getProfileMetrics();
+const history = getCitationHistory();
+const perYear = getPubsPerYear();
+
+const years = pubs.map((p) => p.year).filter((y): y is number => y !== null);
+const minYear = Math.min(...years);
+const maxYear = Math.max(...years);
+
+const fmt = (n: number) => n.toLocaleString("en-US");
+const currentYear = new Date().getFullYear();
+---
+
+<Base
+  title="Publications"
+  description={`Browse ${fmt(pubs.length)} publications by paleoclimate scientist Nick McKay, cited ${fmt(metrics.totalCites)} times. Updated weekly from Google Scholar.`}
+>
+  <PageHero
+    title="Publications"
+    lede={`${fmt(pubs.length)} publications since ${minYear}, cited ${fmt(metrics.totalCites)} times. Updated weekly from Google Scholar.`}
+  />
+  <div class="mx-auto max-w-4xl px-4 py-10">
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <StatTile value={fmt(pubs.length)} label="Publications" />
+      <StatTile value={fmt(metrics.totalCites)} label="Citations" />
+      <StatTile value={fmt(metrics.hIndex)} label="h-index" />
+      <StatTile value={fmt(metrics.i10Index)} label="i10-index" sub={`Updated ${metrics.updateDate}`} />
+    </div>
+
+    <div class="mt-8 grid gap-6 lg:grid-cols-2">
+      <BarChart
+        title="Citations per year"
+        ariaLabel="Bar chart of citations to Nick McKay's publications by year"
+        labels={history.map((h) => h.year)}
+        series={[history.map((h) => h.cites)]}
+        seriesNames={["Citations"]}
+        partialLast={history.at(-1)?.year === currentYear}
+      />
+      <BarChart
+        title="Publications per year"
+        ariaLabel="Bar chart of Nick McKay's publications by year"
+        labels={perYear.map((p) => p.year)}
+        series={[perYear.map((p) => p.count)]}
+        seriesNames={["Publications"]}
+        partialLast={perYear.at(-1)?.year === currentYear}
+      />
+    </div>
+
+    <div class="mt-10">
+      <PublicationExplorer client:load minYear={minYear} maxYear={maxYear} />
+    </div>
+
+    <p class="mt-10 text-sm text-slate-500">
+      Publication data is updated weekly from
+      <a
+        href="https://scholar.google.com/citations?user=j8_CgoEAAAAJ"
+        class="text-sky-600 hover:underline">Google Scholar</a
+      >. Titles link to the published paper via DOI where available.
+    </p>
+  </div>
+
+  <!-- shared tooltip for [data-tip] chart marks -->
+  <div
+    id="chart-tip"
+    class="pointer-events-none fixed z-50 hidden rounded-md bg-sky-950 px-2.5 py-1.5 text-xs text-white shadow-lg"
+  >
+  </div>
+  <script>
+    const tip = document.getElementById("chart-tip")!;
+    document.querySelectorAll<SVGElement>("[data-tip]").forEach((el) => {
+      el.addEventListener("mousemove", (e) => {
+        tip.textContent = el.dataset.tip ?? "";
+        tip.classList.remove("hidden");
+        const pad = 12;
+        const w = tip.offsetWidth;
+        const x = Math.min(e.clientX + pad, window.innerWidth - w - 8);
+        tip.style.left = `${x}px`;
+        tip.style.top = `${e.clientY + pad}px`;
+      });
+      el.addEventListener("mouseleave", () => tip.classList.add("hidden"));
+    });
+  </script>
+</Base>

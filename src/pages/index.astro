@@ -1,0 +1,37 @@
+---
+import Base from "../layouts/Base.astro";
+import SocialLinks from "../components/SocialLinks.astro";
+---
+
+<Base title="Home">
+  <div class="mx-auto grid max-w-5xl items-center gap-10 px-4 py-14 md:grid-cols-2 md:py-20">
+    <img
+      src="/img/revoir.jpg"
+      alt="Nick McKay overlooking a mountain landscape"
+      class="w-full rounded-2xl object-cover shadow-md"
+      width="1200"
+      height="800"
+    />
+    <div>
+      <h1 class="font-serif text-4xl font-bold text-sky-900 sm:text-5xl">Nick McKay</h1>
+      <p class="mt-3 font-serif text-xl text-clay-600">Using the past to understand our climate future</p>
+      <p class="mt-5 leading-relaxed text-slate-700">
+        I use natural records of past climate variability to inform our understanding of climate
+        dynamics. My research spans from the tropics to the Arctic, on timescales ranging from years
+        to millennia and on spatial scales ranging from hemispheres to meters. Through my work
+        directing the Paleoclimate Dynamics Laboratory at Northern Arizona University, I help
+        prepare for and adapt to future climate changes by better understanding the complex details
+        of our climate and earth systems.
+      </p>
+      <div class="mt-6 flex items-center gap-6">
+        <a
+          href="/about/"
+          class="rounded-lg bg-sky-800 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-sky-700"
+        >
+          Learn More →
+        </a>
+        <SocialLinks class="text-sky-800" />
+      </div>
+    </div>
+  </div>
+</Base>
