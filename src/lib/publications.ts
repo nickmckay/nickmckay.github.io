@@ -18,6 +18,8 @@ export interface Publication {
   year: number | null;
   pubid: string;
   doi: string;
+  gradStudents: string[];
+  undergradStudents: string[];
 }
 
 export interface ProfileMetrics {
@@ -31,12 +33,17 @@ function csv(path: string): Record<string, string>[] {
   return parse(readFileSync(path, "utf-8"), { columns: true });
 }
 
+function splitMulti(v: string | undefined): string[] {
+  return v ? v.split("; ").filter(Boolean) : [];
+}
+
 let _pubs: Publication[] | null = null;
 
 /** All publications, newest first (ties broken by citations). */
 export function getPublications(): Publication[] {
   if (_pubs) return _pubs;
   const dois = new Map(csv("data/dois.csv").map((r) => [r.pubid, r.doi]));
+  const students = new Map(csv("data/student_authors.csv").map((r) => [r.pubid, r]));
   _pubs = csv("R/data/publications.csv")
     .map((r) => ({
       title: r.title,
@@ -48,6 +55,8 @@ export function getPublications(): Publication[] {
       year: r.year ? parseInt(r.year, 10) : null,
       pubid: r.pubid,
       doi: dois.get(r.pubid) || "",
+      gradStudents: splitMulti(students.get(r.pubid)?.grad),
+      undergradStudents: splitMulti(students.get(r.pubid)?.undergrad),
     }))
     .sort((a, b) => (b.year ?? 0) - (a.year ?? 0) || b.citations - a.citations);
   return _pubs;
@@ -111,6 +120,23 @@ const JOURNAL_STANDARDIZATIONS: [RegExp, string][] = [
   [/^Paleobiology$/i, "Paleobiology"],
   [/^Holocene$/i, "The Holocene"],
 ];
+
+/** Heuristic ported from ses-nau.org: is the first author a tagged student? */
+export function studentFirstAuthor(p: Publication): boolean {
+  const students = [...p.gradStudents, ...p.undergradStudents];
+  if (students.length === 0 || !p.authors) return false;
+  const first = p.authors.split(",")[0].toLowerCase();
+  const tokens = first.replace(/[^a-z\s-]/g, "").split(/[\s-]+/).filter(Boolean);
+  return students.some((name) => {
+    const parts = name.toLowerCase().split(/\s+/);
+    const surname = parts[parts.length - 1];
+    const initial = parts[0]?.[0];
+    return (
+      tokens.includes(surname) &&
+      (!initial || tokens.some((t) => t !== surname && t.startsWith(initial)))
+    );
+  });
+}
 
 export function standardizeJournalName(name: string): string {
   const clean = name

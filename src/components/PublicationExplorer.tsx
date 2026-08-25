@@ -13,6 +13,9 @@ interface Pub {
   c: number; // citations
   p: string; // scholar pubid
   d: string; // doi
+  g: string[]; // grad-student authors
+  u: string[]; // undergrad-student authors
+  sf: boolean; // student is first author
 }
 
 interface Props {
@@ -26,6 +29,8 @@ function readParams() {
   const q = new URLSearchParams(window.location.search);
   return {
     search: q.get("q") ?? "",
+    students: q.get("students") === "1",
+    firstAuthor: q.get("first") === "1",
     from: q.get("from") ?? "",
     to: q.get("to") ?? "",
     sort: (q.get("sort") as SortKey) ?? "year",
@@ -36,6 +41,8 @@ export default function PublicationExplorer({ minYear, maxYear }: Props) {
   const [pubs, setPubs] = useState<Pub[] | null>(null);
   const [error, setError] = useState(false);
   const [search, setSearch] = useState("");
+  const [students, setStudents] = useState(false);
+  const [firstAuthor, setFirstAuthor] = useState(false);
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");
   const [sort, setSort] = useState<SortKey>("year");
@@ -44,6 +51,8 @@ export default function PublicationExplorer({ minYear, maxYear }: Props) {
   useEffect(() => {
     const p = readParams();
     setSearch(p.search);
+    setStudents(p.students);
+    setFirstAuthor(p.firstAuthor);
     setFrom(p.from);
     setTo(p.to);
     setSort(p.sort === "citations" ? "citations" : "year");
@@ -58,12 +67,14 @@ export default function PublicationExplorer({ minYear, maxYear }: Props) {
     if (pubs === null) return;
     const q = new URLSearchParams();
     if (search) q.set("q", search);
+    if (students) q.set("students", "1");
+    if (firstAuthor) q.set("first", "1");
     if (from) q.set("from", from);
     if (to) q.set("to", to);
     if (sort !== "year") q.set("sort", sort);
     const qs = q.toString();
     history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
-  }, [search, from, to, sort]);
+  }, [search, students, firstAuthor, from, to, sort]);
 
   const filtered = useMemo(() => {
     if (!pubs) return [];
@@ -73,6 +84,8 @@ export default function PublicationExplorer({ minYear, maxYear }: Props) {
     const out = pubs.filter((p) => {
       if (p.y !== null && (p.y < fromY || p.y > toY)) return false;
       if (p.y === null && (from || to)) return false;
+      if (students && p.g.length === 0 && p.u.length === 0) return false;
+      if (firstAuthor && !p.sf) return false;
       if (needle) {
         const hay = `${p.t} ${p.a} ${p.j}`.toLowerCase();
         if (!hay.includes(needle)) return false;
@@ -85,7 +98,7 @@ export default function PublicationExplorer({ minYear, maxYear }: Props) {
         : (a, b) => b.c - a.c || (b.y ?? 0) - (a.y ?? 0),
     );
     return out;
-  }, [pubs, search, from, to, sort]);
+  }, [pubs, search, students, firstAuthor, from, to, sort]);
 
   const totalCites = useMemo(() => filtered.reduce((s, p) => s + p.c, 0), [filtered]);
 
@@ -130,6 +143,24 @@ export default function PublicationExplorer({ minYear, maxYear }: Props) {
               onInput={(e) => setTo((e.target as HTMLInputElement).value)}
               class="w-20 rounded-md border border-slate-300 px-2 py-1"
             />
+          </label>
+          <label class="flex items-center gap-1.5">
+            <input
+              type="checkbox"
+              checked={students}
+              onChange={(e) => setStudents((e.target as HTMLInputElement).checked)}
+              class="h-4 w-4 accent-sky-700"
+            />
+            <span class="text-slate-600">Student authors only</span>
+          </label>
+          <label class="flex items-center gap-1.5">
+            <input
+              type="checkbox"
+              checked={firstAuthor}
+              onChange={(e) => setFirstAuthor((e.target as HTMLInputElement).checked)}
+              class="h-4 w-4 accent-sky-700"
+            />
+            <span class="text-slate-600">Student first author</span>
           </label>
           <label class="ml-auto flex items-center gap-1.5">
             <span class="text-slate-600">Sort by</span>
@@ -179,6 +210,26 @@ export default function PublicationExplorer({ minYear, maxYear }: Props) {
                 </span>
               )}
             </p>
+            {(p.g.length > 0 || p.u.length > 0) && (
+              <p class="mt-1.5 flex flex-wrap items-center gap-1.5">
+                <span class="text-[10px] font-semibold uppercase tracking-wide text-slate-400">
+                  Students
+                </span>
+                {[...p.g, ...p.u]
+                  .sort((a, b) => {
+                    const pos = (x: string) => {
+                      const i = p.a.toLowerCase().indexOf((x.split(" ").pop() ?? x).toLowerCase());
+                      return i === -1 ? Number.MAX_SAFE_INTEGER : i;
+                    };
+                    return pos(a) - pos(b);
+                  })
+                  .map((n) => (
+                    <span key={n} class="rounded-full bg-sky-50 px-2 py-0.5 text-xs text-sky-700">
+                      {n}
+                    </span>
+                  ))}
+              </p>
+            )}
           </article>
         ))}
       </div>

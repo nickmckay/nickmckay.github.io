@@ -36,6 +36,7 @@ node scripts/check_links.mjs   # internal link check (run after build; CI runs i
 - Local cron (Thursday 11 PM) runs `update_and_commit.sh` (gitignored) -> `R/update_publication_database.R` -> rewrites the CSVs -> commits and pushes to main -> GitHub Actions rebuilds the site.
 - **Never add or remove columns in `R/data/publications.csv`.** The R script assigns whole 9-column rows into the loaded data frame (`final_pubs[idx, ] <- current_pub`), so a schema change corrupts the weekly run. Fixing values in existing cells is fine (rows with `complete_authors_fetched=TRUE` are preserved by the merge).
 - DOIs live in the sidecar `data/dois.csv` (`pubid,title,doi`), written by `scripts/enrich_dois.py` and joined at build time in `src/lib/publications.ts`. New publications arrive DOI-less; re-run `python3 scripts/enrich_dois.py` occasionally (safe to re-run; add `--loose` for a fuzzier second pass) and commit the result.
+- Student-author tags live in the sidecar `data/student_authors.csv` (`pubid,title,grad,undergrad`), synced from the curated ses-nau.org database by `scripts/sync_student_authors.py` (needs the local clone at `~/GitHub/SES_Publication_Dashboard`). Re-run alongside enrich_dois.py after weekly updates. The explorer shows student chips and offers "student authors only" / "student first author" filters, mirroring ses-nau.org.
 - GitHub Actions cannot reach Google Scholar; Scholar updates happen only via the local cron.
 
 ## Deployment
