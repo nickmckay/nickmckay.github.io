@@ -42,7 +42,13 @@ let _pubs: Publication[] | null = null;
 /** All publications, newest first (ties broken by citations). */
 export function getPublications(): Publication[] {
   if (_pubs) return _pubs;
-  const dois = new Map(csv("data/dois.csv").map((r) => [r.pubid, r.doi]));
+  const doiRows = new Map(csv("data/dois.csv").map((r) => [r.pubid, r]));
+  const dois = new Map([...doiRows].map(([id, r]) => [id, r.doi]));
+  // Crossref final-publication years: preferred over the Scholar year, which
+  // inherits the preprint's year when Scholar merges two-stage EGU papers.
+  const finalYears = new Map(
+    [...doiRows].filter(([, r]) => r.year).map(([id, r]) => [id, parseInt(r.year, 10)]),
+  );
   const students = new Map(csv("data/student_authors.csv").map((r) => [r.pubid, r]));
   _pubs = csv("R/data/publications.csv")
     .map((r) => ({
@@ -52,7 +58,7 @@ export function getPublications(): Publication[] {
       journal: r.journal ?? "",
       number: r.number ?? "",
       citations: parseInt(r.cites, 10) || 0,
-      year: r.year ? parseInt(r.year, 10) : null,
+      year: finalYears.get(r.pubid) ?? (r.year ? parseInt(r.year, 10) : null),
       pubid: r.pubid,
       doi: dois.get(r.pubid) || "",
       gradStudents: splitMulti(students.get(r.pubid)?.grad),

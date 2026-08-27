@@ -77,6 +77,26 @@ def first_surname(authors: str) -> str:
     return re.sub(r"[^a-z]", "", cand.lower())
 
 
+def final_year(doi: str) -> str:
+    """Publisher's year for a DOI from Crossref: print date preferred, then
+    'issued'. This is the final-publication year, immune to Google Scholar's
+    habit of merging preprints/discussion papers and keeping their earlier
+    year (EGU two-stage journals such as ESSD and Geochronology)."""
+    url = f"https://api.crossref.org/works/{urllib.parse.quote(doi)}"
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            msg = json.load(r)["message"]
+        for field in ("published-print", "issued", "published-online"):
+            parts = (msg.get(field) or {}).get("date-parts", [[None]])
+            if parts and parts[0] and parts[0][0]:
+                return str(parts[0][0])
+    except Exception as e:  # noqa: BLE001 - leave blank, Scholar year stands
+        print(f"  crossref year error for {doi} ({type(e).__name__})", flush=True)
+        time.sleep(2)
+    return ""
+
+
 def lookup_doi(title: str, year: str, authors: str = "",
                loose: bool = False) -> str | None:
     """Crossref first (fast, tolerant of our volume), OpenAlex as fallback."""
@@ -129,6 +149,9 @@ def main() -> int:
     ap.add_argument("--loose", action="store_true",
                     help="second-pass matching: fuzzier titles, but requires "
                          "year agreement AND first-author surname match")
+    ap.add_argument("--refresh-years", action="store_true",
+                    help="(re)fetch the final-publication year from Crossref "
+                         "for every row that has a DOI but no year")
     args = ap.parse_args()
 
     with open(PUB_CSV, newline="") as f:
@@ -151,16 +174,30 @@ def main() -> int:
         DOI_CSV.parent.mkdir(exist_ok=True)
         pub_order = [r["pubid"] for r in pubs if r["pubid"] in known]
         with open(DOI_CSV, "w", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=["pubid", "title", "doi"],
+            w = csv.DictWriter(f, fieldnames=["pubid", "title", "doi", "year"],
                                quoting=csv.QUOTE_MINIMAL)
             w.writeheader()
-            w.writerows(known[p] for p in pub_order)
+            w.writerows({**{"year": ""}, **known[p]} for p in pub_order)
+
+    if args.refresh_years:
+        need = [r for r in known.values() if r.get("doi") and not r.get("year")]
+        print(f"fetching final-publication years for {len(need)} DOIs", flush=True)
+        for i, r in enumerate(need, 1):
+            r["year"] = final_year(r["doi"])
+            if i % 25 == 0:
+                print(f"  {i}/{len(need)}", flush=True)
+                write_out()
+            time.sleep(0.2)
+        write_out()
+        print(f"Done: {sum(1 for r in known.values() if r.get('year'))} rows have years")
+        return 0
 
     found = 0
     for i, r in enumerate(todo, 1):
         doi = lookup_doi(r["title"], r["year"], r.get("author", ""), loose=args.loose)
         if doi:
-            known[r["pubid"]] = {"pubid": r["pubid"], "title": r["title"], "doi": doi}
+            known[r["pubid"]] = {"pubid": r["pubid"], "title": r["title"], "doi": doi,
+                                 "year": final_year(doi)}
             found += 1
         if i % 25 == 0:
             print(f"  {i}/{len(todo)} processed, {found} DOIs found", flush=True)
